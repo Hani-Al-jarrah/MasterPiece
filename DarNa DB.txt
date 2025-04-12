@@ -1,0 +1,93 @@
+-- Users Table
+CREATE TABLE Users (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) ,
+    Email NVARCHAR(100) UNIQUE NOT NULL ,
+    Password NVARCHAR(255) ,
+    PhoneNumber NVARCHAR(15),
+    Role NVARCHAR(20) CHECK (Role IN ('User', 'Admin')) DEFAULT 'User',
+    
+);
+
+-- Houses Table
+CREATE TABLE Houses (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Name NVARCHAR(100) ,
+    Description NVARCHAR(500),
+    LocationName NVARCHAR(100) ,
+    TypeName NVARCHAR(50) NOT NULL,
+    --Amenities NVARCHAR(255),
+    Price DECIMAL(10,2) NOT NULL,
+    Available BIT NOT NULL,
+    MaxGuests INT NOT NULL,
+    ImageURL NVARCHAR(255),
+    AvailableFrom DATE,
+    AvailableTo DATE
+);
+
+-- Bookings Table
+CREATE TABLE Bookings (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    UserID INT FOREIGN KEY REFERENCES Users(ID) ON DELETE CASCADE,
+    HouseID INT FOREIGN KEY REFERENCES Houses(ID) ON DELETE CASCADE,
+    CheckInDate DATE NOT NULL,
+    CheckOutDate DATE NOT NULL,
+    Guests INT NOT NULL,
+    Status NVARCHAR(20) CHECK (Status IN ('Pending', 'Confirmed', 'Cancelled')) DEFAULT 'Pending',
+    BookingDate DATETIME DEFAULT GETDATE()
+
+);
+
+-- Wishlist Table
+CREATE TABLE Wishlist (
+    WishlistID INT IDENTITY(1,1) PRIMARY KEY,
+    UserID INT FOREIGN KEY REFERENCES Users(ID) ON DELETE CASCADE,
+    HouseID INT FOREIGN KEY REFERENCES Houses(ID) ON DELETE CASCADE,
+);
+
+-- Feedback Table
+CREATE TABLE Feedback (
+    FeedbackID INT IDENTITY(1,1) PRIMARY KEY,
+    UserID INT FOREIGN KEY REFERENCES Users(ID) ON DELETE CASCADE,
+    HouseID INT FOREIGN KEY REFERENCES Houses(ID) ON DELETE CASCADE,
+    Rating INT CHECK (Rating BETWEEN 1 AND 5),
+    Comment NVARCHAR(500),
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Payments Table
+CREATE TABLE Payments (
+    PaymentID INT IDENTITY(1,1) PRIMARY KEY,
+    BookingID INT FOREIGN KEY REFERENCES Bookings(ID) ON DELETE CASCADE,
+    UserID INT FOREIGN KEY REFERENCES Users(ID) ON DELETE CASCADE,
+    Amount DECIMAL(10,2) NOT NULL,
+    PaymentMethod NVARCHAR(50) NOT NULL CHECK (PaymentMethod IN ('Credit Card', 'PayPal', 'Cash')),
+    Status NVARCHAR(20) CHECK (Status IN ('Pending', 'Completed', 'Failed')) DEFAULT 'Pending',
+    PaymentDate DATETIME DEFAULT GETDATE()
+);
+
+-- Tours Table
+CREATE TABLE Tours (
+    TourID INT IDENTITY(1,1) PRIMARY KEY,
+    LocationName NVARCHAR(100) NOT NULL,
+    Name NVARCHAR(100) NOT NULL,
+    Description NVARCHAR(500),
+    Duration NVARCHAR(50),
+    Price DECIMAL(10,2) NOT NULL,
+    MaxGuests INT NOT NULL,
+    StartDate DATE NOT NULL,
+    StartTime TIME NOT NULL,
+    EndDate DATE NOT NULL,
+    EndTime TIME NOT NULL,
+    ImageURL NVARCHAR(255),
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Blogs Table
+CREATE TABLE Blogs (
+    BlogID INT IDENTITY(1,1) PRIMARY KEY,
+    Title NVARCHAR(200) NOT NULL,
+    Content NVARCHAR(MAX) NOT NULL,
+    AuthorID INT FOREIGN KEY REFERENCES Users(ID) ON DELETE CASCADE,
+    CreatedAt DATETIME DEFAULT GETDATE()
+);

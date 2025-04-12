@@ -1,0 +1,438 @@
+﻿@model IEnumerable<MasterPiece.Models.House>
+@{
+	Layout = "DarNaLayout";
+}
+
+<main>
+
+	<section class="hero_in hotels">
+		<div class="wrapper">
+			<div class="container">
+				<h1 class="fadeInUp"><span></span>Explore the Best Airbnbs in Jordan</h1>
+
+			</div>
+		</div>
+	</section>
+	<!--/hero_in-->
+
+	<div class="filters_listing sticky_horizontal">
+		<div class="container">
+			<ul class="clearfix">
+				<li>
+					<div class="switch-field">
+						<input type="radio" id="all" name="listing_filter" value="all" checked data-filter="*"
+							   class="selected">
+						<label for="all">All</label>
+						<input type="radio" id="popular" name="listing_filter" value="popular"
+							   data-filter=".popular">
+						<label for="popular">Popular</label>
+						<input type="radio" id="latest" name="listing_filter" value="latest"
+							   data-filter=".latest">
+						<label for="latest">Latest</label>
+					</div>
+				</li>
+				<!-- <li>
+					<div class="layout_view">
+						<a href="#0" class="active"><i class="icon-th"></i></a>
+						<a href="hotels-list-sidebar.html"><i class="icon-th-list"></i></a>
+					</div>
+				</li> -->
+				<!-- <li>
+					<a class="btn_map" data-bs-toggle="collapse" href="#collapseMap" aria-expanded="false"
+						aria-controls="collapseMap" data-text-swap="Hide map"
+						data-text-original="View on map">View on map</a>
+				</li> -->
+			</ul>
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /filters -->
+
+	<div class="collapse" id="collapseMap">
+		<div id="map" class="map"></div>
+	</div>
+	<!-- End Map -->
+
+	<div class="container margin_60_35">
+		<div class="row">
+			<aside class="col-lg-3">
+				<div class="custom-search-input-2 inner-2">
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="Terms...">
+						<i class="icon_search"></i>
+					</div>
+					<div class="form-group">
+						<input class="form-control" type="text" placeholder="Where">
+						<i class="icon_pin_alt"></i>
+					</div>
+					<div class="form-group">
+						<select class="wide">
+							<option>District</option>
+							<option>All</option>
+							<option>Amman</option>
+							<option>Ajloun</option>
+							<option>Jerash</option>
+							<option>Irbid</option>
+							<option>Balqa</option>
+							<option>Zarqa</option>
+							<option>Madaba</option>
+							<option>Mafraq</option>
+							<option>Karak</option>
+							<option>Tafilah</option>
+							<option>Ma'an</option>
+							<option>Aqaba</option>
+							<option>Wadi Rum</option>
+
+						</select>
+					</div>
+					<input type="submit" class="btn_search" value="Search">
+				</div>
+				<!-- /custom-search-input-2 -->
+				<div id="filters_col">
+					<a data-bs-toggle="collapse" href="#collapseFilters" aria-expanded="false"
+					   aria-controls="collapseFilters" id="filters_col_bt">Filters </a>
+					<div class="collapse show" id="collapseFilters">
+						<!-- <div class="filter_type">
+							<h6>Distance</h6>
+							<input type="text" id="range" name="range" value="">
+						</div> -->
+						<div class="filter_type">
+							<h6>Star Category </h6>
+							<ul>
+								<li>
+									<label>
+										<span class="cat_star">
+											<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+										</span>
+										<small>(25)</small>
+									</label>
+									<input type="checkbox" class="js-switch" checked>
+								</li>
+								<li>
+									<label>
+										<span class="cat_star">
+											<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+										</span> <small>(25)</small>
+									</label>
+									<input type="checkbox" class="js-switch">
+								</li>
+								<li>
+									<label>
+										<span class="cat_star">
+											<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+										</span>
+										<small>(25)</small>
+									</label>
+									<input type="checkbox" class="js-switch">
+								</li>
+							</ul>
+						</div>
+						<div class="filter_type">
+							<h6>Rating</h6>
+							<ul>
+								<li>
+									<label>Superb: 9+</label>
+									<input type="checkbox" class="js-switch" checked>
+								</li>
+								<li>
+									<label>Very good: 8+</label>
+									<input type="checkbox" class="js-switch">
+								</li>
+								<li>
+									<label>Good: 7+</label>
+									<input type="checkbox" class="js-switch">
+								</li>
+								<li>
+									<label>Pleasant: 6+</label>
+									<input type="checkbox" class="js-switch">
+								</li>
+								<li>
+									<label>No rating</label>
+									<input type="checkbox" class="js-switch">
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--/collapse -->
+				</div>
+				<!--/filters col-->
+			</aside>
+			<!-- /aside -->
+
+			<div class="col-lg-9">
+				<div class="isotope-wrapper">
+					<div class="row">
+						<div class="col-md-6 isotope-item popular">
+							<div class="box_grid" data-cue="slideInUp">
+								<figure>
+									<a href="#0" class="wish_bt"></a>
+									<a href="hotel-detail.html">
+										<img src="Madaba/Madaba1.png" class="img-fluid" alt="Madaba Hotel"
+											 width="800" height="533">
+										<div class="read_more"><span>Read more</span></div>
+									</a>
+									<small>Madaba, Jordan</small>
+								</figure>
+								<div class="wrapper">
+									<div class="cat_star">
+										<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+									</div>
+									<h3><a href="hotel-detail.html">Madaba Cozy Hut</a></h3>
+									<p>
+										Escape to a traditional Jordanian hut in the heart of Madaba. Enjoy a
+										peaceful retreat surrounded by nature, with easy access to the city's
+										historic mosaics. Perfect for a relaxing stay with an authentic touch.
+									</p>
+									<span class="price">From <strong>160 J.D</strong> /per night</span>
+								</div>
+
+								<ul>
+									<li><i class="ti-eye"></i> 164 views</li>
+									<li>
+										<div class="score">
+											<span>
+												Superb<em>
+													350
+													Reviews
+												</em>
+											</span><strong>8.9</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-md-6 isotope-item latest">
+							<div class="box_grid" data-cue="slideInUp">
+								<figure>
+									<a href="#0" class="wish_bt"></a>
+									<a href="hotel-detail.html">
+										<img src="Alsalt/Alsalt1.png" class="img-fluid"
+											 alt="Chalet in Al-Salt" width="800" height="533">
+										<div class="read_more"><span>Read more</span></div>
+									</a>
+									<small>Al-Salt Countryside</small>
+								</figure>
+								<div class="wrapper">
+									<div class="cat_star">
+										<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+									</div>
+									<h3><a href="hotel-detail.html">Al-Salt Hillside Chalet</a></h3>
+									<p>
+										Relax in a stunning hillside chalet in Al-Salt, offering breathtaking
+										mountain views, a private garden, and a cozy rustic design. Perfect for
+										a peaceful escape or a family retreat in nature.
+									</p>
+									<span class="price">From <strong>150 J.D</strong> / per night</span>
+								</div>
+
+								<ul>
+									<li><i class="ti-eye"></i> 203 views</li>
+									<li>
+										<div class="score">
+											<span>
+												Good<em>
+													350
+													Reviews
+												</em>
+											</span><strong>7.0</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-md-6 isotope-item popular">
+							<div class="box_grid" data-cue="slideInUp">
+								<figure>
+									<a href="#0" class="wish_bt"></a>
+									<a href="hotel-detail.html">
+										<img src="Amman1/Amman1.png"
+											 class="img-fluid" alt="Villa Room in Amman" width="800"
+											 height="533">
+										<div class="read_more"><span>Read more</span></div>
+									</a>
+									<small>Amman, Jordan</small>
+								</figure>
+								<div class="wrapper">
+									<div class="cat_star">
+										<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+									</div>
+									<h3><a href="hotel-detail.html">Elegant Villa Room</a></h3>
+									<p>
+										Stay in a luxurious private room within a stunning villa in Amman. Enjoy
+										elegant interiors, a serene garden view, and access to shared amenities,
+										including terrace.
+									</p>
+									<span class="price">From <strong>45 J.D</strong> / per night</span>
+								</div>
+
+								<ul>
+									<li><i class="ti-eye"></i> 109 views</li>
+									<li>
+										<div class="score">
+											<span>
+												Good<em>
+													350
+													Reviews
+												</em>
+											</span><strong>7.0</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-md-6 isotope-item latest">
+							<div class="box_grid" data-cue="slideInUp">
+								<figure>
+									<a href="#0" class="wish_bt"></a>
+									<a href="hotel-detail.html">
+										<img src="Ajloun/Ajloun5.png" class="img-fluid" alt="Cozy Hut in Ajloun" width="800" height="533">
+										<div class="read_more"><span>Read more</span></div>
+									</a>
+									<small>Ajloun, Jordan</small>
+								</figure>
+								<div class="wrapper">
+									<div class="cat_star"><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i></div>
+									<h3><a href="hotel-detail.html">Cozy Mountain Hut</a></h3>
+									<p>Escape to nature with this rustic hut in Ajloun, surrounded by lush greenery and breathtaking mountain views. Perfect for a peaceful retreat or an adventurous getaway.</p>
+									<span class="price">From <strong>200 J.D</strong> / per night</span>
+								</div>
+
+								<ul>
+									<li><i class="ti-eye"></i> 449 views</li>
+									<li>
+										<div class="score">
+											<span>
+												Superb<em>
+													350
+													Reviews
+												</em>
+											</span><strong>9.0</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-md-6 isotope-item popular">
+							<div class="box_grid" data-cue="slideInUp">
+								<figure>
+									<a href="#0" class="wish_bt"></a>
+									<a href="hotel-detail.html">
+										<img src="WadiRum/WadiRum1.webp" class="img-fluid" alt="Open Cave in Wadi Rum" width="800" height="533">
+										<div class="read_more"><span>Read more</span></div>
+									</a>
+									<small>Wadi Rum, Jordan</small>
+								</figure>
+								<div class="wrapper">
+									<div class="cat_star"><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i></div>
+									<h3><a href="hotel-detail.html">Open Cave Under the Stars</a></h3>
+									<p>Sleep under a blanket of stars in this breathtaking open cave in Wadi Rum. Experience the magic of the desert, surrounded by stunning rock formations and endless skies.</p>
+									<span class="price">From <strong>50 J.D</strong> / per night</span>
+								</div>
+
+								<ul>
+									<li><i class="ti-eye"></i> 144 views</li>
+									<li>
+										<div class="score">
+											<span>
+												Good<em>
+													350
+													Reviews
+												</em>
+											</span><strong>7.5</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+						<div class="col-md-6 isotope-item latest">
+							<div class="box_grid" data-cue="slideInUp">
+								<figure>
+									<a href="#0" class="wish_bt"></a>
+									<a href="hotel-detail.html">
+										<img src="Jerash/Jerash1.png" class="img-fluid" alt="Villa in Jerash" width="800" height="533">
+										<div class="read_more"><span>Read more</span></div>
+									</a>
+									<small>Jerash, Jordan</small>
+								</figure>
+								<div class="wrapper">
+									<div class="cat_star"><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i></div>
+									<h3><a href="hotel-detail.html">Luxury Villa with Ancient Views</a></h3>
+									<p>Relax and unwind in this elegant villa located in the heart of Jerash. Enjoy breathtaking views of ancient Roman ruins and immerse yourself in the rich history of the area.</p>
+									<span class="price">From <strong>120 J.D</strong> / per night</span>
+								</div>
+
+								<ul>
+									<li><i class="ti-eye"></i> 300 views</li>
+									<li>
+										<div class="score">
+											<span>
+												Good<em>
+													350
+													Reviews
+												</em>
+											</span><strong>7.8</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /box_grid -->
+					</div>
+					<!-- /row -->
+				</div>
+				<!-- /isotope-wrapper -->
+
+				<p class="text-center"><a href="#0" class="btn_1 rounded add_top_30">Load more</a></p>
+			</div>
+			<!-- /col -->
+		</div>
+	</div>
+	<!-- /container -->
+
+	<div class="bg_color_1">
+		<div class="container margin_60_35">
+			<div class="row">
+				<div class="col-md-4">
+					<a href="#0" class="boxed_list">
+						<i class="pe-7s-help2"></i>
+						<h4>Need Assistance? We're Here for You</h4>
+						<p>
+							Have questions or need support? Contact our team for quick and helpful assistance,
+							anytime.
+						</p>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#0" class="boxed_list">
+						<i class="pe-7s-wallet"></i>
+						<h4>Secure and Flexible Payments</h4>
+						<p>
+							Book with confidence! We offer secure payment options and flexible methods for a
+							hassle-free experience.
+						</p>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="#0" class="boxed_list">
+						<i class="pe-7s-note2"></i>
+						<h4>Easy Cancellation Policy</h4>
+						<p>
+							Plans changed? No worries! Check out our simple and traveler-friendly cancellation
+							policies.
+						</p>
+					</a>
+				</div>
+			</div>
+
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /bg_color_1 -->
+
+</main>

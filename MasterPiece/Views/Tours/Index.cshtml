@@ -1,0 +1,47 @@
+﻿@model List<MasterPiece.Models.Tour>
+@{
+    ViewData["Title"] = "Manage Tours";
+    Layout = "Admin";
+}
+
+<h2>Manage Tours</h2>
+<a asp-action="Create" class="btn btn-success mb-3">Add New Tour</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Duration</th>
+            <th>Price</th>
+            <th>Guests</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tour in Model)
+        {
+            <tr>
+                <td>
+                    @if (!string.IsNullOrEmpty(tour.ImageUrl))
+                    {
+                        <img src="@tour.ImageUrl" width="80" />
+                    }
+                </td>
+                <td>@tour.Name</td>
+                <td>@tour.LocationName</td>
+                <td>@tour.Duration</td>
+                <td>@tour.Price</td>
+                <td>@tour.MaxGuests</td>
+                <td>@tour.StartDate @tour.StartTime</td>
+                <td>@tour.EndDate @tour.EndTime</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@tour.Id" class="btn btn-sm btn-warning">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

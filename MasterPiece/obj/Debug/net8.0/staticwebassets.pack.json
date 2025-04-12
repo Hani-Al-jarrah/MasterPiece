@@ -1,0 +1,1617 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MasterPiece.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MasterPiece.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Ajloun B\\Ajloun B 1.png",
+      "PackagePath": "staticwebassets\\Images\\Ajloun B\\Ajloun B 1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Ajloun\\Ajloun.png",
+      "PackagePath": "staticwebassets\\Images\\Ajloun\\Ajloun.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Ajloun\\Ajloun2.png",
+      "PackagePath": "staticwebassets\\Images\\Ajloun\\Ajloun2.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Ajloun\\Ajloun3.png",
+      "PackagePath": "staticwebassets\\Images\\Ajloun\\Ajloun3.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Ajloun\\Ajloun4.png",
+      "PackagePath": "staticwebassets\\Images\\Ajloun\\Ajloun4.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Ajloun\\Ajloun5.png",
+      "PackagePath": "staticwebassets\\Images\\Ajloun\\Ajloun5.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Ajloun\\Ajloun55.png",
+      "PackagePath": "staticwebassets\\Images\\Ajloun\\Ajloun55.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Alsalt\\Alsalt1.png",
+      "PackagePath": "staticwebassets\\Images\\Alsalt\\Alsalt1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Alsalt\\Alsalt2.png",
+      "PackagePath": "staticwebassets\\Images\\Alsalt\\Alsalt2.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Alsalt\\Alsalt3.png",
+      "PackagePath": "staticwebassets\\Images\\Alsalt\\Alsalt3.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Alsalt\\Alsalt4.png",
+      "PackagePath": "staticwebassets\\Images\\Alsalt\\Alsalt4.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Amman1\\Amman1.png",
+      "PackagePath": "staticwebassets\\Images\\Amman1\\Amman1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Amman1\\Amman2.png",
+      "PackagePath": "staticwebassets\\Images\\Amman1\\Amman2.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Amman1\\Amman3.png",
+      "PackagePath": "staticwebassets\\Images\\Amman1\\Amman3.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Amman1\\Amman4.png",
+      "PackagePath": "staticwebassets\\Images\\Amman1\\Amman4.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Jerash\\Jerash1.png",
+      "PackagePath": "staticwebassets\\Images\\Jerash\\Jerash1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Madaba\\Madaba1.png",
+      "PackagePath": "staticwebassets\\Images\\Madaba\\Madaba1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Madaba\\Madaba2.png",
+      "PackagePath": "staticwebassets\\Images\\Madaba\\Madaba2.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Madaba\\Madaba3.png",
+      "PackagePath": "staticwebassets\\Images\\Madaba\\Madaba3.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\Madaba\\Madaba4.png",
+      "PackagePath": "staticwebassets\\Images\\Madaba\\Madaba4.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\WadiRum B\\WadiRum B 1.png",
+      "PackagePath": "staticwebassets\\Images\\WadiRum B\\WadiRum B 1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\WadiRum\\HotelsWadiRum.jpeg",
+      "PackagePath": "staticwebassets\\Images\\WadiRum\\HotelsWadiRum.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\WadiRum\\WadiRum1.jpg",
+      "PackagePath": "staticwebassets\\Images\\WadiRum\\WadiRum1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\WadiRum\\WadiRum1.webp",
+      "PackagePath": "staticwebassets\\Images\\WadiRum\\WadiRum1.webp"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\WadiRum\\WadiRum2.png",
+      "PackagePath": "staticwebassets\\Images\\WadiRum\\WadiRum2.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\WadiRum\\WadiRum3.png",
+      "PackagePath": "staticwebassets\\Images\\WadiRum\\WadiRum3.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\WadiRum\\WadiRum4.png",
+      "PackagePath": "staticwebassets\\Images\\WadiRum\\WadiRum4.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\assets\\validate.js",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\assets\\validate.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\css\\style.css",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\fontello\\css\\animation.css",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\fontello\\css\\animation.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\fontello\\css\\fontello.css",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\fontello\\css\\fontello.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\fontello\\font\\fontello4508.eot",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\fontello\\font\\fontello4508.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\fontello\\font\\fontello4508.svg",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\fontello\\font\\fontello4508.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\fontello\\font\\fontello4508.ttf",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\fontello\\font\\fontello4508.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\fontello\\font\\fontello4508.woff",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\fontello\\font\\fontello4508.woff"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\img\\apple-touch-icon-114x114-precomposed.png",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\img\\apple-touch-icon-114x114-precomposed.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\img\\apple-touch-icon-144x144-precomposed.png",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\img\\apple-touch-icon-144x144-precomposed.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\img\\apple-touch-icon-57x57-precomposed.png",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\img\\apple-touch-icon-57x57-precomposed.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\img\\apple-touch-icon-72x72-precomposed.png",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\img\\apple-touch-icon-72x72-precomposed.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\img\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\img\\slide_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\img\\slide_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\img\\slide_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\img\\slide_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\index.html",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\js\\functions.js",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\js\\functions.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\js\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\js\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\js\\jquery.animate-enhanced.min.js",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\js\\jquery.animate-enhanced.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\js\\jquery.easing.1.3.min.js",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\js\\jquery.easing.1.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\js\\jquery.superslides.min.js",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\js\\jquery.superslides.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\coming_soon\\js\\retina.min.js",
+      "PackagePath": "staticwebassets\\Images\\coming_soon\\js\\retina.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\1111.png",
+      "PackagePath": "staticwebassets\\Images\\img\\1111.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\1_carousel.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\1_carousel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\2_carousel.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\2_carousel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\3_carousel.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\3_carousel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\4_carousel.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\4_carousel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\5_carousel.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\5_carousel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Adobe Express - file.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\Adobe Express - file.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Alsalt4.png",
+      "PackagePath": "staticwebassets\\Images\\img\\Alsalt4.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\CEO_Hani.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\CEO_Hani.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\CEO_Hani2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\CEO_Hani2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Cart1.png",
+      "PackagePath": "staticwebassets\\Images\\img\\Cart1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Cart2.png",
+      "PackagePath": "staticwebassets\\Images\\img\\Cart2.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\CartNew.png",
+      "PackagePath": "staticwebassets\\Images\\img\\CartNew.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\DarNa دارنا.png",
+      "PackagePath": "staticwebassets\\Images\\img\\DarNa دارنا.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\DeadSea1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\DeadSea1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Jerash1.png",
+      "PackagePath": "staticwebassets\\Images\\img\\Jerash1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Jordan.png",
+      "PackagePath": "staticwebassets\\Images\\img\\Jordan.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Petra_hero.png",
+      "PackagePath": "staticwebassets\\Images\\img\\Petra_hero.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\The Siq at Petra.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\The Siq at Petra.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\The Siq at Petra2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\The Siq at Petra2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\ToursPhoto.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\ToursPhoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Treasury at Petra.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\Treasury at Petra.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\Wadi mujib.jpeg",
+      "PackagePath": "staticwebassets\\Images\\img\\Wadi mujib.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\about_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\about_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_icon_1.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_icon_1.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_icon_2.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_icon_2.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_icon_3.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_icon_3.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_icon_cat.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_icon_cat.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_latest_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_latest_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_latest_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_latest_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_latest_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_latest_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_latest_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_latest_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_popular_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_popular_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_popular_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_popular_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_popular_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_popular_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_popular_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_popular_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_popular_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_popular_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\adventure_popular_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\adventure_popular_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\ajlounForest.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\ajlounForest.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\amman-wallpaper-image.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\amman-wallpaper-image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\apple-touch-icon-114x114-precomposed.png",
+      "PackagePath": "staticwebassets\\Images\\img\\apple-touch-icon-114x114-precomposed.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\apple-touch-icon-144x144-precomposed.png",
+      "PackagePath": "staticwebassets\\Images\\img\\apple-touch-icon-144x144-precomposed.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\apple-touch-icon-57x57-precomposed.png",
+      "PackagePath": "staticwebassets\\Images\\img\\apple-touch-icon-57x57-precomposed.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\apple-touch-icon-72x72-precomposed.png",
+      "PackagePath": "staticwebassets\\Images\\img\\apple-touch-icon-72x72-precomposed.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\avatar.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\avatar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\avatar1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\avatar2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\avatar3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\banner_bg_desktop.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\banner_bg_desktop.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\banner_bg_mobile.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\banner_bg_mobile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\bg_adventure_detail.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\bg_adventure_detail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\bg_call_action_adventure.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\bg_call_action_adventure.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\bg_call_section.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\bg_call_section.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\bg_fallback_video_adventure.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\bg_fallback_video_adventure.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\blog-6.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\blog-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\blog-single.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\blog-single.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\cards_all.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\cards_all.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\cartnew.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\cartnew.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\dead sea.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\dead sea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\deadsea.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\deadsea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\detail_gallery\\detail_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\detail_gallery\\detail_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\detail_gallery\\detail_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\detail_gallery\\detail_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\detail_gallery\\detail_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\detail_gallery\\detail_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\detail_gallery\\detail_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\detail_gallery\\detail_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\detail_gallery\\detail_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\detail_gallery\\detail_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\drag_icon.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\drag_icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\Images\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_1_thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_1_thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_2_thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_2_thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_3_thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_3_thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_4_thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_4_thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\flex_slides\\slide_5_thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\flex_slides\\slide_5_thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\adventure_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\adventure_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\adventure_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\adventure_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\adventure_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\adventure_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\adventure_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\adventure_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\adventure_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\adventure_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\hotel_list_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\hotel_list_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\hotel_list_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\hotel_list_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\hotel_list_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\hotel_list_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\adventure_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\adventure_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\adventure_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\adventure_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\adventure_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\adventure_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\adventure_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\adventure_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\adventure_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\adventure_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\pic_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\pic_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\pic_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\pic_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\pic_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\pic_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\pic_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\pic_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\pic_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\pic_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\pic_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\pic_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\pic_7.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\pic_7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\large\\pic_8.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\large\\pic_8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\restaurant_list_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\restaurant_list_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\restaurant_list_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\restaurant_list_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\restaurant_list_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\restaurant_list_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\tour_list_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\tour_list_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\tour_list_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\tour_list_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\gallery\\tour_list_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\gallery\\tour_list_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\h.1.png",
+      "PackagePath": "staticwebassets\\Images\\img\\h.1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero-home-3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero-home-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero_in_bg_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero_in_bg_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero_in_bg_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero_in_bg_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero_in_bg_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero_in_bg_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero_in_bg_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero_in_bg_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero_in_bg_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero_in_bg_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero_in_hotels_detail.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero_in_hotels_detail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero_in_restaurants_detail.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero_in_restaurants_detail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hero_in_tours_detail.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hero_in_tours_detail.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hiking in petra.jpeg",
+      "PackagePath": "staticwebassets\\Images\\img\\hiking in petra.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\homeAirbnbPhoto.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\homeAirbnbPhoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\home_section_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\home_section_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\home_section_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\home_section_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\home_slider\\slide_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\home_slider\\slide_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\home_slider\\slide_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\home_slider\\slide_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\home_slider\\slide_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\home_slider\\slide_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_facilites_icon_2.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_facilites_icon_2.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_facilites_icon_3.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_facilites_icon_3.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_facilites_icon_4.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_facilites_icon_4.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_facilites_icon_5.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_facilites_icon_5.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_facilites_icon_6.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_facilites_icon_6.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_facilites_icon_7.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_facilites_icon_7.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_facilites_icon_8.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_facilites_icon_8.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_facilites_icon_9.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_facilites_icon_9.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hotel_icon_cat.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\hotel_icon_cat.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hover-cat-adventure-thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hover-cat-adventure-thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hover-cat-bars-thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hover-cat-bars-thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hover-cat-bars.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hover-cat-bars.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hover-cat-hotels-thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hover-cat-hotels-thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hover-cat-hotels.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hover-cat-hotels.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hover-cat-tours-thumb.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hover-cat-tours-thumb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\hover-cat-tours.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\hover-cat-tours.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\icon_ccv.gif",
+      "PackagePath": "staticwebassets\\Images\\img\\icon_ccv.gif"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\icon_included_1.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\icon_included_1.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\icon_included_2.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\icon_included_2.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\icon_included_3.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\icon_included_3.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\icon_included_4.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\icon_included_4.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\itinerary_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\itinerary_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\itinerary_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\itinerary_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\itinerary_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\itinerary_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\jerash.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\jerash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\jordan3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\jordan3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\jordanRegeister.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\jordanRegeister.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\logo_sticky.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\logo_sticky.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\news_home_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\news_home_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\news_home_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\news_home_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\news_home_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\news_home_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\news_home_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\news_home_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\pattern_1.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\pattern_1.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\paypal_bt.png",
+      "PackagePath": "staticwebassets\\Images\\img\\paypal_bt.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\petra-detailes.png",
+      "PackagePath": "staticwebassets\\Images\\img\\petra-detailes.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\petra.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\petra.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\petra3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\petra3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\petra4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\petra4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\petra5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\petra5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\restaurant_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\restaurant_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\restaurant_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\restaurant_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\restaurant_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\restaurant_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\restaurant_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\restaurant_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\restaurant_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\restaurant_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\restaurant_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\restaurant_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\restaurant_icon_cat.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\restaurant_icon_cat.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\salt.jpeg",
+      "PackagePath": "staticwebassets\\Images\\img\\salt.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\search.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\search.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\small-arrow.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\small-arrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\sprite-skin-flat.png",
+      "PackagePath": "staticwebassets\\Images\\img\\sprite-skin-flat.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\thumb_blog.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\thumb_blog.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\thumb_cart_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\thumb_cart_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\thumb_cart_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\thumb_cart_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\thumb_cart_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\thumb_cart_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\thumb_cart_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\thumb_cart_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_5.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_6.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_plan_1.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_plan_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_plan_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_plan_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_plan_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_plan_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tour_plan_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\tour_plan_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\tours_icon_cat.svg",
+      "PackagePath": "staticwebassets\\Images\\img\\tours_icon_cat.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\umm qais.jpeg",
+      "PackagePath": "staticwebassets\\Images\\img\\umm qais.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\video_fix.png",
+      "PackagePath": "staticwebassets\\Images\\img\\video_fix.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\wadi hidan.jpeg",
+      "PackagePath": "staticwebassets\\Images\\img\\wadi hidan.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\img\\wadiRum.jpg",
+      "PackagePath": "staticwebassets\\Images\\img\\wadiRum.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\payment_Photos\\pic.png",
+      "PackagePath": "staticwebassets\\Images\\payment_Photos\\pic.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\video\\Adventures-header.mp4",
+      "PackagePath": "staticwebassets\\Images\\video\\Adventures-header.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\video\\adventure.mp4",
+      "PackagePath": "staticwebassets\\Images\\video\\adventure.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\video\\adventure.ogv",
+      "PackagePath": "staticwebassets\\Images\\video\\adventure.ogv"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\video\\drink.mp4",
+      "PackagePath": "staticwebassets\\Images\\video\\drink.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\video\\forest.mp4",
+      "PackagePath": "staticwebassets\\Images\\video\\forest.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\video\\hotel.mp4",
+      "PackagePath": "staticwebassets\\Images\\video\\hotel.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\Images\\video\\venice.mp4",
+      "PackagePath": "staticwebassets\\Images\\video\\venice.mp4"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\UserImages\\38432473-90fe-4385-b3f1-f10c2d715822_1_carousel.jpg",
+      "PackagePath": "staticwebassets\\UserImages\\38432473-90fe-4385-b3f1-f10c2d715822_1_carousel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\blog.css",
+      "PackagePath": "staticwebassets\\css\\blog.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\bs-icon-font\\fonts\\bootstrap-icons0107.woff",
+      "PackagePath": "staticwebassets\\css\\bs-icon-font\\fonts\\bootstrap-icons0107.woff"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\bs-icon-font\\fonts\\bootstrap-icons0107.woff2",
+      "PackagePath": "staticwebassets\\css\\bs-icon-font\\fonts\\bootstrap-icons0107.woff2"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\custom.css",
+      "PackagePath": "staticwebassets\\css\\custom.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\ElegantIcons.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\ElegantIcons.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\ElegantIcons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\ElegantIcons.woff"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\ElegantIconsd41d.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\ElegantIconsd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Glyphter.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Glyphter.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Glyphter.svg",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Glyphter.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Glyphter.ttf",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Glyphter.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Glyphter.woff",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Glyphter.woff"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Glyphterd41d.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Glyphterd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Pe-icon-7-strokebb1d.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Pe-icon-7-strokebb1d.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Pe-icon-7-strokebb1d.svg",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Pe-icon-7-strokebb1d.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Pe-icon-7-strokebb1d.ttf",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Pe-icon-7-strokebb1d.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Pe-icon-7-strokebb1d.woff",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Pe-icon-7-strokebb1d.woff"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\Pe-icon-7-stroked41d.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\Pe-icon-7-stroked41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\fontello4508.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\fontello4508.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\fontello4508.svg",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\fontello4508.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\fontello4508.ttf",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\fontello4508.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\fontello4508.woff",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\fontello4508.woff"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\themify9f24.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\themify9f24.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\themify9f24.svg",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\themify9f24.svg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\themify9f24.ttf",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\themify9f24.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\themify9f24.woff",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\themify9f24.woff"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\icon_fonts\\font\\themifyd41d.eot",
+      "PackagePath": "staticwebassets\\css\\icon_fonts\\font\\themifyd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\css\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\tables.css",
+      "PackagePath": "staticwebassets\\css\\tables.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\vegas.css",
+      "PackagePath": "staticwebassets\\css\\vegas.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\vendors.css",
+      "PackagePath": "staticwebassets\\css\\vendors.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\common_scripts.js",
+      "PackagePath": "staticwebassets\\js\\common_scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\infobox.js",
+      "PackagePath": "staticwebassets\\js\\infobox.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\input_qty.js",
+      "PackagePath": "staticwebassets\\js\\input_qty.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\isotope.min.js",
+      "PackagePath": "staticwebassets\\js\\isotope.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\jarallax-video.min.js",
+      "PackagePath": "staticwebassets\\js\\jarallax-video.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\jarallax.min.js",
+      "PackagePath": "staticwebassets\\js\\jarallax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\jquery-clock-timepicker.js",
+      "PackagePath": "staticwebassets\\js\\jquery-clock-timepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\jquery.cookiebar.js",
+      "PackagePath": "staticwebassets\\js\\jquery.cookiebar.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\jquery.flexslider.js",
+      "PackagePath": "staticwebassets\\js\\jquery.flexslider.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\leaflet_map\\leaflet.min.js",
+      "PackagePath": "staticwebassets\\js\\leaflet_map\\leaflet.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\leaflet_map\\leaflet_markercluster.min.js",
+      "PackagePath": "staticwebassets\\js\\leaflet_map\\leaflet_markercluster.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\leaflet_map\\leaflet_single_tour_func.js",
+      "PackagePath": "staticwebassets\\js\\leaflet_map\\leaflet_single_tour_func.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\leaflet_map\\leaflet_tours_func.js",
+      "PackagePath": "staticwebassets\\js\\leaflet_map\\leaflet_tours_func.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\leaflet_map\\leaflet_tours_half_screen_func.js",
+      "PackagePath": "staticwebassets\\js\\leaflet_map\\leaflet_tours_half_screen_func.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\leaflet_map\\leaflet_tours_markers.js",
+      "PackagePath": "staticwebassets\\js\\leaflet_map\\leaflet_tours_markers.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_hotels.js",
+      "PackagePath": "staticwebassets\\js\\map_hotels.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_hotels_half_screen.js",
+      "PackagePath": "staticwebassets\\js\\map_hotels_half_screen.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_restaurants.js",
+      "PackagePath": "staticwebassets\\js\\map_restaurants.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_restaurants_half_screen.js",
+      "PackagePath": "staticwebassets\\js\\map_restaurants_half_screen.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_single_hotel.js",
+      "PackagePath": "staticwebassets\\js\\map_single_hotel.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_single_restaurant.js",
+      "PackagePath": "staticwebassets\\js\\map_single_restaurant.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_single_tour.js",
+      "PackagePath": "staticwebassets\\js\\map_single_tour.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_tours.js",
+      "PackagePath": "staticwebassets\\js\\map_tours.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\map_tours_half_screen.js",
+      "PackagePath": "staticwebassets\\js\\map_tours_half_screen.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\mapmarker.jquery.js",
+      "PackagePath": "staticwebassets\\js\\mapmarker.jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\mapmarker_func.jquery.js",
+      "PackagePath": "staticwebassets\\js\\mapmarker_func.jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\markerclusterer.js",
+      "PackagePath": "staticwebassets\\js\\markerclusterer.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\modernizr.js",
+      "PackagePath": "staticwebassets\\js\\modernizr.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\modernizr_slider.js",
+      "PackagePath": "staticwebassets\\js\\modernizr_slider.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\modernizr_tables.js",
+      "PackagePath": "staticwebassets\\js\\modernizr_tables.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\pw_strenght.js",
+      "PackagePath": "staticwebassets\\js\\pw_strenght.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\switcher.js",
+      "PackagePath": "staticwebassets\\js\\switcher.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\tables_func.js",
+      "PackagePath": "staticwebassets\\js\\tables_func.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\tabs.js",
+      "PackagePath": "staticwebassets\\js\\tabs.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\typed.min.js",
+      "PackagePath": "staticwebassets\\js\\typed.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\vegas.min.js",
+      "PackagePath": "staticwebassets\\js\\vegas.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\js\\video_header.js",
+      "PackagePath": "staticwebassets\\js\\video_header.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\345f1902-5fb1-462b-973f-35877ff16d51_Amman1.png",
+      "PackagePath": "staticwebassets\\newImages\\345f1902-5fb1-462b-973f-35877ff16d51_Amman1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\3cb2b9ab-4881-4f19-aa58-343edec601ab_DeadSea1.jpg",
+      "PackagePath": "staticwebassets\\newImages\\3cb2b9ab-4881-4f19-aa58-343edec601ab_DeadSea1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\5ee04398-88d5-4887-8602-80319370cb5a_wadiRum.jpg",
+      "PackagePath": "staticwebassets\\newImages\\5ee04398-88d5-4887-8602-80319370cb5a_wadiRum.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MasterPiece.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MasterPiece.props",
+      "PackagePath": "build\\MasterPiece.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MasterPiece.props",
+      "PackagePath": "buildMultiTargeting\\MasterPiece.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MasterPiece.props",
+      "PackagePath": "buildTransitive\\MasterPiece.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,50 @@
+﻿@model List<MasterPiece.Models.Payment>
+@{
+    ViewData["Title"] = "Payments";
+    Layout = "Admin";
+}
+
+<h2>Payments</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Type</th>
+            <th>Item</th>
+            <th>Amount</th>
+            <th>Method</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in Model)
+        {
+            <tr>
+                <td>@payment.User?.FullName</td>
+                <td>
+                    @(payment.BookingId != null ? "House" : "Tour")
+                </td>
+                <td>
+                    @if (payment.Booking?.House != null)
+                    {
+                        @payment.Booking.House.Name
+                    }
+                    else if (payment.TourBooking?.Tour != null)
+                    {
+                        @payment.TourBooking.Tour.Name
+                    }
+                </td>
+                <td>@payment.Amount</td>
+                <td>@payment.PaymentMethod</td>
+                <td>
+                    <span class="badge @(payment.Status == "Completed" ? "bg-success" : payment.Status == "Pending" ? "bg-warning text-dark" : "bg-danger")">
+                        @payment.Status
+                    </span>
+                </td>
+                <td>@payment.PaymentDate</td>
+            </tr>
+        }
+    </tbody>
+</table>

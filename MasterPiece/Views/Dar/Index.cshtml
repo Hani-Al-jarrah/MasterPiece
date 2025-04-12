@@ -1,0 +1,325 @@
+﻿ @* @model List<MasterPiece.Models.House>
+ @{
+     ViewData["Title"] = "Dar Listings";
+     Layout = "DarNaLayout";
+ }
+ <style>
+     .hero_in.hotels:before {
+         background: url(/Images/WadiRum/HotelsWadiRum.jpeg) center center / cover no-repeat !important;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover
+     }
+
+ </style>
+
+ <main>
+     <section class="hero_in hotels">
+         <div class="wrapper">
+             <div class="container">
+                 <h1 class="fadeInUp"><span></span>Explore the Best Airbnbs in Jordan</h1>
+             </div>
+         </div>
+     </section>
+
+     <div class="container margin_60_35">
+         <div class="row">
+             <!-- Sidebar Filters -->
+             <aside class="col-lg-3">
+                 <form asp-action="Index" asp-controller="Dar" method="get">
+                     <div class="custom-search-input-2 inner-2">
+                         <div class="form-group">
+                             <input class="form-control" type="text" name="terms" placeholder="Search by name or description">
+                             <i class="icon_search"></i>
+                         </div>
+                         <div class="form-group">
+                             <select class="wide" name="location">
+                                 <option value="">Select Location</option>
+                                 <option>Amman</option>
+                                 <option>Ajloun</option>
+                                 <option>Jerash</option>
+                                 <option>Irbid</option>
+                                 <option>Balqa</option>
+                                 <option>Zarqa</option>
+                                 <option>Madaba</option>
+                                 <option>Mafraq</option>
+                                 <option>Karak</option>
+                                 <option>Tafilah</option>
+                                 <option>Ma'an</option>
+                                 <option>Aqaba</option>
+                                 <option>Wadi Rum</option>
+                             </select>
+                             <i class="icon_pin_alt"></i>
+                         </div>
+                         <div class="form-group">
+                             <label for="availableFrom">Available From</label>
+                             <input class="form-control" type="date" name="availableFrom">
+                             <i class="icon_calendar"></i>
+                         </div>
+                         <div class="form-group">
+                             <label for="priceRange">Price Range (J.D)</label>
+                             <div class="d-flex gap-2">
+                                 <input class="form-control" type="number" name="minPrice" placeholder="Min">
+                                 <input class="form-control" type="number" name="maxPrice" placeholder="Max">
+                             </div>
+                             <i class="icon_wallet"></i>
+                         </div>
+                         <div class="form-group">
+                             <input class="form-control" type="number" name="guests" placeholder="Min Guests">
+                             <i class="icon_group"></i>
+                         </div>
+                         <div class="form-group">
+                             <label><strong>Stars</strong></label>
+                             @for (int i = 5; i >= 3; i--)
+                             {
+                                 <div class="custom-control custom-checkbox">
+                                     <input type="checkbox" class="custom-control-input" name="stars" value="@i" id="star_@i" />
+                                     <label class="custom-control-label" for="star_@i">
+                                         @for (int j = 0; j < i; j++)
+                                         {
+                                             <i class="icon_star"></i>
+                                         }
+                                     </label>
+                                 </div>
+                             }
+                         </div>
+                         <input type="submit" class="btn_search mt-2" value="Filter Results">
+                     </div>
+                 </form>
+             </aside>
+
+             <!-- Dynamic Cards -->
+             <div class="col-lg-9">
+                 <div class="isotope-wrapper">
+                     <div class="row">
+                         @if (!Model.Any())
+                         {
+                             <p class="text-center">No results found.</p>
+                         }
+                         else
+                         {
+                             foreach (var house in Model)
+                             {
+                                 <div class="col-md-6 isotope-item">
+                                     <div class="box_grid" data-cue="slideInUp">
+                                         <figure>
+                                             <a href="#" class="wish_bt"></a>
+                                             <a href="@Url.Action("Details", "Dar", new { id = house.Id })">
+                                                 <img src="@house.ImageUrl" class="img-fluid" alt="@house.Name" width="800" height="533" />
+                                                 <div class="read_more"><span>Read more</span></div>
+                                             </a>
+                                             <small>@house.LocationName</small>
+                                         </figure>
+                                         <div class="wrapper">
+                                             <div class="cat_star">
+                                                 @for (int i = 0; i < (house.Stars ?? 0); i++)
+                                                 {
+                                                     <i class="icon_star"></i>
+                                                 }
+                                             </div>
+                                             <h3><a href="@Url.Action("Details", "Dar", new { id = house.Id })">@house.Name</a></h3>
+                                             <p>@(house.Description?.Length > 120 ? house.Description.Substring(0, 120) + "..." : house.Description)</p>
+                                             <span class="price">From <strong>@(house.Price?.ToString("0.00") ?? "0") J.D</strong> / per night</span>
+                                         </div>
+                                         <ul>
+                                             <li><i class="ti-eye"></i> 0 views</li>
+                                             <li>
+                                                 <div class="score">
+                                                     <span>Review<em>Guests Ratings</em></span>
+                                                     <strong>@(house.Rate?.ToString("0.0") ?? "N/A")</strong>
+                                                 </div>
+                                             </li>
+                                         </ul>
+                                     </div>
+                                 </div>
+                             }
+                         }
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </main>
+ *@
+
+
+ @model List<MasterPiece.Models.House>
+@{
+    ViewData["Title"] = "Dar Listings";
+    Layout = "DarNaLayout";
+}
+<style>
+    .hero_in.hotels:before {
+        background: url(/Images/WadiRum/HotelsWadiRum.jpeg) center center / cover no-repeat !important;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover
+    }
+
+    aside form .form-group {
+        margin-bottom: 1rem;
+    }
+
+    aside form label {
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+        display: block;
+    }
+
+    aside form .icon_star {
+        font-size: 14px;
+        color: #FFC107;
+    }
+
+</style>
+
+<main>
+    <section class="hero_in hotels">
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="fadeInUp"><span></span>Explore the Best Airbnbs in Jordan</h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="container margin_60_35">
+        <div class="row">
+            <!-- Sidebar Filters -->
+            <aside class="col-lg-3">
+                <form asp-action="Index" asp-controller="Dar" method="get" class="p-3 rounded shadow-sm bg-light">
+                    <h5 class="mb-3"><strong>Filter Your Stay</strong></h5>
+
+                    <!-- Search -->
+                    <div class="form-group mb-3">
+                        <label>Search</label>
+                        <input class="form-control" type="text" name="terms" placeholder="By name or description" />
+                    </div>
+
+                    <!-- Location -->
+                    <div class="form-group mb-3">
+                        <label>Location</label>
+                        <select class="form-control" name="location">
+                            <option value="">All Locations</option>
+                            <option value="Amman">Amman</option>
+                            <option value="Ajloun">Ajloun</option>
+                            <option value="Jerash">Jerash</option>
+                            <option value="Irbid">Irbid</option>
+                            <option value="Balqa">Balqa</option>
+                            <option value="Zarqa">Zarqa</option>
+                            <option value="Madaba">Madaba</option>
+                            <option value="Mafraq">Mafraq</option>
+                            <option value="Karak">Karak</option>
+                            <option value="Tafilah">Tafilah</option>
+                            <option value="Ma'an">Ma'an</option>
+                            <option value="Aqaba">Aqaba</option>
+                            <option value="Wadi Rum">Wadi Rum</option>
+                        </select>
+                    </div>
+
+                    <!-- Available From -->
+                    <div class="form-group mb-3">
+                        <label>Available From</label>
+                        <input class="form-control" type="date" name="availableFrom" />
+                    </div>
+
+                    <!-- Price Range -->
+                    <div class="form-group mb-3">
+                        <label>Price Range (J.D)</label>
+                        <div class="d-flex gap-2">
+                            <input class="form-control me-1" type="number" name="minPrice" placeholder="Min" />
+                            <input class="form-control ms-1" type="number" name="maxPrice" placeholder="Max" />
+                        </div>
+                    </div>
+
+                    <!-- Guests -->
+                    <div class="form-group mb-3">
+                        <label>Minimum Guests</label>
+                        <input class="form-control" type="number" name="guests" placeholder="e.g. 2" />
+                    </div>
+
+                    <!-- Stars -->
+                    <div class="form-group mb-3">
+                        <label><strong>Stars</strong></label>
+                        @for (int i = 5; i >= 3; i--)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="stars" value="@i" id="star_@i" />
+                                <label class="form-check-label" for="star_@i">
+                                    @for (int j = 0; j < i; j++)
+                                    {
+                                        <i class="icon_star text-warning"></i>
+                                    }
+                                </label>
+                            </div>
+                        }
+                    </div>
+
+                    <!-- Sort By -->
+                    <div class="form-group mb-3">
+                        <label>Sort By</label>
+                        <select class="form-control" name="sortBy">
+                            <option value="">Default</option>
+                            <option value="priceLow">Price: Low to High</option>
+                            <option value="priceHigh">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary w-100">Filter Results</button>
+                </form>
+            </aside>
+
+
+            <!-- Dynamic Cards -->
+            <div class="col-lg-9">
+                <div class="isotope-wrapper">
+                    <div class="row">
+                        @if (!Model.Any())
+                        {
+                            <p class="text-center">No results found.</p>
+                        }
+                        else
+                        {
+                            foreach (var house in Model)
+                            {
+                                <div class="col-md-6 isotope-item">
+                                    <div class="box_grid" data-cue="slideInUp">
+                                        <figure>
+                                            <a href="#" class="wish_bt"></a>
+                                            <a href="@Url.Action("Details", "Dar", new { id = house.Id })">
+                                                <img src="@house.ImageUrl" class="img-fluid" alt="@house.Name" width="800" height="533" />
+                                                <div class="read_more"><span>Read more</span></div>
+                                            </a>
+                                            <small>@house.LocationName</small>
+                                        </figure>
+                                        <div class="wrapper">
+                                            <div class="cat_star">
+                                                @for (int i = 0; i < (house.Stars ?? 0); i++)
+                                                {
+                                                    <i class="icon_star"></i>
+                                                }
+                                            </div>
+                                            <h3><a href="@Url.Action("Details", "Dar", new { id = house.Id })">@house.Name</a></h3>
+                                            <p>@(house.Description?.Length > 120 ? house.Description.Substring(0, 120) + "..." : house.Description)</p>
+                                            <span class="price">From <strong>@(house.Price?.ToString("0.00") ?? "0") J.D</strong> / per night</span>
+                                        </div>
+                                        <ul>
+                                            <li><i class="ti-eye"></i> 0 views</li>
+                                            <li>
+                                                <div class="score">
+                                                    <span>Review<em>Guests Ratings</em></span>
+                                                    <strong>@(house.Rate?.ToString("0.0") ?? "N/A")</strong>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,42 @@
+﻿@model List<MasterPiece.Models.Feedback>
+@{
+    ViewData["Title"] = "Feedback";
+    Layout = "Admin";
+}
+
+<h2>User Feedback</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Type</th>
+            <th>Item</th>
+            <th>Rating</th>
+            <th>Comment</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.User?.FullName</td>
+                <td>@(item.HouseId != null ? "House" : "Tour")</td>
+                <td>
+                    @if (item.House != null)
+                    {
+                        @item.House.Name
+                    }
+                    else if (item.Tour != null)
+                    {
+                        @item.Tour.Name
+                    }
+                </td>
+                <td>@item.Rating ★</td>
+                <td>@item.Comment</td>
+                <td>@item.CreatedAt</td>
+            </tr>
+        }
+    </tbody>
+</table>

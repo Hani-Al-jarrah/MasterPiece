@@ -1,0 +1,548 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    Layout = "DarNaLayout";
+}
+
+<main>
+	<section class="hero_single cat_hover">
+		<div class="wrapper">
+			<div class="container">
+
+				<br>
+				<br>
+				<br>
+				<br>
+
+				<h3>Book unique experiences</h3>
+				<p>Expolore top rated tours, airBnbs and advantures in Jordan</p>
+				<div class="cat_nav_hover">
+					<ul>
+						<li>
+							<div class="container-item active">
+								<a asp-controller="Home" asp-action="Tours">
+									<figure><img src="~/Images/img/ToursPhoto.jpg" alt=""></figure>
+									<h2>Tours</h2>
+								</a>
+								<div class="image-bg">
+									<img src="~/Images/img/ToursPhoto.jpg" alt="">
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="container-item">
+								<a asp-controller="Home" asp-action="Tours">
+									<figure><img src="~/Images/img/hover-cat-adventure-thumb.jpg" alt=""></figure>
+									<h2>Adventures</h2>
+								</a>
+								<div class="image-bg">
+									<video src="~/Images/video/forest.mp4" loop autoplay playsinline webkit-playsinline
+										   muted></video>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="container-item">
+								<a asp-controller="Home" asp-action="Dar">
+									<figure><img src="~/Images/img/homeAirbnbPhoto.jpg" alt=""></figure>
+									<h2>AirBnbs</h2>
+								</a>
+								<div class="image-bg">
+									<img src="~/Images/img/homeAirbnbPhoto.jpg" alt="">
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div><!-- /cat_nav -->
+
+
+
+				@* <section>
+					<div>
+						<div class="container">
+							<br>
+							<br>
+							<br>
+							<br>
+
+
+							<form asp-controller="Dar" asp-action="Index" method="get">
+								<div class="row g-0 custom-search-input-2">
+									<!-- Location Dropdown -->
+									<div class="col-lg-4">
+										<div class="form-group">
+											<select class="form-control" name="location">
+												<option value="">Select City</option>
+												<option>Amman</option>
+												<option>Zarqa</option>
+												<option>Irbid</option>
+												<option>Ajloun</option>
+												<option>Jerash</option>
+												<option>Madaba</option>
+												<option>Salt</option>
+												<option>Karak</option>
+												<option>Ma'an</option>
+												<option>Aqaba</option>
+											</select>
+											<i class="icon_pin_alt"></i>
+										</div>
+									</div>
+
+									<!-- Date Picker -->
+									<div class="col-lg-3">
+										<div class="form-group">
+											<input class="form-control" type="date" name="fromDate" placeholder="Check-in">
+											<i class="icon_calendar"></i>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="form-group">
+											<input class="form-control" type="date" name="toDate" placeholder="Check-out">
+											<i class="icon_calendar"></i>
+										</div>
+									</div>
+
+									<!-- Guests -->
+									<div class="col-lg-2">
+										<div class="form-group">
+											<input class="form-control" type="number" name="guests" placeholder="Guests" min="1" value="1">
+										</div>
+									</div>
+
+									<!-- Search -->
+									<div class="col-lg-12 mt-3">
+										<input type="submit" class="btn_search w-100" value="Search">
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</section> *@
+
+			</div>
+		</div>
+	</section>
+	<!-- /hero_single -->
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<div class="container container-custom margin_80_0">
+		<div class="main_title_2">
+			<span><em></em></span>
+			<h2>Our Most Popular Tours & Adventures</h2>
+			<p>
+				Experience unforgettable journeys, from breathtaking landscapes to thrilling outdoor activities.
+			</p>
+
+		</div>
+		<div id="reccomended" class="owl-carousel owl-theme" data-cue="zoomIn">
+			<div class="item">
+				<div class="box_grid">
+					<figure>
+						<a href="#0" class="wish_bt"></a>
+						<a href="tour-detail.html">
+							<img src="~/Images/img/petra4.jpg" class="img-fluid" alt="Petra" width="800" height="533">
+							<div class="read_more"><span>Read more</span></div>
+						</a>
+						<small>Historic Landmark</small>
+					</figure>
+					<div class="wrapper">
+						<h3><a href="tour-detail.html">Discover Petra</a></h3>
+						<p>
+							Explore the ancient Nabatean city, carved into rose-red cliffs, and walk through the
+							famous Siq to the iconic Treasury, discovering hidden tombs and temples.
+						</p>
+						<span class="price">From <strong>70 JD</strong> / per person</span>
+					</div>
+					<ul>
+						<li><i class="icon_clock_alt"></i> 1 Day Tour</li>
+						<li>
+							<div class="score">
+								<span>Superb<em>500+ Reviews</em></span><strong>9.5</strong>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- /item -->
+			<div class="item">
+				<div class="box_grid">
+					<figure>
+						<a href="#0" class="wish_bt"></a>
+						<a href="tour-detail.html">
+							<img src="~/Images/img/salt.jpeg" class="img-fluid" alt="As-Salt" width="800" height="533">
+							<div class="read_more"><span>Read more</span></div>
+						</a>
+						<small>Historic & Cultural</small>
+					</figure>
+					<div class="wrapper">
+						<h3><a href="tour-detail.html">Explore the Historic City of Al-Salt</a></h3>
+						<p>
+							Wander through the charming alleys of As-Salt, a UNESCO World Heritage site, known
+							for its Ottoman-era architecture, vibrant souks, historic houses, and cultural
+							landmarks.
+						</p> <span class="price">From <strong>45 JD</strong> / per person</span>
+					</div>
+					<ul>
+						<li><i class="icon_clock_alt"></i> 1 Day Tour</li>
+						<li>
+							<div class="score">
+								<span>Excellent<em>250+ Reviews</em></span><strong>9.0</strong>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- /item -->
+			<div class="item">
+				<div class="box_grid">
+					<figure>
+						<a href="#0" class="wish_bt"></a>
+						<a href="tour-detail.html">
+							<img src="~/Images/img/ajlounForest.jpg" class="img-fluid" alt="Ajloun Forest" width="800"
+								 height="533">
+							<div class="read_more"><span>Read more</span></div>
+						</a>
+						<small>Nature & Adventure</small>
+					</figure>
+					<div class="wrapper">
+						<h3><a href="tour-detail.html">Explore the Beauty of Ajloun Forest</a></h3>
+						<p>
+							Discover the lush landscapes of Ajloun Forest, home to diverse wildlife, scenic
+							hiking trails, and the famous Ajloun Castle overlooking the Jordanian hills.
+						</p>
+						<span class="price">From <strong>50 JD</strong> / per person</span>
+					</div>
+					<ul>
+						<li><i class="icon_clock_alt"></i> 1 Day Tour</li>
+						<li>
+							<div class="score">
+								<span>Amazing<em>280+ Reviews</em></span><strong>9.2</strong>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- /item -->
+			<div class="item">
+				<div class="box_grid">
+					<figure>
+						<a href="#0" class="wish_bt"></a>
+						<a href="tour-detail.html">
+							<img src="~/Images/img/wadiRum.jpg" class="img-fluid1" alt="Wadi Rum">
+							<div class="read_more"><span>Read more</span></div>
+						</a>
+						<small>Desert Adventure</small>
+					</figure>
+					<div class="wrapper">
+						<h3><a href="tour-detail.html">Explore the Majestic Desert Landscapes</a></h3>
+						<p>
+							Experience the breathtaking scenery of Wadi Rum, known as the "Valley of the Moon."
+							Ride a jeep across the red sand dunes, discover ancient petroglyphs, and enjoy a
+							traditional Bedouin camp under the starry sky.
+						</p>
+						<span class="price">From <strong>$65</strong> / per person</span>
+					</div>
+					<ul>
+						<li><i class="icon_clock_alt"></i> 1 Day Tour</li>
+						<li>
+							<div class="score">
+								<span>Excellent<em>400+ Reviews</em></span><strong>9.5</strong>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- /item -->
+			<div class="item">
+				<div class="box_grid">
+					<figure>
+						<a href="#0" class="wish_bt"></a>
+						<a href="tour-detail.html">
+							<img src="~/Images/img/wadi hidan.jpeg" class="img-fluid"
+								 alt="Wadi Hidan" width="800" height="533">
+							<div class="read_more"><span>Read more</span></div>
+						</a>
+						<small>Wadi Hidan</small>
+					</figure>
+					<div class="wrapper">
+						<h3><a href="tour-detail.html">Swim and Trek Through Scenic Water Trails</a></h3>
+						<p>
+							Experience the beauty of Wadi Hidan with a full-day trek through crystal-clear waters
+							and scenic landscapes. Explore stunning trails and enjoy a refreshing swim.
+						</p>
+						<span class="price">From <strong>45 JD</strong> /per person</span>
+					</div>
+					<ul>
+						<li><i class="icon_clock_alt"></i> 1 day</li>
+						<li>
+							<div class="score"><span>Superb<em>350 Reviews</em></span><strong>9.0</strong></div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- /item -->
+			<div class="item">
+				<div class="box_grid">
+					<figure>
+						<a href="#0" class="wish_bt"></a>
+						<a href="tour-detail.html">
+							<img src="~/Images/img/DeadSea1.jpg" class="img-fluid" alt="Dead Sea"
+								 width="800" height="533">
+							<div class="read_more"><span>Read more</span></div>
+						</a>
+						<small>Dead Sea</small>
+					</figure>
+					<div class="wrapper">
+						<h3><a href="tour-detail.html">Experience the World’s Saltiest Waters</a></h3>
+						<p>
+							Immerse yourself in the therapeutic waters of the Dead Sea, the saltiest body of
+							water in the world. Enjoy floating effortlessly and rejuvenating your skin with the
+							mineral-rich mud.
+						</p>
+						<span class="price">From <strong>60 JD</strong> /per person</span>
+					</div>
+					<ul>
+						<li><i class="icon_clock_alt"></i> 1 day</li>
+						<li>
+							<div class="score"><span>Superb<em>350 Reviews</em></span><strong>9.5</strong></div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!-- /item -->
+		</div>
+		<!-- /carousel -->
+		<p class="btn_home_align"><a href="adventure.html" class="btn_1 rounded">View all Tours</a></p>
+		<hr class="large">
+	</div>
+
+	<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<!-- /container -->
+
+	<div class="container container-custom margin_30_95">
+		<section class="add_bottom_45">
+			<div class="main_title_3">
+				<span><em></em></span>
+				<h2>Popular Airbnbs and Unique Stays in Jordan</h2>
+				<p>
+					Discover cozy Airbnbs, charming guesthouses, and unique stays across Jordan, from Amman's
+					bustling streets to Wadi Rum's desert camps.
+				</p>
+
+			</div>
+			<div class="row" data-cues="slideInUp">
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<a href="hotel-detail.html" class="grid_item">
+						<figure>
+							<div class="score"><strong>8.9</strong></div>
+							<img src="~/Images/WadiRum/WadiRum1.jpg" class="img-fluid" alt="">
+							<div class="info">
+								<div class="cat_star">
+									<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+								</div>
+								<h3>Wadi Rum Camp</h3>
+							</div>
+						</figure>
+					</a>
+				</div>
+				<!-- /grid_item -->
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<a href="hotel-detail.html" class="grid_item">
+						<figure>
+							<div class="score"><strong>7.9</strong></div>
+							<img src="~/Images/Amman1/Amman1.png" class="img-fluid" alt="">
+							<div class="info">
+								<div class="cat_star">
+									<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+								</div>
+								<h3>Amman Elegant Villa Room </h3>
+							</div>
+						</figure>
+					</a>
+				</div>
+				<!-- /grid_item -->
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<a href="hotel-detail.html" class="grid_item">
+						<figure>
+							<div class="score"><strong>7.0</strong></div>
+							<img src="~/Images/Alsalt/Alsalt1.png" class="img-fluid" alt="">
+							<div class="info">
+								<div class="cat_star">
+									<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+								</div>
+								<h3>As-Salt Heritage Inn</h3>
+							</div>
+						</figure>
+					</a>
+				</div>
+				<!-- /grid_item -->
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<a href="hotel-detail.html" class="grid_item">
+						<figure>
+							<div class="score"><strong>8.9</strong></div>
+							<img src="~/Images/Ajloun/Ajloun55.png" class="img-fluidAjloun" alt="" width="900px"
+								 height="1000">
+							<div class="info">
+								<div class="cat_star">
+									<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+								</div>
+								<h3>Ajloun Forest Lodge</h3>
+							</div>
+						</figure>
+					</a>
+				</div>
+				<!-- /grid_item -->
+			</div>
+
+			<!-- /row -->
+			<a href="hotels-grid-isotope.html">
+				<strong>
+					View all  <i class="arrow_carrot-right"></i>
+				</strong>
+			</a>
+		</section>
+		<!-- /section -->
+
+
+
+		<div class="banner mb-0" data-cue="zoomIn">
+			<img src="~/Images/img/Petra_hero.png" class="banner mb-0" data-cue="zoomIn" />
+			<div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)">
+				<div>
+					<small>Adventure</small>
+					<h3>Your Perfect<br>Advenure Experience</h3>
+					<p>Activities and accommodations</p>
+					<a href="adventure.html" class="btn_1">Read more</a>
+				</div>
+			</div>
+			<!-- /wrapper -->
+		</div>
+		<!-- /banner -->
+
+	</div>
+	<!-- /container -->
+
+	<div class="bg_color_1">
+		<div class="container margin_80_55">
+			<div class="main_title_2">
+				<span><em></em></span>
+				<h3>Tourism in Jordan: Latest Updates</h3>
+				<p>Discover the latest statistics and the most visited attractions in Jordan.</p>
+			</div>
+			<div class="row" data-cues="slideInUp">
+				<div class="col-lg-6">
+					<a class="box_news" href="#0">
+						<figure>
+							<img src="~/Images/img/petra.jpg" alt="Petra">
+							<figcaption><strong>15</strong>Jan</figcaption>
+						</figure>
+						<ul>
+							<li>Tourism Board</li>
+							<li>2025</li>
+						</ul>
+						<h4>Petra Welcomes Over 1 Million Visitors</h4>
+						<p>
+							Jordan's iconic Petra recorded over 1 million visitors in 2024, marking a 20%
+							increase from the previous year.
+						</p>
+					</a>
+				</div>
+				<!-- /box_news -->
+				<div class="col-lg-6">
+					<a class="box_news" href="#0">
+						<figure>
+							<img src="~/Images/img/deadsea.jpg" alt="Dead Sea">
+							<figcaption><strong>22</strong>Feb</figcaption>
+						</figure>
+						<ul>
+							<li>Tourism Authority</li>
+							<li>2025</li>
+						</ul>
+						<h4>Dead Sea: A Must-Visit Destination</h4>
+						<p>
+							Jordan’s Dead Sea, the lowest point on Earth, attracts thousands of wellness tourists
+							each year for its unique healing properties.
+						</p>
+					</a>
+				</div>
+				<!-- /box_news -->
+				<div class="col-lg-6">
+					<a class="box_news" href="#0">
+						<figure>
+							<img src="~/Images/img/wadiRum.jpg" alt="Wadi Rum" style=" object-fit: cover;
+								object-position: 100%;
+								height: 200px; /* Adjust height as needed */
+								width: 100%;">
+							<figcaption><strong>05</strong>Mar</figcaption>
+						</figure>
+						<ul>
+							<li>Local Guides</li>
+							<li>2025</li>
+						</ul>
+						<h4>Wadi Rum: Adventure Tourism on the Rise</h4>
+						<p>
+							Wadi Rum saw a 30% rise in eco-tourism, with travelers seeking desert adventures,
+							Bedouin culture, and stargazing experiences.
+						</p>
+					</a>
+				</div>
+				<!-- /box_news -->
+				<div class="col-lg-6">
+					<a class="box_news" href="#0">
+						<figure>
+							<img src="~/Images/img/jerash.jpg" alt="Jerash">
+							<figcaption><strong>10</strong>Apr</figcaption>
+						</figure>
+						<ul>
+							<li>Ministry of Tourism</li>
+							<li>2025</li>
+						</ul>
+						<h4>Jerash Festival Brings History to Life</h4>
+						<p>
+							The ancient city of Jerash hosted its annual cultural festival, attracting thousands
+							of visitors to witness live performances among Roman ruins.
+						</p>
+					</a>
+				</div>
+				<!-- /box_news -->
+			</div>
+			<!-- /row -->
+			<p class="btn_home_align"><a href="blog.html" class="btn_1 rounded">View all news</a></p>
+		</div>
+		<!-- /container -->
+	</div>
+
+	<!-- /bg_color_1 -->
+	@* <img src="~/Images/img/bg_call_action_adventure.jpg" /> *@
+
+	<div class="call_section">
+
+		<div class="container clearfix">
+			<div class="col-lg-5 col-md-6 float-end wow position-relative" data-wow-offset="250">
+
+				<div class="block-reveal">
+					<div class="block-vertical"></div>
+					<div class="box_1">
+						<h3>Embark on an Unforgettable Journey with Us</h3>
+						<p>
+							Discover breathtaking destinations, immerse yourself in diverse cultures, and create
+							lasting memories. Whether you're seeking adventure, relaxation, or exploration,
+							we’ve got the perfect trip for you!
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/call_section-->
+</main>
+<!-- /main -->

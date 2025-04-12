@@ -1,0 +1,31 @@
+﻿@model List<MasterPiece.Models.ContactU>
+@{
+    ViewData["Title"] = "Contact Messages";
+    Layout = "Admin";
+}
+
+<h2>Contact Messages</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var msg in Model)
+        {
+            <tr>
+                <td>@msg.FullName</td>
+                <td>@msg.Email</td>
+                <td>@msg.Subject</td>
+                <td>@msg.Message</td>
+                <td>@msg.CreatedAt</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+﻿@model List<MasterPiece.Models.Blog>
+@{
+    ViewData["Title"] = "Blogs";
+    Layout = "Admin";
+}
+
+<h2>All Blogs</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Date</th>
+            <th>Preview</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var blog in Model)
+        {
+            <tr>
+                <td>@blog.Title</td>
+                <td>@blog.Author?.FullName</td>
+                <td>@blog.CreatedAt</td>
+                <td>@(blog.Content.Length > 100 ? blog.Content.Substring(0, 100) + "..." : blog.Content)</td>
+            </tr>
+        }
+    </tbody>
+</table>

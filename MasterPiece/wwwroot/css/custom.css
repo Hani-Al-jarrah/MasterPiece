@@ -1,0 +1,45 @@
+/*============================================================================================*/
+/* Your custom styles below */
+.btn_1 rounded full-width{
+    background-color: black;
+    
+}
+
+
+#custom-search-input input[type=submit], .custom-search-input-2 input[type=submit] {
+    color: #fff;
+    font-size: .875rem;
+    padding: 0 25px;
+    height: 50px;
+    font-weight: 600;
+    background-color: #B88E2F;
+    cursor: pointer;
+    outline: 0;
+}
+
+.img-fluid1 {
+    object-fit: cover;
+    object-position: bottom;
+    height: 300px; /* Adjust height as needed */
+    width: 100%;
+}
+/* for the img in the home in news section */
+.img-fluid12 {
+    object-fit: cover;
+    object-position: bottom;
+    height: 300px; /* Adjust height as needed */
+    width: 100%;
+}
+/*============================================================================================*/
+#login_bg,
+#register_bg {
+    background: url('/Images/img/jordanRegeister.jpg') top center / contain no-repeat fixed !important;
+    background-size: cover;
+}
+/*============================================================================================*/
+
+/*.hero_in.hotels:before {
+    background: url(/Images/WadiRum/HotelsWadiRum.jpeg) center center / cover no-repeat !important;
+}
+
+*/

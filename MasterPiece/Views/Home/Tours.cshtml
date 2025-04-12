@@ -1,0 +1,186 @@
+﻿@model IEnumerable<MasterPiece.Models.Tour>
+@{
+	Layout = "DarNaLayout";
+}
+
+<main>
+	<section class="header-video adventure">
+		<div id="hero_video">
+			<div class="wrapper">
+				<div class="container container-custom">
+					<small>Discover</small>
+					<h3>DarNa Experiences</h3>
+					<p>Curated journeys showcasing the beauty and culture of Jordan.</p>
+
+				</div>
+
+			</div>
+		</div>
+<video class="header-video--media" autoplay loop muted playsinline>
+            <source src="~/images/video/adventures-header.mp4" type="video/mp4" />
+        </video>
+
+		<!-- <img src="img/video_fix.png" alt="" class="header-video--media" data-video-src="..\video\Adventures-header.mp4" data-teaser-source="..\video\Adventures-header.mp4" data-provider="" data-video-width="1920" data-video-height="960"> -->
+	</section>
+	<!-- /header-video -->
+
+	<div class="container container-custom margin_80_55">
+		<section class="add_bottom_45">
+			<div class="main_title_3">
+				<span><em></em></span>
+				<h2>Top Jordanian Tours</h2>
+				<p>Explore iconic destinations and unforgettable experiences in Jordan.</p>
+			</div>
+
+
+<div id="reccomended_adventure" class="owl-carousel owl-theme">
+    @foreach (var tour in Model)
+    {
+        <div class="item">
+            <a asp-action="TourDetails" asp-controller="Home" asp-route-id="@tour.Id" class="grid_item_adventure">
+                <figure>
+                    <div class="score"><strong>9.0</strong></div>
+                    <img src="@tour.ImageUrl" class="img-fluid" alt="@tour.LocationName" />
+                    <div class="info">
+                        <em>@tour.Duration in @tour.LocationName</em>
+                        <h3>@tour.Name</h3>
+                    </div>
+                </figure>
+            </a>
+        </div>
+    }
+</div>
+
+			<!-- /reccomended_aventure -->
+		</section>
+		<!-- /section -->
+
+		<div class="banner">
+			<div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)">
+				<div>
+					<small>Adventure</small>
+					<h3>Your Perfect<br>Advenure Experience</h3>
+					<p>Activities and accommodations</p>
+					<a href="adventure-detail.html" class="btn_1">Read more</a>
+				</div>
+			</div>
+			<!-- /wrapper -->
+		</div>
+		<!-- /banner -->
+
+		<section>
+			<div class="main_title_3">
+				<span><em></em></span>
+				<h2>Recently Added Experiences</h2>
+				<p>Discover the latest and most exciting adventures in Jordan, from cultural tours to outdoor escapades.</p>
+			</div>
+			<div class="row">
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<a href="adventure-detail.html" class="grid_item latest_adventure">
+						<figure>
+							<div class="score"><strong>8.5</strong></div>
+							<img src="img/Wadi mujib.jpeg" class="img-fluid" alt="">
+							<div class="info">
+
+								<em>1 day in Wadi Mujib</em>
+								<h3>Experience Thrilling Canyoning Adventures</h3>
+
+
+							</div>
+						</figure>
+					</a>
+				</div>
+				<!-- /grid_item -->
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<a href="adventure-detail.html" class="grid_item latest_adventure">
+						<figure>
+							<div class="score"><strong>7.9</strong></div>
+							<img src="img/wadi hidan.jpeg" class="img-fluid" alt="">
+							<div class="info">
+								<em>1 day in Wadi Hidan</em>
+								<h3>Swim and Trek Through Scenic Water Trails</h3>
+							</div>
+						</figure>
+					</a>
+				</div>
+				<!-- /grid_item -->
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<a href="adventure-detail.html" class="grid_item latest_adventure">
+						<figure>
+							<div class="score"><strong>7.5</strong></div>
+							<img src="img/umm qais.jpeg" class="img-fluid" alt="">
+							<div class="info">
+								<em>1 day in Umm Qais</em>
+								<h3>Explore Ancient Ruins and Stunning Views</h3>
+							</div>
+						</figure>
+					</a>
+				</div>
+				<!-- /grid_item -->
+				<div class="col-xl-3 col-lg-6 col-md-6">
+					<a href="adventure-detail.html" class="grid_item latest_adventure">
+						<figure>
+							<div class="score"><strong>9.0</strong></div>
+							<img src="img/salt.jpeg" class="img-fluid" alt="">
+							<div class="info">
+								<em>1 days in As-Salt</em>
+								<h3>Explore the Historic Streets of As-Salt</h3>
+							</div>
+						</figure>
+					</a>
+				</div>
+				<!-- /grid_item -->
+			</div>
+			<!-- /row -->
+
+		</section>
+		<!-- /section -->
+	</div>
+	<!-- /container -->
+	<div class="bg_color_1">
+		<div class="container container-custom margin_80_55">
+			<div class="main_title_2">
+				<h2>Plan Your Trip Easily</h2>
+				<p>Discover Jordan with ease – we take care of the details so you can focus on creating unforgettable memories.</p>
+			</div>
+			<div class="row adventure_feat">
+				<div class="col-md-4">
+					<img src="/Images/img/adventure_icon_1.svg" alt="Custom Itineraries" width="75" height="75">
+					<h3>Tailored Itineraries</h3>
+					<p>Enjoy personalized travel plans designed to match your interests, whether it’s exploring Petra or relaxing by the Dead Sea.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="/Images/img/adventure_icon_2.svg" alt="Accommodation & Dining" width="75" height="75">
+					<h3>Accommodation & Dining</h3>
+					<p>We handpick the best Airbnb stays and hotels, ensuring comfort and convenience with dining options that showcase Jordanian cuisine.</p>
+				</div>
+				<div class="col-md-4">
+					<img src="/Images/img/adventure_icon_3.svg" alt="Hassle-Free Planning" width="75" height="75">
+					<h3>Hassle-Free Planning</h3>
+					<p>From transportation to activities, we organize everything so you can enjoy a seamless and stress-free trip.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /container -->
+	</div>
+	<!-- /bg_color_1 -->
+
+	<div class="call_section adventure">
+		<div class="container clearfix">
+			<div class="col-lg-5 col-md-6 float-end wow position-relative" data-wow-offset="250">
+				<div class="block-reveal">
+					<div class="block-vertical"></div>
+					<div class="box_1">
+						<h3>Experience Jordan Like Never Before</h3>
+						<p>From the ancient wonders of Petra to the serene waters of the Dead Sea, we’re here to make your journey unforgettable. Let us handle the details while you focus on exploring the beauty of Jordan.</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/call_section-->
+</main>
+<!-- /main -->
+<!-- /main -->

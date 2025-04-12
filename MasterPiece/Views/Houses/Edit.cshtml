@@ -1,0 +1,85 @@
+﻿@model MasterPiece.Models.House
+@{
+    ViewData["Title"] = "Edit House";
+    Layout = "Admin";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LocationName"></label>
+        <input asp-for="LocationName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TypeName"></label>
+        <input asp-for="TypeName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Available</label>
+        <input type="hidden" name="Available" value="false" />
+        <input type="checkbox" name="Available" value="true" @(Model?.Available == true ? "checked" : "") />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MaxGuests"></label>
+        <input asp-for="MaxGuests" class="form-control" />
+    </div>
+
+    <!-- 👇 Show existing image -->
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <div class="form-group">
+            <label>Current Image</label><br />
+            <img src="@Model.ImageUrl" width="150" />
+        </div>
+    }
+
+    <!-- 👇 Upload new image -->
+    <div class="form-group">
+        <label>Change Image</label>
+        <input type="file" name="ImageFile" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AvailableFrom"></label>
+        <input asp-for="AvailableFrom" type="date" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AvailableTo"></label>
+        <input asp-for="AvailableTo" type="date" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Stars"></label>
+        <input asp-for="Stars" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Rate"></label>
+        <input asp-for="Rate" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

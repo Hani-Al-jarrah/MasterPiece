@@ -1,0 +1,259 @@
+﻿@{
+    Layout = "DarNaLayout";
+    ViewData["Title"] = "Profile";
+
+    var user = ViewBag.User as MasterPiece.Models.User;
+    var houseBookings = ViewBag.HouseBookings as List<MasterPiece.Models.HouseBooking>;
+    var tourBookings = ViewBag.TourBookings as List<MasterPiece.Models.TourBooking>;
+    var wishlist = ViewBag.Wishlist as List<MasterPiece.Models.Wishlist>;
+    var payments = ViewBag.Payments as List<MasterPiece.Models.Payment>;
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
+<style>
+    body {
+        background-color: #f5f5f5;
+    }
+    .profile-container {
+        display: flex;
+        margin-top: 130px;
+        gap: 30px;
+    }
+
+    .profile-sidebar {
+        width: 250px;
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-sidebar h4 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .profile-sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .profile-sidebar li {
+        margin: 10px 0;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .profile-sidebar li.active {
+        color: #B88E2F;
+    }
+
+    .profile-content {
+        flex: 1;
+        padding: 20px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+        display: none;
+    }
+
+    .section.active {
+        display: block;
+        animation: fadeIn 0.3s ease-in;
+    }
+
+    .fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .toggle-section {
+        display: none;
+        margin-top: 20px;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+    }
+</style>
+
+<div class="container profile-container">
+    <div class="profile-sidebar">
+        <h4>@user?.FullName</h4>
+        <ul>
+            <li class="active" onclick="showSection('details')">My Info</li>
+            <li onclick="showSection('house-bookings')">House Bookings</li>
+            <li onclick="showSection('tour-bookings')">Tour Bookings</li>
+            <li onclick="showSection('wishlist')">Wishlist</li>
+            <li onclick="showSection('payments')">Payment History</li>
+        </ul>
+    </div>
+
+    <div class="profile-content">
+        <div id="details" class="section active">
+            <h5>My Info</h5>
+            <p><strong>Full Name:</strong> @user?.FullName</p>
+            <p><strong>Email:</strong> @user?.Email</p>
+            <p><strong>Phone Number:</strong> @user?.PhoneNumber</p>
+            <p>
+                <img src="@user?.ImageUrl" alt="User Image" class="img-thumbnail" style="max-width: 150px;">
+            </p>
+
+            <button class="btn btn-outline-secondary mt-2" onclick="toggleEditProfile()">Edit Profile</button>
+            <button class="btn btn-outline-secondary mt-2" onclick="togglePasswordReset()">Reset Password</button>
+
+            <div id="edit-profile-form" class="toggle-section">
+                <form asp-controller="User" asp-action="EditProfile" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="ID" value="@user?.Id" />
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input class="form-control" name="FullName" value="@user?.FullName" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control" name="Email" value="@user?.Email" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input class="form-control" name="PhoneNumber" value="@user?.PhoneNumber" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Upload Image</label>
+                        <input type="file" name="ImageFile" class="form-control" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-link" onclick="toggleEditProfile()">Cancel</button>
+                </form>
+            </div>
+
+            <div id="reset-password" class="toggle-section">
+                <form asp-controller="User" asp-action="ResetPassword" method="post" onsubmit="return validatePasswords();">
+                    <div class="form-group">
+                        <label>Current Password</label>
+                        <input type="password" class="form-control" name="CurrentPassword" id="currentPass" required />
+                    </div>
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <input type="password" class="form-control" name="NewPassword" id="newPass" required />
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm New Password</label>
+                        <input type="password" class="form-control" name="ConfirmPassword" id="confirmPass" required />
+                    </div>
+                    <button type="submit" class="btn btn-success">Save Password</button>
+                    <button type="button" class="btn btn-link" onclick="togglePasswordReset()">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="house-bookings" class="section">
+            <h5>House Bookings</h5>
+            @foreach (var booking in houseBookings ?? new())
+            {
+                <p>
+                    <strong>House:</strong> @booking.House?.Name<br />
+                    <strong>Dates:</strong> @booking.CheckInDate - @booking.CheckOutDate<br />
+                    <strong>Guests:</strong> @booking.Guests<br />
+                    <strong>Status:</strong> @booking.Status
+                </p>
+            }
+        </div>
+
+        <div id="tour-bookings" class="section">
+            <h5>Tour Bookings</h5>
+            @foreach (var tour in tourBookings ?? new())
+            {
+                <p>
+                    <strong>Tour:</strong> @tour.Tour?.Name<br />
+                    <strong>Date:</strong> @tour.BookingDate<br />
+                    <strong>Status:</strong> @tour.Status
+                </p>
+            }
+        </div>
+
+        <div id="wishlist" class="section">
+            <h5>Wishlist</h5>
+            @foreach (var wish in wishlist ?? new())
+            {
+                <p>@wish.House?.Name - @wish.House?.LocationName</p>
+            }
+        </div>
+
+        <div id="payments" class="section">
+            <h5>Payment History</h5>
+            @foreach (var payment in payments ?? new())
+            {
+                <p>
+                    <strong>Amount:</strong> @payment.Amount JOD<br />
+                    <strong>Method:</strong> @payment.PaymentMethod<br />
+                    <strong>Date:</strong> @payment.PaymentDate<br />
+                    <strong>Status:</strong> @payment.Status
+                </p>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.profile-sidebar li').forEach(li => li.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function togglePasswordReset() {
+            const section = document.getElementById('reset-password');
+            section.style.display = section.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function toggleEditProfile() {
+            const section = document.getElementById('edit-profile-form');
+            section.style.display = section.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function validatePasswords() {
+            const current = document.getElementById("currentPass").value;
+            const pass = document.getElementById("newPass").value;
+            const confirm = document.getElementById("confirmPass").value;
+
+            if (!current) {
+                Swal.fire('Error', 'Please enter your current password.', 'error');
+                return false;
+            }
+
+            if (pass.length < 6) {
+                Swal.fire('Error', 'Password must be at least 6 characters', 'error');
+                return false;
+            }
+            if (pass !== confirm) {
+                Swal.fire('Error', 'Passwords do not match', 'error');
+                return false;
+            }
+            return true;
+        }
+
+        @if (TempData["Success"] != null)
+        {
+        <text>
+            Swal.fire('Success', '@TempData["Success"]', 'success');
+        </text>
+        }
+        @if (TempData["Error"] != null)
+        {
+        <text>
+            Swal.fire('Error', '@TempData["Error"]', 'error');
+        </text>
+        }
+    </script>
+}
