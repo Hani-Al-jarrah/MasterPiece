@@ -1,0 +1,105 @@
+﻿@model MasterPiece.Models.HouseBooking
+@{
+    Layout = "DarNaLayout";
+    var house = Model.House;
+    var total = ViewBag.TotalPrice;
+    var nights = ViewBag.Nights;
+}
+<style>
+    #error_page,
+.cart_section {
+    background: url(/Images/img/CartNew.png) center bottom repeat-x #6f9de1;
+    background-size: cover;
+    /* Ensures the background covers the full area */
+    width: 100vw;
+    /* Full viewport width */
+    height: 80vh;
+    /* Full viewport height */
+}
+.bs-wizard>.bs-wizard-step>.bs-wizard-dot:after {
+    content: '\e903';
+    font-family: Fontello;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: -1px;
+    left: 9px;
+    font-size: 2rem;
+    color: #ffc107;
+}
+</style>
+
+<main>
+    <div class="hero_in cart_section">
+        <div class="wrapper">
+            <div class="container">
+                <div class="bs-wizard clearfix">
+                    <div class="bs-wizard-step active">
+                        <div class="text-center bs-wizard-stepnum">Your cart</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step disabled">
+                        <div class="text-center bs-wizard-stepnum">Payment</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step disabled">
+                        <div class="text-center bs-wizard-stepnum">Finish!</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg_color_1">
+        <div class="container margin_60_35">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="box_cart">
+                        <table class="table cart-list">
+                            <thead>
+                                <tr>
+                                    <th>Your selected</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="thumb_cart">
+                                            <img src="@house.ImageUrl" alt="Image">
+                                        </div>
+                                        <span class="item_cart">@house.Name</span>
+                                    </td>
+                                    <td><strong>@house.Price J.D x @nights nights</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <aside class="col-lg-4" id="sidebar">
+                    <div class="box_detail">
+                        <div id="total_cart">
+                            Total <span class="float-end">@total J.D</span>
+                        </div>
+                        <ul class="cart_details">
+                            <li>From <span>@Model.CheckInDate</span></li>
+                            <li>To <span>@Model.CheckOutDate</span></li>
+                            <li>Guests <span>@Model.Guests</span></li>
+                        </ul>
+
+                       <a href="@Url.Action("Cart2", "Bookings", new { id = Model.Id })" class="btn_1 full-width purchase">Checkout</a>
+
+                        <div class="text-center"><small>No money charged in this step</small></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,397 @@
+﻿
+ @model MasterPiece.Models.House
+@{
+	Layout = "DarNaLayout";
+
+	var images = ViewBag.Images as MasterPiece.Models.Image;
+	var reviews = ViewBag.Reviews as List<MasterPiece.Models.Feedback>;
+	var userId = Context.Session.GetInt32("UserId");
+	var userEmail = ViewBag.UserEmail as string;
+}
+
+    <style>
+        .fadeInUp {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+	/* Style disabled booked dates in red */
+	.flatpickr-day.disabled-booked {
+		background-color: #ff4d4d;
+		color: white;
+		cursor: not-allowed;
+	}
+
+
+    </style>
+
+
+<main>
+
+	<section class="hero_in hotels_detail" style="position: relative; height: 450px; overflow: hidden;">
+		@if (!string.IsNullOrEmpty(Model.ImageUrl))
+		{
+			<img src="@Model.ImageUrl"
+				 alt="Main Image"
+				 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" />
+		}
+
+		<!-- Optional: dark overlay for better text visibility -->
+		<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 2;"></div>
+
+		<div class="container h-100 d-flex align-items-center justify-content-center" style="position: relative; z-index: 3;">
+			<h1 class="text-white text-uppercase fw-bold fadeInUp" style="font-size: 40px;">@Model.Name</h1>
+		</div>
+
+		@if (images != null && (!string.IsNullOrEmpty(images.ImageUrl1) || !string.IsNullOrEmpty(images.ImageUrl2)))
+		{
+			<div class="text-center" style="position: relative; z-index: 4;">
+				<span class="magnific-gallery">
+					@if (!string.IsNullOrEmpty(images.ImageUrl1))
+					{
+						<a href="@images.ImageUrl1" class="btn_photos" title="Photo 1" data-effect="mfp-zoom-in">View Photos</a>
+					}
+					@if (!string.IsNullOrEmpty(images.ImageUrl2))
+					{
+						<a href="@images.ImageUrl2" title="Photo 2" data-effect="mfp-zoom-in"></a>
+					}
+					@if (!string.IsNullOrEmpty(images.ImageUrl3))
+					{
+						<a href="@images.ImageUrl3" title="Photo 3" data-effect="mfp-zoom-in"></a>
+					}
+				</span>
+			</div>
+		}
+	</section>
+		
+
+	<div class="bg_color_1">
+		<nav class="secondary_nav sticky_horizontal">
+			<div class="container">
+				<ul class="clearfix">
+					<li><a href="#description" class="active">Description</a></li>
+					<li><a href="#reviews">Reviews</a></li>
+					<li><a href="#sidebar">Booking</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container margin_60_35">
+			<div class="row">
+				<div class="col-lg-8">
+
+					<section id="description">
+						<h2>Description</h2>
+						<p>@Model.Description</p>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<ul class="bullets">
+									<li>Max Guests: @Model.MaxGuests</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul class="bullets">
+									<li>Type: @Model.TypeName</li>
+									<li>Rating: @Model.Rate</li>
+									<li>Stars: @Model.Stars ⭐</li>
+								</ul>
+							</div>
+						</div>
+
+						<hr>
+						<h3>Pictures from our users</h3>
+						<div class="pictures_grid magnific-gallery clearfix">
+							@if (images != null)
+							{
+								@if (!string.IsNullOrEmpty(images.ImageUrl1))
+								{
+									<figure><a href="@images.ImageUrl1" data-effect="mfp-zoom-in"><img src="@images.ImageUrl1" alt=""></a></figure>
+								}
+								@if (!string.IsNullOrEmpty(images.ImageUrl2))
+								{
+									<figure><a href="@images.ImageUrl2" data-effect="mfp-zoom-in"><img src="@images.ImageUrl2" alt=""></a></figure>
+								}
+								@if (!string.IsNullOrEmpty(images.ImageUrl3))
+								{
+									<figure><a href="@images.ImageUrl3" data-effect="mfp-zoom-in"><img src="@images.ImageUrl3" alt=""></a></figure>
+								}
+							}
+						</div>
+
+                        <ul class="hotel_facilities">
+                            
+							<li><img src="~/images/img/hotel_facilites_icon_4.svg" />Free Wifi</li>
+							<li><img src="~/images/img/hotel_facilites_icon_6.svg" alt="">Bathtub</li>
+							<li><img src="~/images/img/hotel_facilites_icon_7.svg" alt="">Air Condition</li>
+							<li><img src="~/images/img/hotel_facilites_icon_8.svg" alt="">Hairdryer</li>
+						</ul>
+
+						<hr>
+						<h3>Location</h3>
+						<p><i class="icon_pin_alt"></i> @Model.LocationName</p>
+					</section>
+
+					<section id="reviews">
+						<h2>Reviews</h2>
+						<em class="d-block small text-muted">(@(reviews?.Count ?? 0) reviews)</em>
+
+						@if (TempData["Success"] != null)
+						{
+							<div class="alert alert-success">@TempData["Success"]</div>
+						}
+						@if (TempData["Error"] != null)
+						{
+							<div class="alert alert-danger">@TempData["Error"]</div>
+						}
+
+						<div id="reviews-container">
+							@foreach (var review in reviews)
+							{
+								<div class="review-box clearfix">
+									<figure class="rev-thumb"><img src="~/img/avatar1.jpg" alt=""></figure>
+									<div class="rev-content">
+										<div class="rating">
+											@for (int i = 1; i <= review.Rating; i++)
+											{
+												<i class="icon_star voted"></i>
+											}
+										</div>
+										<div class="rev-info">@review.Email – @review.CreatedAt</div>
+										<div class="rev-text"><p>@review.Comment</p></div>
+									</div>
+								</div>
+							}
+						</div>
+
+						<hr>
+						@if (userId != null)
+						{
+							<div class="add-review">
+								<h5>Leave a Review</h5>
+								@* <form asp-controller="Feedback" asp-action="SubmitHouseReview" method="post"> *@
+								<form id="reviewForm" method="post">
+
+									<input type="hidden" name="HouseId" value="@Model.Id" />
+
+									<div class="form-group">
+										<label>Rating</label>
+										<select name="Rating" class="form-control" required>
+											@for (int i = 1; i <= 5; i++)
+											{
+												<option value="@i">@i</option>
+											}
+										</select>
+									</div>
+									<div class="form-group">
+										<label>Comment</label>
+										<textarea name="Comment" class="form-control" rows="4" required></textarea>
+									</div>
+									<input type="hidden" name="Email" value="@userEmail" />
+									<button type="submit" class="btn_1">Submit Review</button>
+								</form>
+							</div>
+						}
+						else
+						{
+							<p class="text-muted">You must be <a href="@Url.Action("Login", "User")">logged in</a> to leave a review.</p>
+						}
+					</section>
+				</div>
+
+	
+				<aside class="col-lg-4" id="sidebar">
+					<div class="box_detail booking shadow-sm p-4 rounded bg-white">
+
+						<!-- PRICE AND RATING -->
+						<div class="price mb-4 d-flex justify-content-between align-items-center">
+							<h4 class="text-primary m-0">@Model.Price J.D <small class="text-muted">/ per night</small></h4>
+							<div class="score text-end">
+								<span class="d-block">Rating</span><hr />
+								<strong>@Model.Rate</strong>
+							</div>
+						</div>
+
+						<!-- BOOKING FORM -->
+						@if (userId != null)
+						{
+							<form id="bookingForm" asp-action="BookHouse" asp-controller="Bookings" method="post">
+								<input type="hidden" name="HouseID" value="@Model.Id" />
+								<input type="hidden" id="MaxGuests" value="@Model.MaxGuests" />
+
+								<!-- DATES -->
+								<div class="form-group mb-3">
+									<label class="form-label">Booking Dates</label>
+									<input type="text" id="BookingDates" class="form-control" name="BookingDates" placeholder="Check-in to Check-out" required readonly />
+								</div>
+
+								<!-- GUESTS -->
+								<div class="form-group mb-3">
+									<label class="form-label">Total Guests</label>
+									<input type="number" name="Guests" id="Guests" min="1" max="@Model.MaxGuests" value="1" class="form-control" />
+
+								</div>
+
+								<!-- Warning -->
+								<div id="bookingWarning" class="alert alert-danger" style="display:none;"></div>
+
+								<!-- BOOK NOW -->
+								<button type="submit" class="btn_1 full-width purchase">Book Now</button>
+							</form>
+						}
+						else
+						{
+							<p class="text-muted text-center mt-3">You must be <a href="@Url.Action("Login", "User")" class="text-primary">logged in</a> to book.</p>
+						}
+
+						<!-- WISHLIST -->
+					@* 	<form method="post" asp-controller="Wishlist" asp-action="AddToWishlist" class="mt-3">
+							<input type="hidden" name="HouseId" value="@Model.Id" />
+							<button type="submit" class="btn_1 full-width outline wishlist">
+								<i class="icon_heart"></i> Add to wishlist
+							</button>
+						</form> *@
+
+						@* @if (ViewBag.IsInWishlist == true)
+						{
+							<button class="btn_1 full-width outline wishlist" disabled>
+								<i class="icon_heart"></i> Added to wishlist
+							</button>
+						}
+						else
+						{
+							<form method="post" asp-controller="Wishlist" asp-action="AddToWishlist" class="mt-3">
+								<input type="hidden" name="houseId" value="@Model.Id" />
+								<button type="submit" class="btn_1 full-width outline wishlist">
+									<i class="icon_heart"></i> Add to wishlist
+								</button>
+							</form>
+						}
+ *@
+
+
+						@if (ViewBag.IsInWishlist == true)
+						{
+							<form method="post" asp-controller="Wishlist" asp-action="RemoveFromWishlist" class="mt-3">
+								<input type="hidden" name="houseId" value="@Model.Id" />
+								<button type="submit" class="btn_1 full-width outline wishlist active">
+									<i class="icon_heart"></i> Remove from wishlist
+								</button>
+							</form>
+						}
+						else
+						{
+							<form method="post" asp-controller="Wishlist" asp-action="AddToWishlist" class="mt-3">
+								<input type="hidden" name="houseId" value="@Model.Id" />
+								<button type="submit" class="btn_1 full-width outline wishlist">
+									<i class="icon_heart"></i> Add to wishlist
+								</button>
+							</form>
+						}
+
+
+					</div>
+				</aside>
+
+			</div>
+		</div>
+	</div>
+
+
+	@if (TempData["Success"] != null)
+{
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: '@TempData["Success"]'
+        });
+    </script>
+}
+@if (TempData["Error"] != null)
+{
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: '@TempData["Error"]'
+        });
+    </script>
+}
+	@if (TempData["Success"] != null)
+	{
+		<script>
+			Swal.fire({
+				icon: 'success',
+				title: 'Success',
+				text: '@TempData["Success"]'
+			});
+		</script>
+	}
+	@if (TempData["Error"] != null)
+	{
+		<script>
+			Swal.fire({
+				icon: 'error',
+				title: 'Error',
+				text: '@TempData["Error"]'
+			});
+		</script>
+	}
+
+
+</main>
+
+
+@section Scripts {
+	<script>
+		document.getElementById('reviewForm')?.addEventListener('submit', function (e) {
+			e.preventDefault();
+
+			const form = this;
+			const formData = new FormData(form);
+
+			fetch('/Feedback/SubmitHouseReviewAjax', {
+				method: 'POST',
+				body: formData
+			})
+				.then(res => res.json())
+				.then(data => {
+					if (data.success) {
+						alert('Your review has been submitted!');
+						form.reset();
+						location.reload(); // or dynamically append the new review to the list
+					} else {
+						alert('Error: ' + data.message);
+					}
+				})
+				.catch(err => {
+					alert('Something went wrong.');
+					console.error(err);
+				});
+		});
+	</script>
+
+	
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const bookedDates = @Html.Raw(Json.Serialize(ViewBag.BookedDates));
+			const availableFrom = "@ViewBag.AvailableFrom";
+			const availableTo = "@ViewBag.AvailableTo";
+
+			flatpickr("#BookingDates", {
+				mode: "range",
+				minDate: availableFrom,
+				maxDate: availableTo,
+				dateFormat: "Y-m-d",
+				disable: bookedDates.map(date => ({
+					from: date,
+					to: date,
+					className: "disabled-booked" // <-- custom class
+				})),
+			});
+		});
+	</script>
+
+
+}

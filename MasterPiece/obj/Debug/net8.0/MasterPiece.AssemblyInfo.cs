@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MasterPiece")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17bca61067d8849291d56e27c5318e934f4c5006")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ca1c737aa27043ed7333cf2c74fac1a8f2c632e")]
 [assembly: System.Reflection.AssemblyProductAttribute("MasterPiece")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MasterPiece")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

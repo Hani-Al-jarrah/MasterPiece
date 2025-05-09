@@ -15,6 +15,8 @@ public partial class TourBooking
 
     public string? Status { get; set; }
 
+    public int? Guests { get; set; }
+
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
     public virtual Tour? Tour { get; set; }

@@ -1,0 +1,414 @@
+﻿@* @model MasterPiece.Models.TourBooking
+@{
+    Layout = "DarNaLayout";
+    var user = Model.User;
+    var tour = Model.Tour;
+    var total = ViewBag.TotalPrice;
+}
+<style>
+    #error_page,
+    .cart_section {
+        background: url(/Images/img/CartNew.png) center bottom repeat-x #6f9de1;
+        background-size: cover;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {
+        content: '\e903';
+        font-family: Fontello;
+        border-radius: 50px;
+        position: absolute;
+        top: -1px;
+        left: 9px;
+        font-size: 2rem;
+        color: #ffc107;
+    }
+</style>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (TempData["Error"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: '@TempData["Error"]'
+            });
+        </script>
+    }
+
+    @if (TempData["Success"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: '@TempData["Success"]'
+            });
+        </script>
+    }
+}
+
+<main>
+    <div class="hero_in cart_section">
+        <div class="wrapper">
+            <div class="container">
+                <div class="bs-wizard clearfix">
+                    <div class="bs-wizard-step">
+                        <div class="text-center bs-wizard-stepnum">Your cart</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="@Url.Action("TourCart1", "Bookings", new { bookingId = Model.Id })" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step active">
+                        <div class="text-center bs-wizard-stepnum">Payment</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#0" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step disabled">
+                        <div class="text-center bs-wizard-stepnum">Finish!</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#0" class="bs-wizard-dot"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form method="post" asp-controller="Bookings" asp-action="PurchaseTour">
+        <input type="hidden" name="bookingId" value="@Model.Id" />
+
+        <div class="bg_color_1">
+            <div class="container margin_60_35">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="box_cart">
+                            <div class="form_title">
+                                <h3><strong>1</strong>Your Details</h3>
+                                <p>Review your personal information</p>
+                            </div>
+                            <div class="step">
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <label>Full Name</label>
+                                        <input type="text" class="form-control" value="@user.FullName" readonly />
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <label>Phone</label>
+                                        <input type="text" class="form-control" value="@user.PhoneNumber" readonly />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" value="@user.Email" readonly />
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="form_title">
+                                <h3><strong>2</strong>Payment Information</h3>
+                                <p>Enter your payment details</p>
+                            </div>
+                            <div class="step">
+                                <div class="form-group">
+                                    <label>Payment Method</label>
+                                    <select class="form-control" name="paymentMethod" required>
+                                        <option value="">Select</option>
+                                        <option value="Credit Card">Credit Card</option>
+                                        <option value="Visa">Visa</option>
+                                        <option value="PayPal">PayPal</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Name on Card</label>
+                                    <input type="text" class="form-control" name="CardName" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>Card Number</label>
+                                    <input type="text" class="form-control" name="CardNumber" required />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label>Expiration Month</label>
+                                        <input type="text" class="form-control" name="ExpireMonth" placeholder="MM" required />
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>Expiration Year</label>
+                                        <input type="text" class="form-control" name="ExpireYear" placeholder="YYYY" required />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>CVV</label>
+                                    <input type="text" class="form-control" name="Cvv" placeholder="3-digit security code" required />
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="form_title">
+                                <h3><strong>3</strong>Billing Address</h3>
+                                <p>Enter your billing address</p>
+                            </div>
+                            <div class="step">
+                                <div class="form-group">
+                                    <label>Country</label>
+                                    <select class="form-control" name="Country" required>
+                                        <option value="">Select Country</option>
+                                        <option>Jordan</option>
+                                        <option>Saudi Arabia</option>
+                                        <option>United Arab Emirates</option>
+                                        <option>Qatar</option>
+                                        <option>Kuwait</option>
+                                        <option>Bahrain</option>
+                                        <option>Oman</option>
+                                        <option>Lebanon</option>
+                                        <option>Egypt</option>
+                                        <option>Iraq</option>
+                                        <option>Syria</option>
+                                        <option>Palestine</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Street Address</label>
+                                    <input type="text" class="form-control" name="Street1" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <input type="text" class="form-control" name="City" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>State</label>
+                                    <input type="text" class="form-control" name="State" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside class="col-lg-4" id="sidebar">
+                        <div class="box_detail">
+                            <div id="total_cart">
+                                Total <span class="float-end">@total J.D</span>
+                            </div>
+                            <ul class="cart_details">
+                                <li>Tour Date <span>@tour.StartDate?.ToString("yyyy-MM-dd")</span></li>
+                                <li>Guests <span>@Model.Guests</span></li>
+                            </ul>
+                            <button type="submit" class="btn_1 full-width purchase">Purchase</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>
+ *@
+ @model MasterPiece.Models.TourBooking
+@{
+    Layout = "DarNaLayout";
+    var user = Model.User;
+    var tour = Model.Tour;
+    var total = ViewBag.TotalPrice;
+}
+<style>
+    #error_page,
+    .cart_section {
+        background: url(/Images/img/CartNew.png) center bottom repeat-x #6f9de1;
+        background-size: cover;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {
+        content: '\e903';
+        font-family: Fontello;
+        border-radius: 50px;
+        position: absolute;
+        top: -1px;
+        left: 9px;
+        font-size: 2rem;
+        color: #ffc107;
+    }
+</style>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (TempData["Error"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: '@TempData["Error"]'
+            });
+        </script>
+    }
+
+    @if (TempData["Success"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Success!',
+                text: '@TempData["Success"]'
+            });
+        </script>
+    }
+}
+
+<main>
+    <div class="hero_in cart_section">
+        <div class="wrapper">
+            <div class="container">
+                <div class="bs-wizard clearfix">
+                    <div class="bs-wizard-step">
+                        <div class="text-center bs-wizard-stepnum">Your cart</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="@Url.Action("TourCart1", "Booking", new { bookingId = Model.Id })" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step active">
+                        <div class="text-center bs-wizard-stepnum">Payment</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step disabled">
+                        <div class="text-center bs-wizard-stepnum">Finish!</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form method="post" asp-controller="Bookings" asp-action="PurchaseTour">
+        <input type="hidden" name="bookingId" value="@Model.Id" />
+
+        <div class="bg_color_1">
+            <div class="container margin_60_35">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="box_cart">
+                            <div class="form_title">
+                                <h3><strong>1</strong>Your Details</h3>
+                                <p>Review your personal information</p>
+                            </div>
+                            <div class="step">
+                                <div class="row">
+                                    <div class="col-sm-6 form-group">
+                                        <label>Full Name</label>
+                                        <input type="text" class="form-control" value="@user.FullName" readonly />
+                                    </div>
+                                    <div class="col-sm-6 form-group">
+                                        <label>Phone</label>
+                                        <input type="text" class="form-control" value="@user.PhoneNumber" readonly />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" value="@user.Email" readonly />
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="form_title">
+                                <h3><strong>2</strong>Payment Information</h3>
+                                <p>Enter your payment details</p>
+                            </div>
+                            <div class="step">
+                                <div class="form-group">
+                                    <label>Payment Method</label>
+                                    <select class="form-control" name="paymentMethod" required>
+                                        <option value="">Select</option>
+                                        <option value="Credit Card">Credit Card</option>
+                                        <option value="Visa">Visa</option>
+                                        <option value="PayPal">PayPal</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Name on Card</label>
+                                    <input type="text" class="form-control" name="CardName" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>Card Number</label>
+                                    <input type="text" class="form-control" name="CardNumber" required />
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <label>Expiration Month</label>
+                                        <input type="text" class="form-control" name="ExpireMonth" placeholder="MM" required />
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <label>Expiration Year</label>
+                                        <input type="text" class="form-control" name="ExpireYear" placeholder="YYYY" required />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>CVV</label>
+                                    <input type="text" class="form-control" name="Cvv" required />
+                                </div>
+                            </div>
+
+                            <hr />
+
+                            <div class="form_title">
+                                <h3><strong>3</strong>Billing Address</h3>
+                                <p>Enter your billing address</p>
+                            </div>
+                            <div class="step">
+                                <div class="form-group">
+                                    <label>Country</label>
+                                    <select class="form-control" name="Country" required>
+                                        <option value="">Select Country</option>
+                                        <option>Jordan</option>
+                                        <option>Saudi Arabia</option>
+                                        <option>United Arab Emirates</option>
+                                        <option>Qatar</option>
+                                        <option>Kuwait</option>
+                                        <option>Bahrain</option>
+                                        <option>Oman</option>
+                                        <option>Lebanon</option>
+                                        <option>Egypt</option>
+                                        <option>Iraq</option>
+                                        <option>Syria</option>
+                                        <option>Palestine</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Street Address</label>
+                                    <input type="text" class="form-control" name="Street1" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <input type="text" class="form-control" name="City" required />
+                                </div>
+                                <div class="form-group">
+                                    <label>State</label>
+                                    <input type="text" class="form-control" name="State" required />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Sidebar -->
+                    <aside class="col-lg-4" id="sidebar">
+                        <div class="box_detail">
+                            <div id="total_cart">
+                                Total <span class="float-end">@total J.D</span>
+                            </div>
+                            <ul class="cart_details">
+                                <li>Tour Date <span>@tour.StartDate?.ToString("yyyy-MM-dd")</span></li>
+                                <li>Guests <span>@Model.Guests</span></li>
+                            </ul>
+                            <button type="submit" class="btn_1 full-width purchase">Purchase</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </form>
+</main>

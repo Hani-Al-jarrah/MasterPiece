@@ -171,6 +171,39 @@
         color: #FFC107;
     }
 
+    .wish_bt {
+        background: url(/Images/img/wishlist-empty.svg) no-repeat center center;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border: none;
+        background-size: contain;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 9;
+    }
+
+    .box_grid {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .box_grid:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .box_grid img {
+            transition: transform 0.3s ease;
+        }
+
+        .box_grid:hover img {
+            transform: scale(1.05);
+        }
+
+    .score strong {
+        cursor: help;
+    }
 </style>
 
 <main>
@@ -270,8 +303,12 @@
                 </form>
             </aside>
 
+        @*     @{
+                var userId = Context.Session.GetInt32("UserId"); // or your auth method
+            } *@
 
             <!-- Dynamic Cards -->
+
             <div class="col-lg-9">
                 <div class="isotope-wrapper">
                     <div class="row">
@@ -283,12 +320,35 @@
                         {
                             foreach (var house in Model)
                             {
+
+
                                 <div class="col-md-6 isotope-item">
-                                    <div class="box_grid" data-cue="slideInUp">
+                                    <div class="box_grid" data-cue="slideInUp" style="position: relative;">
+                            @*             <!-- Wishlist Heart OUTSIDE the image -->
+                                        <form method="post" asp-controller="Wishlist" asp-action="ToggleWishlist" style="position: absolute; top: 15px; right: 15px; z-index: 10;">
+                                            <input type="hidden" name="houseId" value="@house.Id" />
+                                            @{
+                                                var userId = Context.Session.GetInt32("UserId");
+                                                bool isInWishlist = house.Wishlists?.Any(w => w.UserId == userId) ?? false;
+                                            }
+
+                                            @if (userId != null)
+                                            {
+                                                <button type="submit" class="btn p-0 border-0 bg-transparent" title="Toggle Wishlist">
+                                                    <span style="font-size: 22px;">@(isInWishlist ? "❤️" : "🤍")</span>
+                                                </button>
+                                            }
+                                            else
+                                            {
+                                                <button type="button" class="btn p-0 border-0 bg-transparent" onclick="Swal.fire('Please log in to use wishlist')" title="Login required">
+                                                    <span style="font-size: 22px;">🤍</span>
+                                                </button>
+                                            }
+                                        </form> *@
+
                                         <figure>
-                                            <a href="#" class="wish_bt"></a>
                                             <a href="@Url.Action("Details", "Dar", new { id = house.Id })">
-                                                <img src="@house.ImageUrl" class="img-fluid" alt="@house.Name" width="800" height="533" />
+                                                <img src="@house.ImageUrl" class="img-fluid" alt="@house.Name" width="800" height="533" loading="lazy" />
                                                 <div class="read_more"><span>Read more</span></div>
                                             </a>
                                             <small>@house.LocationName</small>
@@ -300,7 +360,7 @@
                                                     <i class="icon_star"></i>
                                                 }
                                             </div>
-                                            <h3><a href="@Url.Action("Details", "Dar", new { id = house.Id })">@house.Name</a></h3>
+                                            <h3>@house.Name</h3>
                                             <p>@(house.Description?.Length > 120 ? house.Description.Substring(0, 120) + "..." : house.Description)</p>
                                             <span class="price">From <strong>@(house.Price?.ToString("0.00") ?? "0") J.D</strong> / per night</span>
                                         </div>
@@ -315,11 +375,85 @@
                                         </ul>
                                     </div>
                                 </div>
+
+
+
+
+                               @*  <div class="col-md-6 isotope-item">
+                                    <a href="@Url.Action("Details", "Dar", new { id = house.Id })" style="text-decoration: none; color: inherit;">
+                                        <div class="box_grid" data-cue="slideInUp" style="cursor: pointer;">
+                                            <figure>
+
+                                                <form method="post" asp-controller="Wishlist" asp-action="ToggleWishlist" style="position: absolute; top: 15px; right: 15px;">
+                                                    <input type="hidden" name="houseId" value="@house.Id" />
+                                                    @{
+                                                        var userId = Context.Session.GetInt32("UserId");
+                                                        bool isInWishlist = house.Wishlists?.Any(w => w.UserId == userId) ?? false;
+                                                    }
+
+                                                    @if (userId != null)
+                                                    {
+                                                        <button type="submit" class="btn p-0 border-0 bg-transparent" title="Toggle Wishlist">
+                                                            <span style="font-size: 22px;">@(isInWishlist ? "❤️" : "🤍")</span>
+                                                        </button>
+                                                    }
+                                                    else
+                                                    {
+                                                        <button type="button" class="btn p-0 border-0 bg-transparent" onclick="Swal.fire('Please log in to use wishlist')" title="Login required">
+                                                            <span style="font-size: 22px;">🤍</span>
+                                                        </button>
+                                                    }
+                                                </form>
+
+
+                                                <img src="@house.ImageUrl" class="img-fluid" alt="@house.Name" width="800" height="533" loading="lazy" />
+                                                <div class="read_more"><span>Read more</span></div>
+                                                <small>@house.LocationName</small>
+                                            </figure>
+                                            <div class="wrapper">
+                                                <div class="cat_star">
+                                                    @for (int i = 0; i < (house.Stars ?? 0); i++)
+                                                    {
+                                                        <i class="icon_star"></i>
+                                                    }
+                                                </div>
+                                                <h3>@house.Name</h3>
+                                                <p>@(house.Description?.Length > 120 ? house.Description.Substring(0, 120) + "..." : house.Description)</p>
+                                                <span class="price">From <strong>@(house.Price?.ToString("0.00") ?? "0") J.D</strong> / per night</span>
+                                            </div>
+                                            <ul>
+                                                <li><i class="ti-eye"></i>0 views</li>
+                                                <li>
+                                                    <div class="score">
+                                                        <span>Review<em>Guests Ratings</em></span>
+                                                        <strong>@(house.Rate?.ToString("0.0") ?? "N/A")</strong>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </div>  *@
                             }
                         }
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 </main>
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @if (TempData["NotLoggedIn"] != null)
+    {
+        <script>
+            Swal.fire('Login Required', '@TempData["NotLoggedIn"]', 'warning');
+        </script>
+    }
+}
+

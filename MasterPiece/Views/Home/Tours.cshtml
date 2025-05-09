@@ -2,7 +2,46 @@
 @{
 	Layout = "DarNaLayout";
 }
+<style>
+	.banner {
+		background: url(/Images/img/Petra_hero.png) center center/cover no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		width: 100%;
+		height: 420px;
+		margin-bottom: 60px;
+		position: relative
+	}
 
+	.fixed-tour-img {
+		display: block;
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+
+	/* Make sure figure doesn't crop content weirdly */
+	.grid_item_adventure figure {
+		margin: 0;
+		overflow: hidden;
+	}
+
+	/* Ensure Owl Carousel items are sized correctly */
+	.owl-carousel .item {
+		height: auto !important;
+	}
+
+	.fixed-img {
+		height: 220px;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 8px;
+	}
+
+
+</style>
 <main>
 	<section class="header-video adventure">
 		<div id="hero_video">
@@ -20,8 +59,7 @@
             <source src="~/images/video/adventures-header.mp4" type="video/mp4" />
         </video>
 
-		<!-- <img src="img/video_fix.png" alt="" class="header-video--media" data-video-src="..\video\Adventures-header.mp4" data-teaser-source="..\video\Adventures-header.mp4" data-provider="" data-video-width="1920" data-video-height="960"> -->
-	</section>
+			</section>
 	<!-- /header-video -->
 
 	<div class="container container-custom margin_80_55">
@@ -33,23 +71,25 @@
 			</div>
 
 
-<div id="reccomended_adventure" class="owl-carousel owl-theme">
-    @foreach (var tour in Model)
-    {
-        <div class="item">
-            <a asp-action="TourDetails" asp-controller="Home" asp-route-id="@tour.Id" class="grid_item_adventure">
-                <figure>
-                    <div class="score"><strong>9.0</strong></div>
-                    <img src="@tour.ImageUrl" class="img-fluid" alt="@tour.LocationName" />
-                    <div class="info">
-                        <em>@tour.Duration in @tour.LocationName</em>
-                        <h3>@tour.Name</h3>
-                    </div>
-                </figure>
-            </a>
-        </div>
-    }
-</div>
+			<div id="reccomended_adventure" class="owl-carousel owl-theme">
+				@foreach (var tour in Model)
+				{
+					<div class="item">
+						<a asp-action="TourDetails" asp-controller="Home" asp-route-id="@tour.Id" class="grid_item_adventure">
+							<figure>
+				@* 				<div class="score"><strong>9.0</strong></div> *@
+								<img src="@tour.ImageUrl" class="img-fluid fixed-tour-img" alt="@tour.LocationName" width="800" height="533" loading="lazy" />
+								<div class="info">
+									<em>@tour.Duration in @tour.LocationName</em>
+									<h3>@tour.Name</h3>
+								</div>
+							</figure>
+						</a>
+					</div>
+				}
+			</div>
+
+
 
 			<!-- /reccomended_aventure -->
 		</section>
@@ -61,13 +101,12 @@
 					<small>Adventure</small>
 					<h3>Your Perfect<br>Advenure Experience</h3>
 					<p>Activities and accommodations</p>
-					<a href="adventure-detail.html" class="btn_1">Read more</a>
+					
 				</div>
 			</div>
 			<!-- /wrapper -->
 		</div>
 		<!-- /banner -->
-
 		<section>
 			<div class="main_title_3">
 				<span><em></em></span>
@@ -75,65 +114,24 @@
 				<p>Discover the latest and most exciting adventures in Jordan, from cultural tours to outdoor escapades.</p>
 			</div>
 			<div class="row">
-				<div class="col-xl-3 col-lg-6 col-md-6">
-					<a href="adventure-detail.html" class="grid_item latest_adventure">
-						<figure>
-							<div class="score"><strong>8.5</strong></div>
-							<img src="img/Wadi mujib.jpeg" class="img-fluid" alt="">
-							<div class="info">
-
-								<em>1 day in Wadi Mujib</em>
-								<h3>Experience Thrilling Canyoning Adventures</h3>
-
-
-							</div>
-						</figure>
-					</a>
-				</div>
-				<!-- /grid_item -->
-				<div class="col-xl-3 col-lg-6 col-md-6">
-					<a href="adventure-detail.html" class="grid_item latest_adventure">
-						<figure>
-							<div class="score"><strong>7.9</strong></div>
-							<img src="img/wadi hidan.jpeg" class="img-fluid" alt="">
-							<div class="info">
-								<em>1 day in Wadi Hidan</em>
-								<h3>Swim and Trek Through Scenic Water Trails</h3>
-							</div>
-						</figure>
-					</a>
-				</div>
-				<!-- /grid_item -->
-				<div class="col-xl-3 col-lg-6 col-md-6">
-					<a href="adventure-detail.html" class="grid_item latest_adventure">
-						<figure>
-							<div class="score"><strong>7.5</strong></div>
-							<img src="img/umm qais.jpeg" class="img-fluid" alt="">
-							<div class="info">
-								<em>1 day in Umm Qais</em>
-								<h3>Explore Ancient Ruins and Stunning Views</h3>
-							</div>
-						</figure>
-					</a>
-				</div>
-				<!-- /grid_item -->
-				<div class="col-xl-3 col-lg-6 col-md-6">
-					<a href="adventure-detail.html" class="grid_item latest_adventure">
-						<figure>
-							<div class="score"><strong>9.0</strong></div>
-							<img src="img/salt.jpeg" class="img-fluid" alt="">
-							<div class="info">
-								<em>1 days in As-Salt</em>
-								<h3>Explore the Historic Streets of As-Salt</h3>
-							</div>
-						</figure>
-					</a>
-				</div>
-				<!-- /grid_item -->
+				@foreach (var tour in Model)
+				{
+					<div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+						<a asp-action="TourDetails" asp-controller="Home" asp-route-id="@tour.Id" class="grid_item latest_adventure">
+							<figure>
+								
+								<img src="@tour.ImageUrl" class="img-fluid fixed-img" alt="@tour.Name" />
+								<div class="info">
+									<em>@tour.Duration in @tour.LocationName</em>
+									<h3>@tour.Name</h3>
+								</div>
+							</figure>
+						</a>
+					</div>
+				}
 			</div>
-			<!-- /row -->
-
 		</section>
+	
 		<!-- /section -->
 	</div>
 	<!-- /container -->
@@ -182,5 +180,4 @@
 	</div>
 	<!--/call_section-->
 </main>
-<!-- /main -->
 <!-- /main -->

@@ -1,0 +1,184 @@
+﻿@model MasterPiece.Models.Tour
+@{
+    Layout = "DarNaLayout";
+    var reviews = ViewBag.Reviews as List<MasterPiece.Models.Feedback>;
+    var userId = ViewBag.UserId as int?;
+    var userEmail = ViewBag.UserEmail as string;
+    int remainingSpots = (int)ViewBag.RemainingSpots;
+}
+<style>
+    <style >
+    .review-box {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+</style>
+</style>
+<main>
+    <section class="hero_in adventure_detail" style="background: url('@Model.ImageUrl') center center/cover no-repeat; position: relative;">
+        <div class="wrapper opacity-mask" style="background-color: rgba(0,0,0,0.5); padding: 60px 0;">
+            <div class="container">
+                <div class="main_info">
+                    <div class="row">
+                        <div class="col-lg-4 mb-3">
+                            <em>@Model.Duration Trip</em>
+                            <h1 class="text-white">@Model.Name</h1>
+                            <p class="text-light">@Model.LocationName</p>
+                        </div>
+                        <div class="col-lg-8">
+                            <h3 class="text-white">@Model.Description</h3>
+                            <ul class="text-light">
+                                <li><i class="pe-7s-clock"></i> Duration <span>@Model.Duration</span></li>
+                                <li><i class="pe-7s-graph3"></i> Activity level <span>Easy</span></li>
+                                <li><i class="pe-7s-shopbag"></i> Price <span>@Model.Price J.D</span></li>
+                                <li><i class="pe-7s-date"></i> Date <span>@Model.StartDate?.ToString("yyyy-MM-dd")</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container margin_60_35">
+        <h2>Book This Tour</h2>
+        @if (userId != null)
+        {
+            if (remainingSpots > 0)
+            {
+                <form asp-controller="Bookings" asp-action="BookTour" method="post">
+                    <input type="hidden" name="tourId" value="@Model.Id" />
+                    <label>Available on: <strong>@Model.StartDate?.ToString("yyyy-MM-dd")</strong></label>
+                    <input class="form-control mb-2" type="text" readonly value="@Model.StartDate?.ToString("yyyy-MM-dd")" />
+
+                    <label>Guests</label>
+                    <input class="form-control mb-3" type="number" name="guests" min="1" max="@remainingSpots" value="1" required />
+
+                    <button type="submit" class="btn_1">Book Now</button>
+                </form>
+            }
+            else
+            {
+                <div class="alert alert-danger">This tour is full. Please check back for future dates.</div>
+                <a href="@Url.Action("Tours", "Home")" class="btn_1">Back to Tours</a>
+            }
+        }
+        else
+        {
+            <p>You must <a href="@Url.Action("Login", "User")">login</a> to book.</p>
+        }
+
+        <hr />
+
+        <h4>Average Rating: <span id="review-rate">@Math.Round((reviews?.Any() == true ? reviews.Average(r => (decimal)r.Rating) : 0), 1)</span> ⭐</h4>
+        <h2>Reviews (<span id="review-count">@reviews?.Count</span>)</h2>
+
+        @{
+            var allUsers = (List<MasterPiece.Models.User>)ViewBag.AllUsers;
+        }
+        <div id="reviews-container">
+            @foreach (var review in reviews)
+            {
+                var user = allUsers.FirstOrDefault(u => u.Id == review.UserId);
+                var imgSrc = string.IsNullOrEmpty(user?.ImageUrl) ? "/img/avatar1.jpg" : user.ImageUrl;
+
+                <div class="review-box clearfix mb-4 p-3 border rounded bg-white shadow-sm">
+                    <figure class="rev-thumb">
+                        <img src="@imgSrc" alt="avatar" style="width:60px; height:60px; border-radius:50%; object-fit:cover;">
+                    </figure>
+                    <div class="rev-content">
+                        <div class="rating mb-1">
+                            @for (int i = 0; i < review.Rating; i++)
+                            {
+                                <i class="icon_star voted" style="color:gold;"></i>
+                            }
+                        </div>
+                        <div class="rev-info fw-bold">@review.Email – @review.CreatedAt</div>
+                        <div class="rev-text"><p>@review.Comment</p></div>
+                    </div>
+                </div>
+            }
+        </div>
+
+
+
+        @if (userId != null)
+        {
+            <form id="tourReviewForm">
+                <input type="hidden" name="TourId" value="@Model.Id" />
+                <input type="hidden" name="Email" value="@userEmail" />
+                <div class="form-group">
+                    <label>Rating</label>
+                    <select name="Rating" class="form-control" required>
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            <option value="@i">@i</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Comment</label>
+                    <textarea name="Comment" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn_1 mt-2">Submit Review</button>
+            </form>
+        }
+        else
+        {
+            <p>Please <a href="@Url.Action("Login", "User")">login</a> to leave a review.</p>
+        }
+
+    </div>
+</main>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("tourReviewForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            fetch('/Home/SubmitTourReview', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        Swal.fire("Success", "Review submitted!", "success");
+
+                        // Add new review to DOM
+                        const container = document.getElementById("reviews-container");
+                        container.innerHTML += `
+                            <div class="review-box clearfix">
+                                <figure class="rev-thumb"><img src="/img/avatar1.jpg" alt="avatar"></figure>
+                                <div class="rev-content">
+                                    <div class="rating">${"★".repeat(data.review.rating)}</div>
+                                    <div class="rev-info">${data.review.email} – ${data.review.createdAt}</div>
+                                    <div class="rev-text"><p>${data.review.comment}</p></div>
+                                </div>
+                            </div>
+                        `;
+
+                        document.getElementById("review-count").innerText = data.count;
+                        document.getElementById("review-rate").innerText = data.avg;
+
+                        form.reset();
+                    } else {
+                        Swal.fire("Error", "Something went wrong.", "error");
+                    }
+                })
+                .catch(() => {
+                    Swal.fire("Error", "Server error.", "error");
+                });
+        });
+    </script>
+
+
+}

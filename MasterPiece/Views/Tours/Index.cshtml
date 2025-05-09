@@ -1,4 +1,4 @@
-﻿@model List<MasterPiece.Models.Tour>
+﻿@* @model List<MasterPiece.Models.Tour>
 @{
     ViewData["Title"] = "Manage Tours";
     Layout = "Admin";
@@ -40,8 +40,250 @@
                 <td>@tour.EndDate @tour.EndTime</td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@tour.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="EditImages" asp-route-id="@tour.Id" class="btn btn-sm btn-info">Edit Images</a>
+                    <a asp-action="ShowImages" asp-route-id="@tour.Id" class="btn btn-sm btn-secondary">Show Images</a>
+
                 </td>
             </tr>
         }
     </tbody>
 </table>
+ *@
+
+ @model List<MasterPiece.Models.Tour>
+@{
+    ViewData["Title"] = "Manage Tours";
+    Layout = "Admin";
+}
+
+<div class="admin-page-container">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert-notification">
+            <i class="fas fa-info-circle"></i> @TempData["Message"]
+        </div>
+    }
+
+    <div class="page-header">
+        <h2><i class="fas fa-map-marked-alt"></i> Manage Tours</h2>
+        <a asp-action="Create" class="btn-add">
+            <i class="fas fa-plus"></i> Add New Tour
+        </a>
+    </div>
+
+    <div class="table-card">
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                    <th>Guests</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var tour in Model)
+                {
+                    <tr>
+                        <td>
+                            @if (!string.IsNullOrEmpty(tour.ImageUrl))
+                            {
+                                <img src="@tour.ImageUrl" class="table-image" />
+                            }
+                        </td>
+                        <td>@tour.Name</td>
+                        <td>@tour.LocationName</td>
+                        <td>@tour.Duration</td>
+                        <td>@tour.Price</td>
+                        <td>@tour.MaxGuests</td>
+                        <td>@tour.StartDate @tour.StartTime</td>
+                        <td>@tour.EndDate @tour.EndTime</td>
+                        <td>
+                            <div class="action-buttons">
+                                <a asp-action="Edit" asp-route-id="@tour.Id" class="btn-edit">
+                                    <i class="fas fa-edit"></i> Edit
+                                </a>
+                                <a asp-action="EditImages" asp-route-id="@tour.Id" class="btn-images">
+                                    <i class="fas fa-images"></i> Images
+                                </a>
+                                <a asp-action="ShowImages" asp-route-id="@tour.Id" class="btn-view">
+                                    <i class="fas fa-eye"></i> View
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    /* Tours Index Page Styles */
+    .admin-page-container {
+        padding: 20px;
+    }
+
+    .alert-notification {
+        background-color: #e3f2fd;
+        color: #1976d2;
+        padding: 12px 15px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        border-left: 4px solid #1976d2;
+    }
+
+    .alert-notification i {
+        margin-right: 10px;
+    }
+
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .page-header h2 {
+        color: #454545;
+        font-weight: 600;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .page-header h2 i {
+        margin-right: 10px;
+        color: #B88E2F;
+    }
+
+    .btn-add {
+        background-color: #B88E2F;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    .btn-add i {
+        margin-right: 8px;
+    }
+
+    .btn-add:hover {
+        background-color: #9a7628;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .table-card {
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        overflow: hidden;
+    }
+
+    .admin-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .admin-table th {
+            background-color: #b88e2f;
+        color: white;
+        padding: 15px;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .admin-table td {
+        padding: 12px 15px;
+        border-bottom: 1px solid #eee;
+        vertical-align: middle;
+    }
+
+    .admin-table tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    .table-image {
+        width: 80px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .action-buttons a {
+        display: flex;
+        align-items: center;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    .action-buttons a i {
+        margin-right: 6px;
+        font-size: 0.8rem;
+    }
+
+    .btn-edit {
+        background-color: #FFF3E0;
+        color: #E65100;
+    }
+
+    .btn-edit:hover {
+        background-color: #FFE0B2;
+    }
+
+    .btn-images {
+        background-color: #E3F2FD;
+        color: #1565C0;
+    }
+
+    .btn-images:hover {
+        background-color: #BBDEFB;
+    }
+
+    .btn-view {
+        background-color: #E8F5E9;
+        color: #2E7D32;
+    }
+
+    .btn-view:hover {
+        background-color: #C8E6C9;
+    }
+
+    @@media (max-width: 768px) {
+        .admin-table {
+            display: block;
+            overflow-x: auto;
+        }
+
+        .action-buttons {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+</style>

@@ -1585,6 +1585,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\0c64638e-5635-4903-9b2f-66c39528c1d6_Madaba1.png",
+      "PackagePath": "staticwebassets\\newImages\\0c64638e-5635-4903-9b2f-66c39528c1d6_Madaba1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\1b334dbf-4d3b-4b58-846b-4c45426f7a82_Amman2.png",
+      "PackagePath": "staticwebassets\\newImages\\1b334dbf-4d3b-4b58-846b-4c45426f7a82_Amman2.png"
+    },
+    {
       "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\345f1902-5fb1-462b-973f-35877ff16d51_Amman1.png",
       "PackagePath": "staticwebassets\\newImages\\345f1902-5fb1-462b-973f-35877ff16d51_Amman1.png"
     },
@@ -1595,6 +1603,54 @@
     {
       "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\5ee04398-88d5-4887-8602-80319370cb5a_wadiRum.jpg",
       "PackagePath": "staticwebassets\\newImages\\5ee04398-88d5-4887-8602-80319370cb5a_wadiRum.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\628618d8-eb75-4a5e-bf15-30a8e9f3be49_Ajloun.png",
+      "PackagePath": "staticwebassets\\newImages\\628618d8-eb75-4a5e-bf15-30a8e9f3be49_Ajloun.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\63a52534-a0b9-40f2-ae5a-5288113b6a32_Amman2.png",
+      "PackagePath": "staticwebassets\\newImages\\63a52534-a0b9-40f2-ae5a-5288113b6a32_Amman2.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\8b5f2745-43ea-4c6e-804f-bcab36fab8a0_Madaba1.png",
+      "PackagePath": "staticwebassets\\newImages\\8b5f2745-43ea-4c6e-804f-bcab36fab8a0_Madaba1.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\8d48346b-331f-4bfd-8c38-519d749f17b9_Ajloun2.png",
+      "PackagePath": "staticwebassets\\newImages\\8d48346b-331f-4bfd-8c38-519d749f17b9_Ajloun2.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\9b727ba6-dbc5-4471-b1d0-2ca756561dc6_Ajloun5.png",
+      "PackagePath": "staticwebassets\\newImages\\9b727ba6-dbc5-4471-b1d0-2ca756561dc6_Ajloun5.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\b266dceb-6a87-4233-806c-b46fcc2d83d3_Amman3.png",
+      "PackagePath": "staticwebassets\\newImages\\b266dceb-6a87-4233-806c-b46fcc2d83d3_Amman3.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\d5d3794e-4d03-4f2b-9eac-9dda2acf6280_Ajloun55.png",
+      "PackagePath": "staticwebassets\\newImages\\d5d3794e-4d03-4f2b-9eac-9dda2acf6280_Ajloun55.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\d91d3d76-0baa-4e5b-936f-7c150870cb76_pexels-axp-photography-500641970-18682579.jpg",
+      "PackagePath": "staticwebassets\\newImages\\d91d3d76-0baa-4e5b-936f-7c150870cb76_pexels-axp-photography-500641970-18682579.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\db0b07a9-1e79-43f3-a8bb-9123c33e7f0c_Amman4.png",
+      "PackagePath": "staticwebassets\\newImages\\db0b07a9-1e79-43f3-a8bb-9123c33e7f0c_Amman4.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\df330964-621a-4cab-a3f4-cbdcbd2bf947_Amman3.png",
+      "PackagePath": "staticwebassets\\newImages\\df330964-621a-4cab-a3f4-cbdcbd2bf947_Amman3.png"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\e9b7de77-98d2-486a-aaa9-031898dbc644_Ajloun_Castle.jpg",
+      "PackagePath": "staticwebassets\\newImages\\e9b7de77-98d2-486a-aaa9-031898dbc644_Ajloun_Castle.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\newImages\\f8e60adc-d3eb-42f3-9d24-defa041feaf6_Amman4.png",
+      "PackagePath": "staticwebassets\\newImages\\f8e60adc-d3eb-42f3-9d24-defa041feaf6_Amman4.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MasterPiece.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -15,6 +15,8 @@ public partial class Feedback
 
     public int? Rating { get; set; }
 
+    public string? Email { get; set; }
+
     public string? Comment { get; set; }
 
     public DateTime? CreatedAt { get; set; }

@@ -43,3 +43,13 @@
 }
 
 */
+#error_page,
+.cart_section {
+    background: url(/Images/img/CartNew.png) center bottom repeat-x #6f9de1;
+    background-size: cover;
+    /* Ensures the background covers the full area */
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+}

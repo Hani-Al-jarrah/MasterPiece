@@ -1,4 +1,4 @@
-﻿@{
+﻿@* @{
     ViewData["Title"] = "Dashboard";
 }
 @{
@@ -75,3 +75,295 @@
         </div>
     </div>
 </div>
+ *@
+
+ @{
+    ViewData["Title"] = "Dashboard";
+    Layout = "Admin";
+}
+
+<div class="dashboard-container">
+    <div class="dashboard-header">
+        <h2>Welcome to DarNA Admin Dashboard</h2>
+        <p class="lead">Manage your platform efficiently with these quick insights</p>
+    </div>
+
+    <div class="dashboard-overview">
+        <h3 class="section-title">Platform Overview</h3>
+        
+        <div class="metrics-grid">
+            <!-- House Metrics -->
+            <div class="metric-card card-house">
+                <div class="metric-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="metric-info">
+                    <h4>Total Houses</h4>
+                    <p class="metric-value">@Model.Houses</p>
+                    <a href="/Houses" class="metric-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Tour Metrics -->
+            <div class="metric-card card-tour">
+                <div class="metric-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <div class="metric-info">
+                    <h4>Total Tours</h4>
+                    <p class="metric-value">@Model.Tours</p>
+                    <a href="/Tours" class="metric-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- User Metrics -->
+            <div class="metric-card card-user">
+                <div class="metric-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="metric-info">
+                    <h4>Registered Users</h4>
+                    <p class="metric-value">@Model.Users</p>
+                    <a href="/Users" class="metric-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Metrics -->
+            <div class="metric-card card-contact">
+                <div class="metric-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="metric-info">
+                    <h4>Contact Messages</h4>
+                    <p class="metric-value">@Model.Contacts</p>
+                    <a href="/ContactMessages" class="metric-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Feedback Metrics -->
+            <div class="metric-card card-feedback">
+                <div class="metric-icon">
+                    <i class="fas fa-comment-alt"></i>
+                </div>
+                <div class="metric-info">
+                    <h4>Customer Feedbacks</h4>
+                    <p class="metric-value">@Model.Feedbacks</p>
+                    <a href="/Feedback" class="metric-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Booking Metrics -->
+            <div class="metric-card card-booking">
+                <div class="metric-icon">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <div class="metric-info">
+                    <h4>Total Bookings</h4>
+                    <p class="metric-value">@Model.Bookings</p>
+                    <a href="/Bookings" class="metric-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Payment Metrics -->
+            <div class="metric-card card-payment">
+                <div class="metric-icon">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <div class="metric-info">
+                    <h4>Payments Processed</h4>
+                    <p class="metric-value">@Model.PaymentsCount</p>
+                    <p class="metric-amount">@Model.PaymentsTotal.ToString("C") J.D</p>
+                    <a href="/Payments" class="metric-link">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    :root {
+        --sidebar-color: #454545;
+        --primary: #B88E2F; /* Your gold color */
+        --primary-dark: #9a7628;
+        --primary-light: #d9b873;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --dark: #343a40;
+        --light: #f8f9fa;
+    }
+
+    /* Dashboard Specific Styles */
+    .dashboard-container {
+        padding: 20px;
+    }
+
+    .dashboard-header {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .dashboard-header h2 {
+        color: var(--sidebar-color);
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .dashboard-header .lead {
+        color: #666;
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        color: var(--sidebar-color);
+        font-weight: 600;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #eee;
+    }
+
+    .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .metric-card {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        border-left: 4px solid;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .metric-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+        z-index: 1;
+    }
+
+    .metric-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .metric-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        font-size: 24px;
+        color: white;
+        position: relative;
+        z-index: 2;
+    }
+
+    .metric-info {
+        flex: 1;
+        position: relative;
+        z-index: 2;
+    }
+
+    .metric-info h4 {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .metric-value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--sidebar-color);
+        margin-bottom: 5px;
+    }
+
+    .metric-amount {
+        font-size: 1.2rem;
+        color: var(--success);
+        font-weight: 600;
+    }
+
+    .metric-link {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: var(--sidebar-color);
+        text-decoration: none;
+        transition: all 0.2s;
+        font-weight: 500;
+    }
+
+    .metric-link:hover {
+        color: var(--primary);
+        text-decoration: underline;
+    }
+
+    /* Card Specific Colors */
+    .card-house {
+        border-left-color: #3498db;
+    }
+    .card-house .metric-icon {
+        background: #3498db;
+    }
+
+    .card-tour {
+        border-left-color: #2ecc71;
+    }
+    .card-tour .metric-icon {
+        background: #2ecc71;
+    }
+
+    .card-user {
+        border-left-color: #9b59b6;
+    }
+    .card-user .metric-icon {
+        background: #9b59b6;
+    }
+
+    .card-contact {
+        border-left-color: #e74c3c;
+    }
+    .card-contact .metric-icon {
+        background: #e74c3c;
+    }
+
+    .card-feedback {
+        border-left-color: #f39c12;
+    }
+    .card-feedback .metric-icon {
+        background: #f39c12;
+    }
+
+    .card-booking {
+        border-left-color: #34495e;
+    }
+    .card-booking .metric-icon {
+        background: #34495e;
+    }
+
+    .card-payment {
+        border-left-color: #16a085;
+    }
+    .card-payment .metric-icon {
+        background: #16a085;
+    }
+
+
+</style>

@@ -167,3 +167,8 @@ C:\Users\mac\Desktop\MasterPiece\MasterPiece\obj\Debug\net8.0\refint\MasterPiece
 C:\Users\mac\Desktop\MasterPiece\MasterPiece\obj\Debug\net8.0\MasterPiece.pdb
 C:\Users\mac\Desktop\MasterPiece\MasterPiece\obj\Debug\net8.0\MasterPiece.genruntimeconfig.cache
 C:\Users\mac\Desktop\MasterPiece\MasterPiece\obj\Debug\net8.0\ref\MasterPiece.dll
+C:\Users\mac\Desktop\MasterPiece\MasterPiece\bin\Debug\net8.0\PdfSharpCore.dll
+C:\Users\mac\Desktop\MasterPiece\MasterPiece\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
+C:\Users\mac\Desktop\MasterPiece\MasterPiece\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\mac\Desktop\MasterPiece\MasterPiece\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+C:\Users\mac\Desktop\MasterPiece\MasterPiece\bin\Debug\net8.0\de\PdfSharpCore.resources.dll

@@ -1,0 +1,359 @@
+﻿@* @model MasterPiece.Models.Image
+@{
+    ViewData["Title"] = "Tour Images";
+    Layout = "Admin";
+}
+<h2>Images for Tour ID: @ViewBag.TourId</h2>
+
+@if (!string.IsNullOrEmpty(Model.ImageUrl1))
+{
+    <div class="mb-3">
+        <label>Image 1:</label><br />
+        <img src="@Model.ImageUrl1" width="200" class="border rounded" />
+    </div>
+}
+@if (!string.IsNullOrEmpty(Model.ImageUrl2))
+{
+    <div class="mb-3">
+        <label>Image 2:</label><br />
+        <img src="@Model.ImageUrl2" width="200" class="border rounded" />
+    </div>
+}
+@if (!string.IsNullOrEmpty(Model.ImageUrl3))
+{
+    <div class="mb-3">
+        <label>Image 3:</label><br />
+        <img src="@Model.ImageUrl3" width="200" class="border rounded" />
+    </div>
+}
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back to Tours</a>
+ *@
+
+ @model MasterPiece.Models.Image
+@{
+    ViewData["Title"] = "Tour Images";
+    Layout = "Admin";
+}
+
+<div class="admin-gallery-container">
+    <div class="gallery-header">
+        <h2><i class="fas fa-images"></i> Images for Tour ID: @ViewBag.TourId</h2>
+        <a asp-action="Index" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back to Tours
+        </a>
+    </div>
+
+    <div class="gallery-card">
+        <div class="image-gallery">
+            @if (!string.IsNullOrEmpty(Model.ImageUrl1))
+            {
+                <div class="gallery-item">
+                    <div class="image-label">Image 1</div>
+                    <div class="image-container">
+                        <img src="@Model.ImageUrl1" class="gallery-image" alt="Tour Image 1" />
+                        <div class="image-actions">
+                            <a href="@Model.ImageUrl1" class="action-btn view-btn">
+                                <i class="fas fa-expand"></i> View Full
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.ImageUrl2))
+            {
+                <div class="gallery-item">
+                    <div class="image-label">Image 2</div>
+                    <div class="image-container">
+                        <img src="@Model.ImageUrl2" class="gallery-image" alt="Tour Image 2" />
+                        <div class="image-actions">
+                            <a href="@Model.ImageUrl2" class="action-btn view-btn">
+                                <i class="fas fa-expand"></i> View Full
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @if (!string.IsNullOrEmpty(Model.ImageUrl3))
+            {
+                <div class="gallery-item">
+                    <div class="image-label">Image 3</div>
+                    <div class="image-container">
+                        <img src="@Model.ImageUrl3" class="gallery-image" alt="Tour Image 3" />
+                        <div class="image-actions">
+                            <a href="@Model.ImageUrl3" class="action-btn view-btn">
+                                <i class="fas fa-expand"></i> View Full
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @if (string.IsNullOrEmpty(Model.ImageUrl1) && string.IsNullOrEmpty(Model.ImageUrl2) && string.IsNullOrEmpty(Model.ImageUrl3))
+            {
+                <div class="no-images">
+                    <i class="fas fa-image-slash"></i>
+                    <p>No images available for this tour</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Show Tour Images Page Styles */
+    .admin-gallery-container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .gallery-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .gallery-header h2 {
+        color: #454545;
+        font-weight: 600;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .gallery-header h2 i {
+        margin-right: 10px;
+        color: #B88E2F;
+    }
+
+    .btn-back {
+        background-color: #454545;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    .btn-back i {
+        margin-right: 8px;
+    }
+
+    .btn-back:hover {
+        background-color: #333;
+        color: white;
+    }
+
+    .gallery-card {
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .gallery-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-label {
+        font-weight: 600;
+        color: #454545;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .image-label:before {
+        content: "\f03e";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: #B88E2F;
+        margin-right: 8px;
+    }
+
+    .image-container {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border: 1px solid #eee;
+    }
+
+    .gallery-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s;
+    }
+
+    .image-actions {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.7);
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        transform: translateY(100%);
+        transition: transform 0.3s;
+    }
+
+    .image-container:hover .image-actions {
+        transform: translateY(0);
+    }
+
+    .image-container:hover .gallery-image {
+        transform: scale(1.05);
+    }
+
+    .action-btn {
+        color: white;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s;
+    }
+
+    .view-btn {
+        background-color: #B88E2F;
+    }
+
+    .view-btn:hover {
+        background-color: #9a7628;
+    }
+
+    /* No Images State */
+    .no-images {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 40px;
+        color: #777;
+    }
+
+    .no-images i {
+        font-size: 3rem;
+        color: #ddd;
+        margin-bottom: 15px;
+    }
+
+    .no-images p {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    /* Responsive Design */
+    @@media (max-width: 768px) {
+        .gallery-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .image-gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .gallery-card {
+            padding: 20px 15px;
+        }
+        
+        .gallery-image {
+            height: 200px;
+        }
+    }
+
+    /* Modal Styles */
+    .image-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+    
+    .modal-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    
+    .modal-image {
+        max-width: 100%;
+        max-height: 80vh;
+        border-radius: 4px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    
+    .close-modal {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .close-modal:hover {
+        color: #B88E2F;
+    }
+</style>
+
+<script>
+    // Add click handler for view full links
+    document.querySelectorAll('.view-btn').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const imgUrl = this.getAttribute('href');
+            const modal = document.createElement('div');
+            modal.className = 'image-modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <img src="${imgUrl}" class="modal-image" />
+                </div>
+            `;
+            document.body.appendChild(modal);
+            
+            // Close modal when clicking X or outside image
+            modal.querySelector('.close-modal').addEventListener('click', () => {
+                document.body.removeChild(modal);
+            });
+            
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    document.body.removeChild(modal);
+                }
+            });
+        });
+    });
+</script>

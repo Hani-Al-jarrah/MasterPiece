@@ -5540,7 +5540,7 @@ a.grid_item.latest_adventure em {
     font-style: normal
 }
 
-.banner {
+/*.banner {
     background: url(../img/Petra_hero.png) center center/cover no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -5550,7 +5550,7 @@ a.grid_item.latest_adventure em {
     margin-bottom: 60px;
     position: relative
 }
-
+*/
 .banner .wrapper {
     color: #fff;
     padding: 60px
@@ -7490,6 +7490,7 @@ ul.bullets li:before {
 }
 
 .margin_60_35 {
+    margin-bottom: -8vh;
     padding-top: 60px;
     padding-bottom: 35px
 }

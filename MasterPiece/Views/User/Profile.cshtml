@@ -1,4 +1,6 @@
-﻿@{
+﻿
+
+@{
     Layout = "DarNaLayout";
     ViewData["Title"] = "Profile";
 
@@ -13,7 +15,7 @@
 <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
 <style>
     body {
-        background-color: #f5f5f5;
+        background-color: #d2cab6;
     }
     .profile-container {
         display: flex;
@@ -22,6 +24,7 @@
     }
 
     .profile-sidebar {
+        margin-bottom: 100px;
         width: 250px;
         background: #fff;
         border-radius: 10px;
@@ -50,6 +53,7 @@
     }
 
     .profile-content {
+        margin-bottom: 100px;
         flex: 1;
         padding: 20px;
         border-radius: 10px;
@@ -103,9 +107,7 @@
             <p><strong>Full Name:</strong> @user?.FullName</p>
             <p><strong>Email:</strong> @user?.Email</p>
             <p><strong>Phone Number:</strong> @user?.PhoneNumber</p>
-            <p>
-                <img src="@user?.ImageUrl" alt="User Image" class="img-thumbnail" style="max-width: 150px;">
-            </p>
+            <p><img src="@user?.ImageUrl" alt="User Image" class="img-thumbnail" style="max-width: 150px;"></p>
 
             <button class="btn btn-outline-secondary mt-2" onclick="toggleEditProfile()">Edit Profile</button>
             <button class="btn btn-outline-secondary mt-2" onclick="togglePasswordReset()">Reset Password</button>
@@ -154,7 +156,7 @@
             </div>
         </div>
 
-        <div id="house-bookings" class="section">
+    @*     <div id="house-bookings" class="section">
             <h5>House Bookings</h5>
             @foreach (var booking in houseBookings ?? new())
             {
@@ -165,7 +167,69 @@
                     <strong>Status:</strong> @booking.Status
                 </p>
             }
+        </div> *@
+
+
+        <div id="house-bookings" class="section">
+            <h5>House Bookings</h5>
+
+            @foreach (var booking in houseBookings ?? new())
+            {
+                <div class="border rounded p-3 mb-3">
+                    <p>
+                        <strong>House:</strong> @booking.House?.Name<br />
+                        <strong>Dates:</strong> @booking.CheckInDate?.ToShortDateString() - @booking.CheckOutDate?.ToShortDateString()<br />
+                        <strong>Guests:</strong> @booking.Guests<br />
+                        <strong>Status:</strong>
+                        <span class="badge
+                    @(booking.Status == "Confirmed" ? "bg-success" :
+                      booking.Status == "Cancelled" ? "bg-danger" :
+                      "bg-warning text-dark")">
+                            @booking.Status
+                        </span>
+                    </p>
+
+                    @{
+                        var canCancel = booking.CheckInDate > DateOnly.FromDateTime(DateTime.Today.AddDays(2));
+                    }
+
+                    @* Show Complete Booking button only if status is Pending *@
+                    @if (booking.Status == "Pending")
+                    {
+                        <a class="btn btn-sm btn-primary me-2" href="@Url.Action("Cart1", "Bookings", new { id = booking.Id })">
+                            <i class="fas fa-credit-card"></i> Complete Booking
+                        </a>
+                    }
+
+                    @* Show Cancel Booking button if Pending or Confirmed, and can cancel *@
+                    @if ((booking.Status == "Pending" || booking.Status == "Confirmed") && canCancel)
+                    {
+                        <form method="post" asp-action="CancelHouseBooking" asp-controller="Bookings" asp-route-id="@booking.Id" style="display:inline;" onsubmit="return confirmCancel();">
+                            <button type="submit" class="btn btn-sm btn-danger">
+                                <i class="fas fa-times-circle"></i> Cancel Booking
+                            </button>
+                        </form>
+                    }
+                    else if (booking.Status != "Cancelled" && !canCancel)
+                    {
+                        <button class="btn btn-sm btn-secondary" disabled>
+                            <i class="fas fa-ban"></i> Cancellation Window Closed
+                        </button>
+                    }
+                </div>
+            }
         </div>
+
+
+
+        @if (TempData["Error"] != null)
+        {
+            <script>
+                Swal.fire('Error', '@TempData["Error"]', 'error');
+            </script>
+        }
+
+
 
         <div id="tour-bookings" class="section">
             <h5>Tour Bookings</h5>
@@ -178,6 +242,10 @@
                 </p>
             }
         </div>
+
+
+        
+
 
         <div id="wishlist" class="section">
             <h5>Wishlist</h5>
@@ -255,5 +323,29 @@
             Swal.fire('Error', '@TempData["Error"]', 'error');
         </text>
         }
+
+
     </script>
+    <script>
+        function confirmCancel() {
+            return confirm("Are you sure you want to cancel this booking?");
+        }
+        function showSection(id) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.profile-sidebar li').forEach(li => li.classList.remove('active'));
+
+            const section = document.getElementById(id);
+            if (section) {
+                section.classList.add('active');
+            }
+
+            // Highlight the clicked menu item
+            const clickedItem = event.target;
+            if (clickedItem) {
+                clickedItem.classList.add('active');
+            }
+        }
+
+    </script>
+
 }

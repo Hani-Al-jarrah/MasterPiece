@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "DarNaLayout";
+    var userEmail = TempData["UserEmail"]?.ToString() ?? "your email";
+    var reference = TempData["Reference"]?.ToString();
+}
+<style>
+    #error_page,
+    .cart_section {
+        background: url(/Images/img/CartNew.png) center bottom repeat-x #6f9de1;
+        background-size: cover;
+        width: 100vw;
+        height: 80vh;
+        position: relative;
+    }
+
+    .confirmation-wrapper {
+        background-color: #ffffffee;
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 100px auto 40px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 10;
+    }
+</style>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @if (TempData["Success"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Thank you!',
+                text: '@TempData["Success"]'
+            });
+        </script>
+    }
+}
+<main>
+    <div class="hero_in cart_section last">
+        <div class="wrapper">
+            <div class="container">
+                <div class="bs-wizard clearfix">
+                    <div class="bs-wizard-step">
+                        <div class="text-center bs-wizard-stepnum">Your cart</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step">
+                        <div class="text-center bs-wizard-stepnum">Payment</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step active">
+                        <div class="text-center bs-wizard-stepnum">Finish!</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                </div>
+
+                <div class="confirmation-wrapper text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="100" class="mb-4" />
+                    <h4 class="mb-3">Tour Booking Confirmed!</h4>
+                    <p>Confirmation sent to <strong>@userEmail</strong></p>
+                    @if (!string.IsNullOrEmpty(reference))
+                    {
+                        <p class="mt-2">Reference ID: <strong style="color:#28a745">@reference</strong></p>
+                    }
+                    <a href="@Url.Action("Tours", "Home")" class="btn_1 mt-4">Return to Tours</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

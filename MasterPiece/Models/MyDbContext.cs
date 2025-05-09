@@ -76,7 +76,7 @@ public partial class MyDbContext : DbContext
 
         modelBuilder.Entity<Feedback>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Feedback__3214EC274BB6D442");
+            entity.HasKey(e => e.Id).HasName("PK__Feedback__3214EC2792660234");
 
             entity.ToTable("Feedback");
 
@@ -85,6 +85,7 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
+            entity.Property(e => e.Email).HasMaxLength(100);
             entity.Property(e => e.HouseId).HasColumnName("HouseID");
             entity.Property(e => e.TourId).HasColumnName("TourID");
             entity.Property(e => e.UserId).HasColumnName("UserID");
@@ -92,17 +93,17 @@ public partial class MyDbContext : DbContext
             entity.HasOne(d => d.House).WithMany(p => p.Feedbacks)
                 .HasForeignKey(d => d.HouseId)
                 .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK__Feedback__HouseI__787EE5A0");
+                .HasConstraintName("FK__Feedback__HouseI__31B762FC");
 
             entity.HasOne(d => d.Tour).WithMany(p => p.Feedbacks)
                 .HasForeignKey(d => d.TourId)
                 .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK__Feedback__TourID__797309D9");
+                .HasConstraintName("FK__Feedback__TourID__32AB8735");
 
             entity.HasOne(d => d.User).WithMany(p => p.Feedbacks)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK__Feedback__UserID__778AC167");
+                .HasConstraintName("FK__Feedback__UserID__30C33EC3");
         });
 
         modelBuilder.Entity<House>(entity =>
@@ -148,13 +149,10 @@ public partial class MyDbContext : DbContext
 
         modelBuilder.Entity<Image>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Images__3214EC2777B47C28");
+            entity.HasKey(e => e.Id).HasName("PK__Images__3214EC279803C45E");
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.HouseId).HasColumnName("HouseID");
-            entity.Property(e => e.ImageUrl)
-                .HasMaxLength(255)
-                .HasColumnName("ImageURL");
             entity.Property(e => e.ImageUrl1)
                 .HasMaxLength(255)
                 .HasColumnName("ImageURL1");
@@ -168,11 +166,11 @@ public partial class MyDbContext : DbContext
 
             entity.HasOne(d => d.House).WithMany(p => p.Images)
                 .HasForeignKey(d => d.HouseId)
-                .HasConstraintName("FK__Images__HouseID__2CF2ADDF");
+                .HasConstraintName("FK__Images__HouseID__3B40CD36");
 
             entity.HasOne(d => d.Tour).WithMany(p => p.Images)
                 .HasForeignKey(d => d.TourId)
-                .HasConstraintName("FK__Images__TourID__2DE6D218");
+                .HasConstraintName("FK__Images__TourID__3C34F16F");
         });
 
         modelBuilder.Entity<Payment>(entity =>
@@ -232,6 +230,7 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.BookingDate)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
+            entity.Property(e => e.Guests).HasDefaultValue(1);
             entity.Property(e => e.Status)
                 .HasMaxLength(20)
                 .HasDefaultValue("Pending");

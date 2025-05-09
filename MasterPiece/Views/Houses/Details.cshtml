@@ -1,0 +1,159 @@
+﻿@* @model MasterPiece.Models.House
+@{
+	var images = ViewBag.Images as MasterPiece.Models.Image;
+	var reviews = ViewBag.Reviews as List<MasterPiece.Models.Feedback>;
+}
+
+<main>
+	<section class="hero_in hotels_detail">
+		<div class="wrapper">
+			<div class="container">
+				<h1 class="fadeInUp"><span></span>@Model.Name</h1>
+			</div>
+			<span class="magnific-gallery">
+				<a href="@images?.ImageUrl1" class="btn_photos" title="Photo 1" data-effect="mfp-zoom-in">View photos</a>
+				<a href="@images?.ImageUrl2" title="Photo 2" data-effect="mfp-zoom-in"></a>
+				<a href="@images?.ImageUrl3" title="Photo 3" data-effect="mfp-zoom-in"></a>
+			</span>
+		</div>
+	</section>
+
+	<div class="bg_color_1">
+		<nav class="secondary_nav sticky_horizontal">
+			<div class="container">
+				<ul class="clearfix">
+					<li><a href="#description" class="active">Description</a></li>
+					<li><a href="#reviews">Reviews</a></li>
+					<li><a href="#sidebar">Booking</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container margin_60_35">
+			<div class="row">
+				<div class="col-lg-8">
+					<section id="description">
+						<h2>Description</h2>
+						<p>@Model.Description</p>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<ul class="bullets">
+									<li>Max Guests: @Model.MaxGuests</li>
+									<li>Available From: @Model.AvailableFrom?.ToShortDateString()</li>
+									<li>Available To: @Model.AvailableTo?.ToShortDateString()</li>
+								</ul>
+							</div>
+							<div class="col-lg-6">
+								<ul class="bullets">
+									<li>Type: @Model.TypeName</li>
+									<li>Rating: @Model.Rate</li>
+									<li>Stars: @Model.Stars ⭐</li>
+								</ul>
+							</div>
+						</div>
+
+						<hr>
+						<h3>Pictures from our users</h3>
+						<div class="pictures_grid magnific-gallery clearfix">
+							@if (images != null)
+							{
+								if (!string.IsNullOrEmpty(images.ImageUrl1))
+								{
+									<figure><a href="@images.ImageUrl1" data-effect="mfp-zoom-in"><img src="@images.ImageUrl1" alt=""></a></figure>
+									;
+								}
+								if (!string.IsNullOrEmpty(images.ImageUrl2))
+								{
+									<figure><a href="@images.ImageUrl2" data-effect="mfp-zoom-in"><img src="@images.ImageUrl2" alt=""></a></figure>
+									;
+								}
+								if (!string.IsNullOrEmpty(images.ImageUrl3))
+								{
+									<figure><a href="@images.ImageUrl3" data-effect="mfp-zoom-in"><img src="@images.ImageUrl3" alt=""></a></figure>
+									;
+								}
+								if (!string.IsNullOrEmpty(images.ImageUrl3))
+								{
+									<figure><a href="@images.ImageUrl3" data-effect="mfp-zoom-in"><img src="@images.ImageUrl3" alt=""></a></figure>
+									;
+								}
+							}
+						</div>
+
+						<ul class="hotel_facilities">
+							<li><img src="~/img/hotel_facilites_icon_4.svg" alt="">Free Wifi</li>
+							<li><img src="~/img/hotel_facilites_icon_6.svg" alt="">Bathtub</li>
+							<li><img src="~/img/hotel_facilites_icon_7.svg" alt="">Air Condition</li>
+							<li><img src="~/img/hotel_facilites_icon_8.svg" alt="">Hairdryer</li>
+						</ul>
+
+						<hr>
+						<h3>Location</h3>
+						<p><i class="icon_pin_alt"></i> @Model.LocationName</p>
+						<!-- Optional: integrate with Google Maps or use static image -->
+					</section>
+
+					<section id="reviews">
+						<h2>Reviews</h2>
+						@foreach (var review in reviews)
+						{
+							<div class="review-box clearfix">
+								<figure class="rev-thumb"><img src="~/img/avatar1.jpg" alt=""></figure>
+								<div class="rev-content">
+									<div class="rating">
+										@for (int i = 1; i <= review.Rating; i++)
+										{
+											<i class="icon_star voted"></i>
+										}
+									</div>
+									<div class="rev-info">@review.Email – @review.CreatedAt</div>
+									<div class="rev-text"><p>@review.Comment</p></div>
+								</div>
+							</div>
+						}
+					</section>
+				</div>
+
+				<aside class="col-lg-4" id="sidebar">
+					<div class="box_detail booking">
+						<div class="price">
+							<span>@Model.Price J.D <small>/ per night</small></span>
+							<div class="score">
+								<span>Rating<em>@reviews.Count() Reviews</em></span>
+								<strong>@Model.Rate</strong>
+							</div>
+						</div>
+
+						<form asp-action="BookHouse" asp-controller="Booking" method="post">
+							<input type="hidden" name="HouseID" value="@Model.Id" />
+							<div class="form-group input-dates">
+								<input class="form-control" name="BookingDates" placeholder="When.." required>
+								<i class="icon_calendar"></i>
+							</div>
+
+							<div class="panel-dropdown">
+								<a href="#">Guests <span class="qtyTotal">1</span></a>
+								<div class="panel-dropdown-content right">
+									<div class="qtyButtons">
+										<label>Adults</label>
+										<input type="number" name="Adults" min="1" max="@Model.MaxGuests" value="1">
+									</div>
+									<div class="qtyButtons">
+										<label>Children</label>
+										<input type="number" name="Children" value="0">
+									</div>
+								</div>
+							</div>
+
+							<button type="submit" class="btn_1 full-width purchase">Book Now</button>
+						</form>
+
+						<a href="#" class="btn_1 full-width outline wishlist"><i class="icon_heart"></i> Add to wishlist</a>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</div>
+</main>
+ *@

@@ -1,4 +1,4 @@
-﻿@model MasterPiece.Models.House
+﻿@* @model MasterPiece.Models.House
 
 @{
     ViewData["Title"] = "Create House";
@@ -66,3 +66,414 @@
 
     <button type="submit" class="btn btn-primary">Save</button>
 </form>
+ 
+ *@
+
+
+ @model MasterPiece.Models.House
+@{
+    ViewData["Title"] = "Create House";
+    Layout = "Admin";
+}
+
+<div class="admin-form-container">
+    <div class="form-header">
+        <h2><i class="fas fa-home"></i> @ViewData["Title"]</h2>
+        <a asp-controller="Houses" asp-action="Index" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back to List
+        </a>
+    </div>
+
+    <div class="form-card">
+        <form asp-action="Create" enctype="multipart/form-data" class="house-form">
+            <div class="form-grid">
+                <!-- Basic Information Column -->
+                <div class="form-column">
+                    <div class="form-group">
+                        <label asp-for="Name" class="form-label" >
+                            <i class="fas fa-signature"></i> House Name
+                        </label>
+                        <input asp-for="Name" class="form-input" placeholder="Enter house name" required />
+                        <span asp-validation-for="Name" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Description" class="form-label">
+                            <i class="fas fa-align-left"></i> Description
+                        </label>
+                        <textarea asp-for="Description" class="form-input" rows="4" placeholder="Enter detailed description" required></textarea>
+                        <span asp-validation-for="Description" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="LocationName" class="form-label">
+                            <i class="fas fa-map-marker-alt"></i> Location
+                        </label>
+                        <input asp-for="LocationName" class="form-input" placeholder="Enter location" required />
+                        <span asp-validation-for="LocationName" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="TypeName" class="form-label" required>
+                            <i class="fas fa-tags"></i> House Type
+                        </label>
+                        <select asp-for="TypeName" class="form-input">
+                        
+                            <option value="Room">Room</option>
+                            <option value="House">House</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Shaleah">Shaleah</option>
+                        </select>
+                        <span asp-validation-for="TypeName" class="form-error"></span>
+                    </div>
+                </div>
+
+                <!-- Pricing & Availability Column -->
+                <div class="form-column">
+                    <div class="form-group">
+                        <label asp-for="Price" class="form-label">
+                            <i class="fas fa-money-bill-wave"></i> Price
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text">J.D</span>
+                            <input asp-for="Price" type="number" step="0.01" min="0" class="form-input" placeholder="0.00" />
+                        </div>
+                        <span asp-validation-for="Price" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="MaxGuests" class="form-label">
+                            <i class="fas fa-users"></i> Max Guests
+                        </label>
+                        <input asp-for="MaxGuests" type="number" class="form-input" placeholder="Enter maximum guests" />
+                        <span asp-validation-for="MaxGuests" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">
+                            <i class="fas fa-image"></i> House Image
+                        </label>
+                        <div class="file-upload">
+                            <label class="upload-label">
+                                <input type="file" name="ImageFile" class="upload-input" />
+                                <span class="upload-text">Choose Image</span>
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Details Column -->
+                <div class="form-column">
+                    <div class="form-group">
+                        <label asp-for="AvailableFrom" class="form-label">
+                            <i class="fas fa-calendar-day"></i> Available From
+                        </label>
+                        <input asp-for="AvailableFrom" type="date" class="form-input"
+                               min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        <span asp-validation-for="AvailableFrom" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="AvailableTo" class="form-label">
+                            <i class="fas fa-calendar-day"></i> Available To
+                        </label>
+                        <input asp-for="AvailableTo" type="date" class="form-input"
+                               min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        <span asp-validation-for="AvailableTo" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Stars" class="form-label">
+                            <i class="fas fa-star"></i> Star Rating
+                        </label>
+                        <select asp-for="Stars" class="form-input">
+                            <option value="1">1 Star</option>
+                            <option value="2">2 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="5">5 Stars</option>
+                        </select>
+                        <span asp-validation-for="Stars" class="form-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Rate" class="form-label">
+                            <i class="fas fa-thumbs-up"></i> Rating
+                        </label>
+                        <input asp-for="Rate" type="number" min="0" max="10" class="form-input" placeholder="0-10" />
+                        <span asp-validation-for="Rate" class="form-error"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-save"></i> Save House
+                </button>
+                <button type="reset" class="btn-reset">
+                    <i class="fas fa-undo"></i> Reset
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    /* Form Container */
+    .admin-form-container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Form Header */
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .form-header h2 {
+        color: #454545;
+        font-weight: 600;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .form-header h2 i {
+        margin-right: 10px;
+        color: #B88E2F;
+    }
+
+    .btn-back {
+        background-color: #454545;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    .btn-back i {
+        margin-right: 8px;
+    }
+
+    .btn-back:hover {
+        background-color: #333;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    /* Form Card */
+    .form-card {
+        background: white;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* Form Grid Layout */
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .form-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Form Elements */
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: #454545;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .form-label i {
+        color: #B88E2F;
+        width: 20px;
+        text-align: center;
+    }
+
+    .form-input {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: all 0.3s;
+    }
+
+    .form-input:focus {
+        border-color: #B88E2F;
+        box-shadow: 0 0 0 3px rgba(184, 142, 47, 0.2);
+        outline: none;
+    }
+
+    textarea.form-input {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    .form-error {
+        color: #dc3545;
+        font-size: 0.85rem;
+        margin-top: 5px;
+    }
+
+    /* File Upload */
+    .file-upload {
+        margin-top: 5px;
+    }
+
+    .upload-label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .upload-input {
+        display: none;
+    }
+
+    .upload-text {
+        padding: 10px 15px;
+        background-color: #f8f9fa;
+        border: 1px dashed #ddd;
+        border-radius: 6px;
+        flex-grow: 1;
+        transition: all 0.3s;
+    }
+
+    .upload-label:hover .upload-text {
+        border-color: #B88E2F;
+        background-color: #fff;
+    }
+
+    .upload-label i {
+        color: #B88E2F;
+        font-size: 1.2rem;
+    }
+
+    /* Form Actions */
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+
+    .btn-submit {
+        background-color: #B88E2F;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s;
+    }
+
+    .btn-submit:hover {
+        background-color: #9a7628;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn-reset {
+        background-color: #f8f9fa;
+        color: #454545;
+        padding: 12px 25px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s;
+    }
+
+    .btn-reset:hover {
+        background-color: #e9ecef;
+        border-color: #ccc;
+    }
+
+    /* Input Group for Price */
+    .input-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .input-group-text {
+        padding: 12px 15px;
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-right: none;
+        border-radius: 6px 0 0 6px;
+        color: #454545;
+    }
+
+    .input-group .form-input {
+        border-radius: 0 6px 6px 0;
+        flex-grow: 1;
+    }
+
+ 
+</style>
+
+	<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const fromInput = document.querySelector('input[name="AvailableFrom"]');
+    const toInput = document.querySelector('input[name="AvailableTo"]');
+    
+    fromInput.addEventListener('change', function() {
+        toInput.min = this.value;
+        if (toInput.value && toInput.value < this.value) {
+            toInput.value = this.value;
+        }
+    });
+});
+</script> 
+
+	
+
+	<script>
+        document.querySelector('input[name="Price"]').addEventListener('input', function (e) {
+            // Remove any non-numeric characters except decimal point
+            this.value = this.value.replace(/[^0-9.]/g, '');
+
+            // Ensure only one decimal point
+            if ((this.value.match(/\./g) || []).length > 1) {
+                this.value = this.value.substring(0, this.value.lastIndexOf('.'));
+            }
+        });
+	</script>
+
+
+

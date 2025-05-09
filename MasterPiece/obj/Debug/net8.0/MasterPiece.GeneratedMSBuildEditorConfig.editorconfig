@@ -34,12 +34,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Bookings/Cart1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ2FydDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Bookings/Cart2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ2FydDIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Bookings/Cart3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcQ2FydDMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Bookings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Bookings/TourCart1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcVG91ckNhcnQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Bookings/TourCart2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcVG91ckNhcnQyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Bookings/TourCart3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ3NcVG91ckNhcnQzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/ContactMessages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdE1lc3NhZ2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Dar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFyXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Dar/Index.cshtml]
@@ -70,20 +98,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Home/TourDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb3VyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Home/Tours.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb3Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Houses/AddImages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXEFkZEltYWdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Houses/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Houses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Houses/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Houses/EditImages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXEVkaXRJbWFnZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Houses/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Houses/ShowImages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG91c2VzXFNob3dJbWFnZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Payments/Index.cshtml]
@@ -114,8 +162,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Tours/EditImages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcRWRpdEltYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Tours/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Tours/ShowImages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91cnNcU2hvd0ltYWdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Users/Index.cshtml]
@@ -132,6 +188,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/Wishlist/MyWishList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaGxpc3RcTXlXaXNoTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mac/Desktop/MasterPiece/MasterPiece/Views/_ViewImports.cshtml]

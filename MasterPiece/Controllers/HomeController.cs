@@ -158,7 +158,108 @@ namespace MasterPiece.Controllers
 			return View(tours);
 		}
 
-		public IActionResult Privacy()
+		public IActionResult RecentAdventures()
+		{
+			var adventures = _context.Tours
+				.OrderByDescending(t => t.Id)
+				.Skip(5)
+				.Take(8)
+				.ToList();
+
+			return View(adventures);
+		}
+
+
+		public IActionResult TourDetails(int id)
+		{
+            ViewBag.AllUsers = _context.Users.ToList(); // For profile pictures
+
+            var tour = _context.Tours.FirstOrDefault(t => t.Id == id);
+			if (tour == null) return NotFound();
+
+			var reviews = _context.Feedbacks
+				.Where(r => r.TourId == id)
+				.OrderByDescending(r => r.CreatedAt)
+				.ToList();
+
+			var totalGuests = _context.TourBookings
+				.Where(b => b.TourId == id && b.Status != "Cancelled")
+				.Sum(b => b.Guests);
+
+			var remainingSpots = (tour.MaxGuests ?? 0) - totalGuests;
+
+			ViewBag.Reviews = reviews;
+			ViewBag.RemainingSpots = remainingSpots;
+			ViewBag.UserId = HttpContext.Session.GetInt32("UserId");
+			ViewBag.UserEmail = HttpContext.Session.GetString("UserEmail");
+
+			return View(tour);
+		}
+
+
+        [HttpPost]
+        public IActionResult SubmitTourReview(IFormCollection form)
+        {
+            try
+            {
+                int userId = (int)HttpContext.Session.GetInt32("UserId");
+                int tourId = int.Parse(form["TourId"]);
+                int rating = int.Parse(form["Rating"]);
+                string email = form["Email"];
+                string comment = form["Comment"];
+
+                var review = new Feedback
+                {
+                    UserId = userId,
+                    TourId = tourId,
+                    Rating = rating,
+                    Email = email,
+                    Comment = comment,
+                    CreatedAt = DateTime.Now
+                };
+
+                _context.Feedbacks.Add(review);
+                _context.SaveChanges();
+
+                var allReviews = _context.Feedbacks.Where(f => f.TourId == tourId).ToList();
+                var count = allReviews.Count;
+                var avg = allReviews.Any() ? Math.Round((decimal)allReviews.Average(r => r.Rating), 1) : 0;
+
+                return Json(new
+                {
+                    success = true,
+                    count,
+                    avg,
+                    review = new
+                    {
+                        rating = review.Rating,
+                        email = review.Email,
+                        comment = review.Comment,
+                        createdAt = review.CreatedAt
+                    }
+                });
+            }
+            catch
+            {
+                return Json(new { success = false });
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public IActionResult Privacy()
 		{
 			return View();
 		}
