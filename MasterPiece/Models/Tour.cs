@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MasterPiece.Models;
 
@@ -12,8 +13,8 @@ public partial class Tour
     public string? Name { get; set; }
 
     public string? Description { get; set; }
-
-    public string? Duration { get; set; }
+	[RegularExpression(@"^\d+\s*(hour|hours|day|days)$", ErrorMessage = "Use format like '4 hours' or '2 days'.")]
+	public string? Duration { get; set; }
 
     public decimal? Price { get; set; }
 

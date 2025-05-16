@@ -502,3 +502,50 @@
         }
     });
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const startDateInput = document.querySelector('input[name="StartDate"]');
+        const startTimeInput = document.querySelector('input[name="StartTime"]');
+        const durationInput = document.querySelector('input[name="Duration"]');
+        const endDateInput = document.querySelector('input[name="EndDate"]');
+        const endTimeInput = document.querySelector('input[name="EndTime"]');
+
+        function updateEndDateTime() {
+            const startDate = startDateInput.value;
+            const startTime = startTimeInput.value;
+            const duration = durationInput.value.trim().toLowerCase();
+
+            if (!startDate || !startTime || !duration) return;
+
+            const [amountStr, unit] = duration.split(" ");
+            const amount = parseInt(amountStr);
+
+            if (isNaN(amount)) return;
+
+            const startDateTime = new Date(`${startDate}T${startTime}`);
+
+            if (unit === "hour" || unit === "hours") {
+                startDateTime.setHours(startDateTime.getHours() + amount);
+            } else if (unit === "day" || unit === "days") {
+                startDateTime.setDate(startDateTime.getDate() + amount);
+            } else {
+                return;
+            }
+
+            // Format to yyyy-MM-dd and HH:mm
+            const formattedDate = startDateTime.toISOString().split("T")[0];
+            const formattedTime = startDateTime.toTimeString().slice(0, 5);
+
+            endDateInput.value = formattedDate;
+            endTimeInput.value = formattedTime;
+
+            endDateInput.readOnly = true;
+            endTimeInput.readOnly = true;
+        }
+
+        [startDateInput, startTimeInput, durationInput].forEach(input => {
+            input.addEventListener('change', updateEndDateTime);
+            input.addEventListener('input', updateEndDateTime);
+        });
+    });
+</script>

@@ -46,7 +46,7 @@
 </form>
  *@
 
- @model MasterPiece.Models.Image
+@*  @model MasterPiece.Models.Image
 @{
     ViewData["Title"] = "Edit House Images";
     Layout = "Admin";
@@ -401,4 +401,230 @@
             }
         });
     });
+</script> *@
+
+@model MasterPiece.Models.Image
+@{
+    ViewData["Title"] = "Edit House Images";
+    Layout = "Admin";
+}
+
+<div class="admin-form-container">
+    <div class="form-header">
+        <h2><i class="fas fa-images"></i> Edit Images for House</h2>
+        <a asp-action="Index" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back to List
+        </a>
+    </div>
+
+    <div class="form-card">
+        <form asp-action="EditImages" enctype="multipart/form-data" method="post" class="image-edit-form">
+            <input type="hidden" name="id" value="@Model.HouseId" />
+
+            <div class="image-upload-grid">
+                <!-- Image 1 -->
+                <div class="image-upload-group">
+                    <label class="form-label"><i class="fas fa-image"></i> Image 1</label>
+                    <div class="current-image-container">
+                        <img id="preview1" class="current-image" src="@Model.ImageUrl1" onerror="this.src='/img/default.jpg'" />
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl1))
+                        {
+                            <a href="@Model.ImageUrl1" target="_blank" class="view-full">View Full Size</a>
+                        }
+                    </div>
+                    <div class="file-upload">
+                        <label class="upload-label">
+                            <input type="file" name="Image1" class="upload-input" onchange="previewImage(this, 'preview1')" />
+                            <span class="upload-text">Upload / Change</span>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="image-upload-group">
+                    <label class="form-label"><i class="fas fa-image"></i> Image 2</label>
+                    <div class="current-image-container">
+                        <img id="preview2" class="current-image" src="@Model.ImageUrl2" onerror="this.src='/img/default.jpg'" />
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl2))
+                        {
+                            <a href="@Model.ImageUrl2" target="_blank" class="view-full">View Full Size</a>
+                        }
+                    </div>
+                    <div class="file-upload">
+                        <label class="upload-label">
+                            <input type="file" name="Image2" class="upload-input" onchange="previewImage(this, 'preview2')" />
+                            <span class="upload-text">Upload / Change</span>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="image-upload-group">
+                    <label class="form-label"><i class="fas fa-image"></i> Image 3</label>
+                    <div class="current-image-container">
+                        <img id="preview3" class="current-image" src="@Model.ImageUrl3" onerror="this.src='/img/default.jpg'" />
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl3))
+                        {
+                            <a href="@Model.ImageUrl3" target="_blank" class="view-full">View Full Size</a>
+                        }
+                    </div>
+                    <div class="file-upload">
+                        <label class="upload-label">
+                            <input type="file" name="Image3" class="upload-input" onchange="previewImage(this, 'preview3')" />
+                            <span class="upload-text">Upload / Change</span>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit"><i class="fas fa-save"></i> Save Changes</button>
+                <a asp-action="Index" class="btn-cancel"><i class="fas fa-times"></i> Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    function previewImage(input, previewId) {
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById(previewId).src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 </script>
+
+<style>
+    .admin-form-container {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .form-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #eee;
+    }
+
+        .form-header h2 {
+            font-size: 24px;
+            color: #444;
+        }
+
+    .btn-back {
+        background-color: #444;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .form-card {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .image-upload-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .image-upload-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-label {
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .current-image {
+        width: 100%;
+        max-height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .view-full {
+        font-size: 0.9rem;
+        color: #B88E2F;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .file-upload {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .upload-input {
+        display: none;
+    }
+
+    .upload-label {
+        cursor: pointer;
+        padding: 12px;
+        background: #f4f4f4;
+        border: 1px dashed #ccc;
+        border-radius: 6px;
+        width: 100%;
+        text-align: center;
+        transition: background 0.3s;
+    }
+
+        .upload-label:hover {
+            background: #fff;
+            border-color: #B88E2F;
+        }
+
+        .upload-label i {
+            color: #B88E2F;
+            margin-left: 10px;
+        }
+
+    .form-actions {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+
+    .btn-submit {
+        background: #B88E2F;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 6px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .btn-cancel {
+        background: #eee;
+        color: #333;
+        padding: 10px 20px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+        .btn-cancel:hover {
+            background: #ddd;
+        }
+</style>

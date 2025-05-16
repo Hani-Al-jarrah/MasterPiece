@@ -94,12 +94,13 @@
                         <div class="follow_us">
                             <ul>
                                 <li>Follow us</li>
-                                <li><a href="#0"><i class="bi bi-facebook"></i></a></li>
-                                <li><a href="#0"><i class="bi bi-twitter-x"></i></a></li>
-                                <li><a href="#0"><i class="bi bi-instagram"></i></a></li>
-                                <li><a href="#0"><i class="bi bi-tiktok"></i></a></li>
-                                <li><a href="#0"><i class="bi bi-whatsapp"></i></a></li>
+                                <li><a href="https://www.facebook.com/YourPage" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/YourProfile" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+                                <li><a href="https://www.instagram.com/YourProfile" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="https://www.tiktok.com/YourProfile" target="_blank"><i class="bi bi-tiktok"></i></a></li>
+                                <li><a href="https://wa.me/YourPhoneNumber" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
                             </ul>
+
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 ms-lg-auto">
@@ -124,22 +125,8 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <ul id="footer-selector">
-                            <li>
-                                <div class="styled-select" id="lang-selector">
-                                    <select>
-                                        <option value="English" selected>English</option>
-                                        <option value="Arabic">Arabic</option>
-                                    </select>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="styled-select" id="currency-selector">
-                                    <select>
-                                        <option value="USD">USD</option>
-                                        <option value="JOD" selected>Jor Dinar</option>
-                                    </select>
-                                </div>
-                            </li>
+                         
+                  
                             <li><img src="~/Images/img/cards_all.svg" alt=""></li>
                         </ul>
                     </div>
@@ -206,8 +193,8 @@
             <form asp-controller="User" asp-action="Login" method="post">
                 <div class="sign-in-wrapper">
                     <!-- Google Login -->
-                    <a href="#0" class="social_bt google">Login with Google</a>
-                    <div class="divider"><span>Or</span></div>
+            @*         <a href="#0" class="social_bt google">Login with Google</a>
+                    <div class="divider"><span>Or</span></div> *@
 
                     <!-- Email Input -->
                     <div class="form-group">
@@ -224,7 +211,7 @@
                     </div>
 
                     <!-- Remember Me & Forgot Password -->
-                    <div class="clearfix add_bottom_15">
+             @*        <div class="clearfix add_bottom_15">
                         <div class="checkboxes float-start">
                             <label class="container_check">
                                 Remember me
@@ -234,9 +221,9 @@
                         </div>
                         @* 	<div class="float-end mt-1">
                         <a asp-controller="User" asp-action="ForgotPassword">Forgot Password?</a>
-                        </div> *@
+                        </div> 
                         <div class="float-end mt-1"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
-                    </div>
+                    </div> *@
 
                     <!-- Error Message -->
                     @if (TempData["ErrorMessage"] != null)

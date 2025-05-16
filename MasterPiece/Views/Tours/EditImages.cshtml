@@ -45,10 +45,10 @@
     <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
     <a asp-action="Index" class="btn btn-secondary mt-3">Cancel</a>
 </form>
+
  *@
 
-
- @model MasterPiece.Models.Image
+@*  @model MasterPiece.Models.Image
 @{
     ViewData["Title"] = "Edit Tour Images";
     Layout = "Admin";
@@ -89,6 +89,7 @@
                         </label>
                     </div>
                 </div>
+
 
                 <!-- Image 2 -->
                 <div class="image-upload-group">
@@ -147,8 +148,93 @@
             </div>
         </form>
     </div>
-</div>
+</div> *@
 
+
+@model MasterPiece.Models.Image
+@{
+    ViewData["Title"] = "Edit Tour Images";
+    Layout = "Admin";
+}
+
+<div class="admin-form-container">
+    <div class="form-header">
+        <h2><i class="fas fa-images"></i> Edit Images for Tour</h2>
+        <a asp-action="Index" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Back to Tours
+        </a>
+    </div>
+
+    <div class="form-card">
+        <form asp-action="EditImages" enctype="multipart/form-data" method="post" class="image-edit-form">
+            <input type="hidden" name="id" value="@Model.TourId" />
+
+            <div class="image-upload-grid">
+                <!-- Image 1 -->
+                <div class="image-upload-group">
+                    <label class="form-label"><i class="fas fa-image"></i> Image 1</label>
+                    <div class="current-image-container">
+                        <img id="preview1" class="current-image" src="@Model.ImageUrl1" onerror="this.src='/img/default.jpg'" />
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl1))
+                        {
+                            <a href="@Model.ImageUrl1" target="_blank" class="view-full">View Full Size</a>
+                        }
+                    </div>
+                    <div class="file-upload">
+                        <label class="upload-label">
+                            <input type="file" name="Image1" class="upload-input" onchange="previewImage(this, 'preview1')" />
+                            <span class="upload-text">Upload / Change</span>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="image-upload-group">
+                    <label class="form-label"><i class="fas fa-image"></i> Image 2</label>
+                    <div class="current-image-container">
+                        <img id="preview2" class="current-image" src="@Model.ImageUrl2" onerror="this.src='/img/default.jpg'" />
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl2))
+                        {
+                            <a href="@Model.ImageUrl2" target="_blank" class="view-full">View Full Size</a>
+                        }
+                    </div>
+                    <div class="file-upload">
+                        <label class="upload-label">
+                            <input type="file" name="Image2" class="upload-input" onchange="previewImage(this, 'preview2')" />
+                            <span class="upload-text">Upload / Change</span>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="image-upload-group">
+                    <label class="form-label"><i class="fas fa-image"></i> Image 3</label>
+                    <div class="current-image-container">
+                        <img id="preview3" class="current-image" src="@Model.ImageUrl3" onerror="this.src='/img/default.jpg'" />
+                        @if (!string.IsNullOrEmpty(Model.ImageUrl3))
+                        {
+                            <a href="@Model.ImageUrl3" target="_blank" class="view-full">View Full Size</a>
+                        }
+                    </div>
+                    <div class="file-upload">
+                        <label class="upload-label">
+                            <input type="file" name="Image3" class="upload-input" onchange="previewImage(this, 'preview3')" />
+                            <span class="upload-text">Upload / Change</span>
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-submit"><i class="fas fa-save"></i> Save Changes</button>
+                <a asp-action="Index" class="btn-cancel"><i class="fas fa-times"></i> Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
 <style>
     /* Edit Tour Images Page Styles */
     .admin-form-container {

@@ -76,14 +76,21 @@ namespace MasterPiece.Controllers
 			_logger = logger;
 			_context = context;
 		}
+        public IActionResult Index()
+        {
+            var houses = _context.Houses.Take(5).ToList();
+            var tours = _context.Tours.Take(4).ToList();
 
-		public IActionResult Index()
-		{
-			return View();
-		}
+            ViewBag.Houses = houses;
+            ViewBag.Tours = tours;
 
-		public IActionResult About()
+            return View();
+        }
+
+        public IActionResult About()
 		{
+			var userCount = _context.Users.Count();
+			ViewBag.UserCount = userCount;
 			return View();
 		}
 
@@ -177,7 +184,8 @@ namespace MasterPiece.Controllers
             var tour = _context.Tours.FirstOrDefault(t => t.Id == id);
 			if (tour == null) return NotFound();
 
-			var reviews = _context.Feedbacks
+            var images = _context.Images.FirstOrDefault(i => i.TourId == id);
+            var reviews = _context.Feedbacks
 				.Where(r => r.TourId == id)
 				.OrderByDescending(r => r.CreatedAt)
 				.ToList();
@@ -187,8 +195,8 @@ namespace MasterPiece.Controllers
 				.Sum(b => b.Guests);
 
 			var remainingSpots = (tour.MaxGuests ?? 0) - totalGuests;
-
-			ViewBag.Reviews = reviews;
+            ViewBag.Images = images;
+            ViewBag.Reviews = reviews;
 			ViewBag.RemainingSpots = remainingSpots;
 			ViewBag.UserId = HttpContext.Session.GetInt32("UserId");
 			ViewBag.UserEmail = HttpContext.Session.GetString("UserEmail");

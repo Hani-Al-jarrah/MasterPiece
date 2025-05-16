@@ -51,6 +51,7 @@
                     <th>Subject</th>
                     <th>Message</th>
                     <th>Date</th>
+                    <th>Reply</th>
                 </tr>
             </thead>
             <tbody>
@@ -66,9 +67,17 @@
                             </div>
                         </td>
                         <td>@msg.CreatedAt</td>
+                        <td>
+                            <a class="btn btn-sm btn-outline-primary"
+                               href="https://mail.google.com/mail/?view=cm&fs=1&to=@msg.Email"
+                               target="_blank">
+                                <i class="fas fa-reply"></i> Reply
+                            </a>
+                        </td>
                     </tr>
                 }
             </tbody>
+
         </table>
     </div>
 </div>

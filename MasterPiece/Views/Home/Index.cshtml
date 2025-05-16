@@ -1,10 +1,42 @@
 ﻿@{
+	Layout = "DarNaLayout";
+	var houses = ViewBag.Houses as List<MasterPiece.Models.House>;
+	var tours = ViewBag.Tours as List<MasterPiece.Models.Tour>;
+}
+
+@{
     ViewData["Title"] = "Home Page";
 }
 @{
     Layout = "DarNaLayout";
 }
+<style>
+	.tour-card-figure {
+		position: relative;
+		height: 300px; /* Match your desired card size */
+		overflow: hidden;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	}
 
+	.tour-image-fixed {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.tour-card-figure .info {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 15px;
+		background: rgba(0, 0, 0, 0.4);
+		color: white;
+		width: 100%;
+	}
+
+</style>
 <main>
 	<section class="hero_single cat_hover">
 		<div class="wrapper">
@@ -59,68 +91,7 @@
 
 
 
-				@* <section>
-					<div>
-						<div class="container">
-							<br>
-							<br>
-							<br>
-							<br>
-
-
-							<form asp-controller="Dar" asp-action="Index" method="get">
-								<div class="row g-0 custom-search-input-2">
-									<!-- Location Dropdown -->
-									<div class="col-lg-4">
-										<div class="form-group">
-											<select class="form-control" name="location">
-												<option value="">Select City</option>
-												<option>Amman</option>
-												<option>Zarqa</option>
-												<option>Irbid</option>
-												<option>Ajloun</option>
-												<option>Jerash</option>
-												<option>Madaba</option>
-												<option>Salt</option>
-												<option>Karak</option>
-												<option>Ma'an</option>
-												<option>Aqaba</option>
-											</select>
-											<i class="icon_pin_alt"></i>
-										</div>
-									</div>
-
-									<!-- Date Picker -->
-									<div class="col-lg-3">
-										<div class="form-group">
-											<input class="form-control" type="date" name="fromDate" placeholder="Check-in">
-											<i class="icon_calendar"></i>
-										</div>
-									</div>
-									<div class="col-lg-3">
-										<div class="form-group">
-											<input class="form-control" type="date" name="toDate" placeholder="Check-out">
-											<i class="icon_calendar"></i>
-										</div>
-									</div>
-
-									<!-- Guests -->
-									<div class="col-lg-2">
-										<div class="form-group">
-											<input class="form-control" type="number" name="guests" placeholder="Guests" min="1" value="1">
-										</div>
-									</div>
-
-									<!-- Search -->
-									<div class="col-lg-12 mt-3">
-										<input type="submit" class="btn_search w-100" value="Search">
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</div>
-				</section> *@
+				
 
 			</div>
 		</div>
@@ -138,190 +109,47 @@
 
 		</div>
 		<div id="reccomended" class="owl-carousel owl-theme" data-cue="zoomIn">
-			<div class="item">
-				<div class="box_grid">
-					<figure>
-						<a href="#0" class="wish_bt"></a>
-						<a href="tour-detail.html">
-							<img src="~/Images/img/petra4.jpg" class="img-fluid" alt="Petra" width="800" height="533">
-							<div class="read_more"><span>Read more</span></div>
-						</a>
-						<small>Historic Landmark</small>
-					</figure>
-					<div class="wrapper">
-						<h3><a href="tour-detail.html">Discover Petra</a></h3>
-						<p>
-							Explore the ancient Nabatean city, carved into rose-red cliffs, and walk through the
-							famous Siq to the iconic Treasury, discovering hidden tombs and temples.
-						</p>
-						<span class="price">From <strong>70 JD</strong> / per person</span>
+			@foreach (var house in houses)
+			{
+				<div class="item">
+					<div class="box_grid">
+						<figure>
+					@* 		<a asp-controller="Dar" asp-action="Details" asp-route-id="@house.Id" class="wish_bt"></a> *@
+							<a asp-controller="Dar" asp-action="Details" asp-route-id="@house.Id">
+								<img src="@house.ImageUrl" class="img-fluid" alt="@house.Name" width="800" height="533">
+								<div class="read_more"><span>Read more</span></div>
+							</a>
+							<small>@house.TypeName</small>
+						</figure>
+						<div class="wrapper">
+							<h3>
+								<a asp-controller="Dar" asp-action="Details" asp-route-id="@house.Id">
+									@house.Name
+								</a>
+							</h3>
+							<p>@(house.Description.Length > 100 ? house.Description.Substring(0, 100) + "..." : house.Description)</p>
+							<span class="price">From <strong>@house.Price JD</strong> / per night</span>
+						</div>
+						<ul>
+							<li> <i class="icon_star voted"></i> @house.Stars Stars</li>
+							<li>
+								<div class="score">
+									<span>Great<em>Reviews</em></span>
+									<strong>@(house.Rate)</strong>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<ul>
-						<li><i class="icon_clock_alt"></i> 1 Day Tour</li>
-						<li>
-							<div class="score">
-								<span>Superb<em>500+ Reviews</em></span><strong>9.5</strong>
-							</div>
-						</li>
-					</ul>
-
 				</div>
-			</div>
-			<!-- /item -->
-			<div class="item">
-				<div class="box_grid">
-					<figure>
-						<a href="#0" class="wish_bt"></a>
-						<a href="tour-detail.html">
-							<img src="~/Images/img/salt.jpeg" class="img-fluid" alt="As-Salt" width="800" height="533">
-							<div class="read_more"><span>Read more</span></div>
-						</a>
-						<small>Historic & Cultural</small>
-					</figure>
-					<div class="wrapper">
-						<h3><a href="tour-detail.html">Explore the Historic City of Al-Salt</a></h3>
-						<p>
-							Wander through the charming alleys of As-Salt, a UNESCO World Heritage site, known
-							for its Ottoman-era architecture, vibrant souks, historic houses, and cultural
-							landmarks.
-						</p> <span class="price">From <strong>45 JD</strong> / per person</span>
-					</div>
-					<ul>
-						<li><i class="icon_clock_alt"></i> 1 Day Tour</li>
-						<li>
-							<div class="score">
-								<span>Excellent<em>250+ Reviews</em></span><strong>9.0</strong>
-							</div>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-			<!-- /item -->
-			<div class="item">
-				<div class="box_grid">
-					<figure>
-						<a href="#0" class="wish_bt"></a>
-						<a href="tour-detail.html">
-							<img src="~/Images/img/ajlounForest.jpg" class="img-fluid" alt="Ajloun Forest" width="800"
-								 height="533">
-							<div class="read_more"><span>Read more</span></div>
-						</a>
-						<small>Nature & Adventure</small>
-					</figure>
-					<div class="wrapper">
-						<h3><a href="tour-detail.html">Explore the Beauty of Ajloun Forest</a></h3>
-						<p>
-							Discover the lush landscapes of Ajloun Forest, home to diverse wildlife, scenic
-							hiking trails, and the famous Ajloun Castle overlooking the Jordanian hills.
-						</p>
-						<span class="price">From <strong>50 JD</strong> / per person</span>
-					</div>
-					<ul>
-						<li><i class="icon_clock_alt"></i> 1 Day Tour</li>
-						<li>
-							<div class="score">
-								<span>Amazing<em>280+ Reviews</em></span><strong>9.2</strong>
-							</div>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-			<!-- /item -->
-			<div class="item">
-				<div class="box_grid">
-					<figure>
-						<a href="#0" class="wish_bt"></a>
-						<a href="tour-detail.html">
-							<img src="~/Images/img/wadiRum.jpg" class="img-fluid1" alt="Wadi Rum">
-							<div class="read_more"><span>Read more</span></div>
-						</a>
-						<small>Desert Adventure</small>
-					</figure>
-					<div class="wrapper">
-						<h3><a href="tour-detail.html">Explore the Majestic Desert Landscapes</a></h3>
-						<p>
-							Experience the breathtaking scenery of Wadi Rum, known as the "Valley of the Moon."
-							Ride a jeep across the red sand dunes, discover ancient petroglyphs, and enjoy a
-							traditional Bedouin camp under the starry sky.
-						</p>
-						<span class="price">From <strong>$65</strong> / per person</span>
-					</div>
-					<ul>
-						<li><i class="icon_clock_alt"></i> 1 Day Tour</li>
-						<li>
-							<div class="score">
-								<span>Excellent<em>400+ Reviews</em></span><strong>9.5</strong>
-							</div>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-			<!-- /item -->
-			<div class="item">
-				<div class="box_grid">
-					<figure>
-						<a href="#0" class="wish_bt"></a>
-						<a href="tour-detail.html">
-							<img src="~/Images/img/wadi hidan.jpeg" class="img-fluid"
-								 alt="Wadi Hidan" width="800" height="533">
-							<div class="read_more"><span>Read more</span></div>
-						</a>
-						<small>Wadi Hidan</small>
-					</figure>
-					<div class="wrapper">
-						<h3><a href="tour-detail.html">Swim and Trek Through Scenic Water Trails</a></h3>
-						<p>
-							Experience the beauty of Wadi Hidan with a full-day trek through crystal-clear waters
-							and scenic landscapes. Explore stunning trails and enjoy a refreshing swim.
-						</p>
-						<span class="price">From <strong>45 JD</strong> /per person</span>
-					</div>
-					<ul>
-						<li><i class="icon_clock_alt"></i> 1 day</li>
-						<li>
-							<div class="score"><span>Superb<em>350 Reviews</em></span><strong>9.0</strong></div>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-			<!-- /item -->
-			<div class="item">
-				<div class="box_grid">
-					<figure>
-						<a href="#0" class="wish_bt"></a>
-						<a href="tour-detail.html">
-							<img src="~/Images/img/DeadSea1.jpg" class="img-fluid" alt="Dead Sea"
-								 width="800" height="533">
-							<div class="read_more"><span>Read more</span></div>
-						</a>
-						<small>Dead Sea</small>
-					</figure>
-					<div class="wrapper">
-						<h3><a href="tour-detail.html">Experience the World’s Saltiest Waters</a></h3>
-						<p>
-							Immerse yourself in the therapeutic waters of the Dead Sea, the saltiest body of
-							water in the world. Enjoy floating effortlessly and rejuvenating your skin with the
-							mineral-rich mud.
-						</p>
-						<span class="price">From <strong>60 JD</strong> /per person</span>
-					</div>
-					<ul>
-						<li><i class="icon_clock_alt"></i> 1 day</li>
-						<li>
-							<div class="score"><span>Superb<em>350 Reviews</em></span><strong>9.5</strong></div>
-						</li>
-					</ul>
-
-				</div>
-			</div>
-			<!-- /item -->
+			}
 		</div>
+
+
 		<!-- /carousel -->
-		<p class="btn_home_align"><a href="adventure.html" class="btn_1 rounded">View all Tours</a></p>
+		<p class="btn_home_align">
+			<a href="@Url.Action("Index", "Dar")" class="btn_1 rounded">View all Tours</a>
+		</p>
+
 		<hr class="large">
 	</div>
 
@@ -339,7 +167,47 @@
 				</p>
 
 			</div>
+
 			<div class="row" data-cues="slideInUp">
+				@foreach (var tour in tours)
+				{
+					@* <div class="col-xl-3 col-lg-6 col-md-6 mb-4">
+						<a asp-controller="Home" asp-action="TourDetails" asp-route-id="@tour.Id" class="grid_item">
+							<figure>
+
+								<img src="@tour.ImageUrl" alt="@tour.Name" class="tour-image-fixed" />
+
+								<div class="info">
+									<div class="cat_star">
+										@for (int i = 0; i < 4; i++)
+										{
+											<i class="icon_star"></i>
+										}
+									</div>
+									<h3>@tour.Name</h3>
+									<p class="mb-1"><i class="icon_clock_alt"></i> @tour.Duration</p>
+									<p class="mb-1">From @tour.Price JD / person</p>
+								</div>
+							</figure>
+						</a>
+					</div> *@
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<a asp-action="Details" asp-controller="Tours" asp-route-id="@tour.Id" class="grid_item">
+							<figure class="tour-card-figure">
+								<img src="@tour.ImageUrl" alt="@tour.Name" class="tour-image-fixed" />
+								<div class="info">
+									<div class="cat_star">
+										<i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i><i class="icon_star"></i>
+									</div>
+									<h3>@tour.Name</h3>
+								</div>
+							</figure>
+						</a>
+					</div>
+
+				}
+			</div>
+			@* <div class="row" data-cues="slideInUp">
 				<div class="col-xl-3 col-lg-6 col-md-6">
 					<a href="hotel-detail.html" class="grid_item">
 						<figure>
@@ -401,14 +269,15 @@
 					</a>
 				</div>
 				<!-- /grid_item -->
-			</div>
+			</div> *@
 
 			<!-- /row -->
-			<a href="hotels-grid-isotope.html">
+			<a asp-controller="Home" asp-action="Tours">
 				<strong>
-					View all  <i class="arrow_carrot-right"></i>
+					View all <i class="arrow_carrot-right"></i>
 				</strong>
 			</a>
+
 		</section>
 		<!-- /section -->
 
@@ -421,7 +290,8 @@
 					<small>Adventure</small>
 					<h3>Your Perfect<br>Advenure Experience</h3>
 					<p>Activities and accommodations</p>
-					<a href="adventure.html" class="btn_1">Read more</a>
+					<a href="@Url.Action("Tours", "Home")" class="btn_1">Read more</a>
+
 				</div>
 			</div>
 			<!-- /wrapper -->
@@ -516,7 +386,7 @@
 				<!-- /box_news -->
 			</div>
 			<!-- /row -->
-			<p class="btn_home_align"><a href="blog.html" class="btn_1 rounded">View all news</a></p>
+
 		</div>
 		<!-- /container -->
 	</div>

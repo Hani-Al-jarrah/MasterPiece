@@ -103,7 +103,12 @@
                         <label asp-for="Duration" class="form-label">
                             <i class="fas fa-clock"></i> Duration
                         </label>
-                        <input asp-for="Duration" class="form-input" placeholder="e.g. 3 hours" />
+                        <input asp-for="Duration" class="form-input"
+                               placeholder="e.g. 4 hours or 2 days"
+                               pattern="^\d+\s*(hour|hours|day|days)$"
+                               title="Use format like '4 hours' or '2 days'"
+                               required />
+
                         <span asp-validation-for="Duration" class="form-error"></span>
                     </div>
 
@@ -148,7 +153,9 @@
                         <label asp-for="EndDate" class="form-label">
                             <i class="fas fa-calendar-day"></i> End Date
                         </label>
-                        <input asp-for="EndDate" type="date" class="form-input" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        <input asp-for="EndDate" type="date" class="form-input" readonly />
+               
+
                         <span asp-validation-for="EndDate" class="form-error"></span>
                     </div>
 
@@ -156,7 +163,7 @@
                         <label asp-for="EndTime" class="form-label">
                             <i class="fas fa-clock"></i> End Time
                         </label>
-                        <input asp-for="EndTime" type="time" class="form-input" />
+                        <input asp-for="EndTime" type="time" class="form-input" readonly />
                         <span asp-validation-for="EndTime" class="form-error"></span>
                     </div>
                 </div>
@@ -432,3 +439,46 @@
         }
     }
 </style>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const durationInput = document.querySelector('[name="Duration"]');
+            const startDateInput = document.querySelector('[name="StartDate"]');
+            const startTimeInput = document.querySelector('[name="StartTime"]');
+            const endDateInput = document.querySelector('[name="EndDate"]');
+            const endTimeInput = document.querySelector('[name="EndTime"]');
+
+            function updateEndDateTime() {
+                const durationText = durationInput.value.toLowerCase();
+                const hoursMatch = durationText.match(/(\d+)\s*hour/);
+                const daysMatch = durationText.match(/(\d+)\s*day/);
+
+                const date = startDateInput.value;
+                const time = startTimeInput.value;
+
+                if (!date || !time) return;
+
+                const start = new Date(`${date}T${time}`);
+
+                if (hoursMatch) {
+                    const hours = parseInt(hoursMatch[1]);
+                    start.setHours(start.getHours() + hours);
+                } else if (daysMatch) {
+                    const days = parseInt(daysMatch[1]);
+                    start.setDate(start.getDate() + days);
+                } else {
+                    return;
+                }
+
+                // Set calculated values
+                endDateInput.value = start.toISOString().slice(0, 10);
+                endTimeInput.value = start.toTimeString().slice(0, 5);
+            }
+
+            // Watch changes
+            durationInput.addEventListener("input", updateEndDateTime);
+            startDateInput.addEventListener("change", updateEndDateTime);
+            startTimeInput.addEventListener("change", updateEndDateTime);
+        });
+    </script>
+

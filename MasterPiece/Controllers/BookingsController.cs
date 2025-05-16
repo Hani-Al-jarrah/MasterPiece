@@ -462,6 +462,38 @@ namespace MasterPiece.Controllers
 
             return RedirectToAction("TourCart1", new { bookingId = booking.Id });
         }
+
+
+
+        [HttpPost]
+        public IActionResult CancelTourBooking(int id)
+        {
+            var booking = _context.TourBookings
+                .Include(b => b.Tour)
+                .FirstOrDefault(b => b.Id == id);
+
+            if (booking == null || (booking.Status != "Pending" && booking.Status != "Confirmed"))
+            {
+                TempData["Error"] = "Invalid or non-cancelable booking.";
+                return RedirectToAction("Profile", "User");
+            }
+
+            var tourDate = booking.Tour?.StartDate;
+            if (tourDate == null || tourDate <= DateOnly.FromDateTime(DateTime.Today.AddDays(2)))
+            {
+                TempData["Error"] = "Cancellations must be made at least 2 days before the tour date.";
+                return RedirectToAction("Profile", "User");
+            }
+
+            booking.Status = "Cancelled";
+            _context.SaveChanges();
+
+            TempData["Success"] = "Tour booking canceled successfully.";
+            return RedirectToAction("Profile", "User");
+        }
+
+
+
         public IActionResult TourCart1(int bookingId)
         {
             var booking = _context.TourBookings

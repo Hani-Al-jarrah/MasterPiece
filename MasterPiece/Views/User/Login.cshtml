@@ -65,11 +65,11 @@
 
 			<form asp-controller="User" asp-action="Login" method="post">
 				<!-- Social Login Buttons -->
-				<div class="access_social">
+	@* 			<div class="access_social">
 					<a href="#0" class="social_bt google">Login with Google</a>
 				</div>
 
-				<div class="divider"><span>Or</span></div>
+				<div class="divider"><span>Or</span></div> *@
 
 				<!-- Email Input -->
 				<div class="form-group">
@@ -86,7 +86,7 @@
 				</div>
 
 				<!-- Remember Me & Forgot Password -->
-				<div class="clearfix add_bottom_30">
+			@* 	<div class="clearfix add_bottom_30">
 					<div class="checkboxes float-start">
 						<label class="container_check">
 							Remember me
@@ -98,7 +98,7 @@
 						<a asp-controller="User" asp-action="ForgotPassword" id="forgot">Forgot Password?</a>
 					</div>
 				</div>
-
+ *@
 				<div id="pass-info" class="clearfix">
 				@if (TempData["ErrorMessage"] != null)
 				{

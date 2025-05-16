@@ -148,19 +148,56 @@ namespace MasterPiece.Controllers
 		}
 
 
+        //public IActionResult Profile()
+        //{
+        //    var userId = HttpContext.Session.GetInt32("UserId");
+        //    if (userId == null)
+        //    {
+        //        return RedirectToAction("Login", "User");
+        //    }
+
+        //    var user = _context.Users.Find(userId);
+        //    if (user == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var houseBookings = _context.HouseBookings
+        //        .Include(h => h.House)
+        //        .Where(h => h.UserId == userId)
+        //        .ToList();
+
+        //    var tourBookings = _context.TourBookings
+        //        .Include(t => t.Tour)
+        //        .Where(t => t.UserId == userId)
+        //        .ToList();
+
+        //    var wishlist = _context.Wishlists
+        //        .Include(w => w.House)
+        //        .Where(w => w.UserId == userId)
+        //        .ToList();
+
+        //    var payments = _context.Payments
+        //        .Where(p => p.UserId == userId)
+        //        .ToList();
+
+        //    ViewBag.User = user;
+        //    ViewBag.HouseBookings = houseBookings;
+        //    ViewBag.TourBookings = tourBookings;
+        //    ViewBag.Wishlist = wishlist;
+        //    ViewBag.Payments = payments;
+
+        //    return View();
+        //}
         public IActionResult Profile()
         {
             var userId = HttpContext.Session.GetInt32("UserId");
             if (userId == null)
-            {
                 return RedirectToAction("Login", "User");
-            }
 
             var user = _context.Users.Find(userId);
             if (user == null)
-            {
                 return NotFound();
-            }
 
             var houseBookings = _context.HouseBookings
                 .Include(h => h.House)
@@ -172,14 +209,55 @@ namespace MasterPiece.Controllers
                 .Where(t => t.UserId == userId)
                 .ToList();
 
+            bool anyTourCancelled = false;
+            bool anyHouseCancelled = false;
+
+            // Auto-cancel expired tours
+            foreach (var booking in tourBookings)
+            {
+                var tourDate = booking.Tour?.StartDate;
+                if ((booking.Status == "Pending" || booking.Status == "Confirmed") &&
+                    tourDate < DateOnly.FromDateTime(DateTime.Today))
+                {
+                    booking.Status = "Cancelled";
+                    anyTourCancelled = true;
+                }
+            }
+
+            // Auto-cancel expired houses
+            foreach (var booking in houseBookings)
+            {
+                if ((booking.Status == "Pending" || booking.Status == "Confirmed") &&
+                    booking.CheckInDate < DateOnly.FromDateTime(DateTime.Today))
+                {
+                    booking.Status = "Cancelled";
+                    anyHouseCancelled = true;
+                }
+            }
+
+            if (anyTourCancelled || anyHouseCancelled)
+                _context.SaveChanges();
+
+            if (anyTourCancelled)
+                TempData["CancelledTours"] = "Some of your tour bookings were automatically canceled due to missed payment deadlines.";
+
+            if (anyHouseCancelled)
+                TempData["CancelledHouses"] = "Some of your house bookings were automatically canceled due to missed payment deadlines.";
+
             var wishlist = _context.Wishlists
                 .Include(w => w.House)
                 .Where(w => w.UserId == userId)
                 .ToList();
 
+            //var payments = _context.Payments
+            //    .Where(p => p.UserId == userId)
+            //    .ToList();
             var payments = _context.Payments
-                .Where(p => p.UserId == userId)
-                .ToList();
+    .Where(p => p.UserId == userId)
+    .Include(p => p.Booking).ThenInclude(b => b.House)
+    .Include(p => p.TourBooking).ThenInclude(tb => tb.Tour)
+    .ToList();
+
 
             ViewBag.User = user;
             ViewBag.HouseBookings = houseBookings;
@@ -260,7 +338,7 @@ namespace MasterPiece.Controllers
 
             if (ImageFile != null && ImageFile.Length > 0)
             {
-                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Uploads");
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "UserImages");
                 var uniqueFileName = Guid.NewGuid().ToString() + "_" + ImageFile.FileName;
                 var filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
@@ -269,7 +347,7 @@ namespace MasterPiece.Controllers
                     await ImageFile.CopyToAsync(stream);
                 }
 
-                user.ImageUrl = "/Uploads/" + uniqueFileName;
+                user.ImageUrl = "/UserImages/" + uniqueFileName;
             }
 
             await _context.SaveChangesAsync();

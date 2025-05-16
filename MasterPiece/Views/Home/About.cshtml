@@ -1,6 +1,14 @@
 ﻿@{
     Layout = "DarNaLayout";
 }
+<style>
+	.hero_in.tours:before {
+		background: url(/Images/img/Petra_hero.png) center center/cover no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover
+	}
+</style>
 <main>
 
 	<section class="hero_in general">
@@ -26,48 +34,49 @@
 			<div class="col-lg-4 col-md-6">
 				<a class="box_feat" href="#0">
 					<i class="pe-7s-medal"></i>
-					<h3>+ 1000 Customers</h3>
-					<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
+					<h3>+ @ViewBag.UserCount Customers</h3>
+					<p>Trusted by over @ViewBag.UserCount satisfied guests who enjoyed personalized stays, cultural warmth, and exceptional service across Jordan.</p>
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a class="box_feat" href="#0">
 					<i class="pe-7s-help2"></i>
 					<h3>H24 Support</h3>
-					<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
+					<p>Our team is available 24/7 to assist you with any questions or concerns, ensuring a smooth and stress-free experience.</p>
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a class="box_feat" href="#0">
 					<i class="pe-7s-culture"></i>
 					<h3>+ 575 Locations</h3>
-					<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
+					<p>Discover unique stays across 575+ handpicked locations throughout Jordan, from ancient towns to scenic hideaways.</p>
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a class="box_feat" href="#0">
 					<i class="pe-7s-headphones"></i>
 					<h3>Help Direct Line</h3>
-					<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
+					<p>Need help? Contact our direct support line anytime for immediate assistance from a dedicated DarNa representative.</p>
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a class="box_feat" href="#0">
 					<i class="pe-7s-credit"></i>
 					<h3>Secure Payments</h3>
-					<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
+					<p>Book with confidence using our encrypted and secure payment system that protects your data every step of the way.</p>
 				</a>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<a class="box_feat" href="#0">
 					<i class="pe-7s-chat"></i>
 					<h3>Support via Chat</h3>
-					<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
+					<p>Chat with our friendly support team in real-time for quick answers, booking help, or personalized recommendations.</p>
 				</a>
 			</div>
 		</div>
 		<!--/row-->
 	</div>
+
 	<!-- /container -->
 
 	<div class="bg_color_1">
