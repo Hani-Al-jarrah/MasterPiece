@@ -78,6 +78,15 @@
             <i class="fas fa-plus"></i> Add New House
         </a>
     </div>
+    <form asp-action="Index" method="get" class="mb-4 d-flex align-items-center">
+        <input type="text" name="search" value="@ViewBag.Search" class="form-control me-2" placeholder="Search by name or location..." style="max-width: 300px;">
+        <button type="submit" class="btn btn-dark">
+            <i class="fas fa-search"></i> Search
+        </button>
+        <a href="@Url.Action("Index", "Houses")" class="btn btn-outline-secondary ms-2">
+            <i class="fas fa-times"></i> Clear
+        </a>
+    </form>
 
     <div class="card table-card">
         <div class="card-body">
@@ -148,6 +157,21 @@
 </div>
 
 <style>
+    /* filter Styles */
+    form input[type="text"] {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    form button {
+        padding: 8px 15px;
+        margin-left: 5px;
+    }
+
+
+
+
     /* House Management Page Styles */
     .admin-page-container {
         padding: 20px;

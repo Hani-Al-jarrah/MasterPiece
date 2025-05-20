@@ -14,14 +14,28 @@ namespace MasterPiece.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
-        {
-            var houses = _context.Houses.ToList();
+		//public IActionResult Index()
+		//{
+		//    var houses = _context.Houses.ToList();
 
-            return View(houses);
-        }
-     
-        public IActionResult Create()
+		//    return View(houses);
+		//}
+		public IActionResult Index(string search)
+		{
+			var query = _context.Houses.AsQueryable();
+
+			if (!string.IsNullOrWhiteSpace(search))
+			{
+				query = query.Where(h => h.Name.Contains(search) || h.LocationName.Contains(search));
+			}
+
+			var houses = query.ToList();
+			ViewBag.Search = search;
+			return View(houses);
+		}
+
+
+		public IActionResult Create()
         {
             return View();
         }

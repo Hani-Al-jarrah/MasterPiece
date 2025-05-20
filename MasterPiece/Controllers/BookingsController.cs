@@ -560,15 +560,25 @@ namespace MasterPiece.Controllers
 
             var total = booking.Tour.Price * booking.Guests;
 
+            //var payment = new Payment
+            //{
+            //    BookingId = bookingId,
+            //    UserId = booking.UserId,
+            //    Amount = total,
+            //    PaymentMethod = paymentMethod,
+            //    Status = "Completed",
+            //    PaymentDate = DateTime.Now
+            //};
             var payment = new Payment
             {
-                BookingId = bookingId,
+                TourBookingId = bookingId, // ✅ Correct field for tour bookings
                 UserId = booking.UserId,
                 Amount = total,
                 PaymentMethod = paymentMethod,
                 Status = "Completed",
                 PaymentDate = DateTime.Now
             };
+
 
             _context.Payments.Add(payment);
             booking.Status = "Confirmed";

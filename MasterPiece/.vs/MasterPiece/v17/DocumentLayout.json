@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\contactmessages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\contactmessages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\contactmessagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\contactmessagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,28 +11,88 @@
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\bookings\\tourcart2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\bookings\\tourcart3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\bookings\\tourcart3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\houses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\houses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\housescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\housescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\shared\\darnalayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\shared\\darnalayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\houses\\showimages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\houses\\showimages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\dar\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\dar\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\home\\tourdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\home\\tourdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\bookings\\tourcart1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\bookings\\tourcart1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\bookings\\tourcart3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\bookings\\tourcart3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\bookings\\cart3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\bookings\\cart3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\wishlist\\mywishlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\wishlist\\mywishlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\contactmessages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\contactmessages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\contactmessagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\contactmessagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\shared\\darnalayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\shared\\darnalayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\home\\dar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -55,14 +107,6 @@
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -73,10 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\darcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\darcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\home\\tourdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\home\\tourdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\tourscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,20 +131,8 @@
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\houses\\editimages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\blogs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -131,24 +159,12 @@
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\shared\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\houses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\houses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\dar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\dar\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\bookings\\cart2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\bookings\\cart2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\bookings\\tourcart1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\bookings\\tourcart1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\bookings\\cart3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\bookings\\cart3.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\bookings\\cart1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -161,10 +177,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\housescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\housescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\payments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -187,10 +199,6 @@
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\tours\\showimages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\houses\\showimages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\houses\\showimages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\views\\houses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:views\\houses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -201,10 +209,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\models\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:models\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|solutionrelative:controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{843A64B2-4D93-4A22-B469-C24206DB3F01}|MasterPiece.csproj|c:\\users\\mac\\desktop\\masterpiece\\masterpiece\\wwwroot\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -218,7 +222,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -226,79 +230,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContactMessagesController.cs",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\ContactMessagesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ContactMessagesController.cs",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\ContactMessagesController.cs",
-              "RelativeToolTip": "Controllers\\ContactMessagesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T23:43:42.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DarNaLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Shared\\DarNaLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\DarNaLayout.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Shared\\DarNaLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\DarNaLayout.cshtml",
-              "ViewState": "AgIAALMAAAAAAAAAAADwv8AAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-25T17:07:46.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\User\\Profile.cshtml",
-              "RelativeDocumentMoniker": "Views\\User\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\User\\Profile.cshtml",
-              "RelativeToolTip": "Views\\User\\Profile.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwCIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-29T11:24:37.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BookingsController.cs",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\BookingsController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
               "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\BookingsController.cs",
               "RelativeToolTip": "Controllers\\BookingsController.cs",
-              "ViewState": "AgIAAP0AAAAAwGRmZmbmv+0BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADcCAAAAMDMzM3MhwDoCAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T19:08:03.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Dar\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Dar\\Details.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Dar\\Details.cshtml",
-              "RelativeToolTip": "Views\\Dar\\Details.cshtml",
-              "ViewState": "AgIAAM4AAAAAnJmZmZkuwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-13T17:29:35.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAAPgAAACY/////98wwAMBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:21:11.053Z",
               "EditorCaption": ""
             },
             {
@@ -309,27 +249,284 @@
               "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
               "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\PaymentsController.cs",
               "RelativeToolTip": "Controllers\\PaymentsController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-05T12:10:58.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T06:21:08.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T06:21:11.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T17:24:27.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HousesController.cs",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\HousesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HousesController.cs",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\HousesController.cs",
+              "RelativeToolTip": "Controllers\\HousesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T20:05:45.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Houses\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\Index.cshtml",
+              "RelativeToolTip": "Views\\Houses\\Index.cshtml",
+              "ViewState": "AgIAAI8AAAAAlZmZmRkWwJ8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T16:42:57.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TourCart2.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart2.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\TourCart2.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart2.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\TourCart2.cshtml",
+              "ViewState": "AgIAAHwBAAAAGjMzM7MfwC0BAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T21:53:39.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ShowImages.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\ShowImages.cshtml",
+              "RelativeDocumentMoniker": "Views\\Houses\\ShowImages.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\ShowImages.cshtml",
+              "RelativeToolTip": "Views\\Houses\\ShowImages.cshtml",
+              "ViewState": "AgIAAK8AAAAAAAAAAACMvRoBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-05T21:15:15.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Dar\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dar\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Dar\\Details.cshtml",
+              "RelativeToolTip": "Views\\Dar\\Details.cshtml",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAgwIcBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-13T17:29:35.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TourDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\TourDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\TourDetails.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\TourDetails.cshtml",
+              "RelativeToolTip": "Views\\Home\\TourDetails.cshtml",
+              "ViewState": "AgIAADwBAAAAOTMzM7MiwHABAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T17:21:34.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TourCart1.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart1.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\TourCart1.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart1.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\TourCart1.cshtml",
+              "ViewState": "AgIAABIAAABAm5mZmZkjwFwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T19:47:07.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAzszMzMwXwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T15:47:05.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TourCart3.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart3.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\TourCart3.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart3.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\TourCart3.cshtml",
+              "ViewState": "AgIAAEYAAAAAZ2ZmZqYnwFsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T22:13:06.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Cart3.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\Cart3.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\Cart3.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\Cart3.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\Cart3.cshtml",
+              "ViewState": "AgIAAKkAAAAAmJmZmZkLwCcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T09:11:11.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MyWishList.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Wishlist\\MyWishList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Wishlist\\MyWishList.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Wishlist\\MyWishList.cshtml",
+              "RelativeToolTip": "Views\\Wishlist\\MyWishList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-17T17:28:50.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\style.css",
+              "RelativeToolTip": "wwwroot\\css\\style.css",
+              "ViewState": "AgIAAC8EAAAAAAAAAAAnwEsEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-29T08:18:56.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-29T08:18:53.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\WishlistController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WishlistController.cs",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\WishlistController.cs",
+              "RelativeToolTip": "Controllers\\WishlistController.cs",
+              "ViewState": "AgIAAC4AAAAAmJmZmRkUwF4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T09:04:49.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\ContactMessages\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\ContactMessages\\Index.cshtml",
               "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\ContactMessages\\Index.cshtml",
               "RelativeToolTip": "Views\\ContactMessages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAZmZmZqYowCkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-05T22:28:40.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\User\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\User\\Profile.cshtml",
+              "RelativeToolTip": "Views\\User\\Profile.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-29T11:24:37.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DarNaLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Shared\\DarNaLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\DarNaLayout.cshtml",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Shared\\DarNaLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\DarNaLayout.cshtml",
+              "ViewState": "AgIAALMAAAAAAAAAAADwv8AAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-25T17:07:46.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ContactMessagesController.cs",
+              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\ContactMessagesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ContactMessagesController.cs",
+              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\ContactMessagesController.cs",
+              "RelativeToolTip": "Controllers\\ContactMessagesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T23:43:42.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Dar.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\Dar.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Dar.cshtml",
@@ -341,33 +538,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TourCart3.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart3.cshtml",
-              "RelativeDocumentMoniker": "Views\\Bookings\\TourCart3.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart3.cshtml",
-              "RelativeToolTip": "Views\\Bookings\\TourCart3.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwCcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-09T22:13:06.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TourCart2.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart2.cshtml",
-              "RelativeDocumentMoniker": "Views\\Bookings\\TourCart2.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart2.cshtml",
-              "RelativeToolTip": "Views\\Bookings\\TourCart2.cshtml",
-              "ViewState": "AgIAAAEBAACAMjMzM/MkwOgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-09T21:53:39.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 25,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Contact.cshtml",
@@ -379,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\About.cshtml",
@@ -391,31 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\style.css",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "wwwroot\\css\\style.css",
-              "ViewState": "AgIAAC8EAAAAAAAAAAAnwEsEAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-29T08:18:56.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-29T08:18:53.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
@@ -427,7 +574,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -439,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "DarController.cs",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\DarController.cs",
               "RelativeDocumentMoniker": "Controllers\\DarController.cs",
@@ -451,19 +598,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TourDetails.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\TourDetails.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\TourDetails.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\TourDetails.cshtml",
-              "RelativeToolTip": "Views\\Home\\TourDetails.cshtml",
-              "ViewState": "AgIAAJcAAAAA9v///38awLoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-09T17:21:34.61Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "ToursController.cs",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\ToursController.cs",
               "RelativeDocumentMoniker": "Controllers\\ToursController.cs",
@@ -475,7 +610,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 30,
               "Title": "EditImages.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Tours\\EditImages.cshtml",
               "RelativeDocumentMoniker": "Views\\Tours\\EditImages.cshtml",
@@ -487,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 31,
               "Title": "EditImages.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\EditImages.cshtml",
               "RelativeDocumentMoniker": "Views\\Houses\\EditImages.cshtml",
@@ -499,7 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 42,
               "Title": "Tours.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\Tours.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Tours.cshtml",
@@ -511,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 43,
               "Title": "MyDbContext.cs",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Models\\MyDbContext.cs",
               "RelativeDocumentMoniker": "Models\\MyDbContext.cs",
@@ -523,31 +658,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "TourCart1.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart1.cshtml",
-              "RelativeDocumentMoniker": "Views\\Bookings\\TourCart1.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\TourCart1.cshtml",
-              "RelativeToolTip": "Views\\Bookings\\TourCart1.cshtml",
-              "ViewState": "AgIAADAAAAAANzMzM/MswFwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-09T19:47:07.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAALwAAAAAAAAAAAAqwM4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-10T15:47:05.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "Tour.cs",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Models\\Tour.cs",
               "RelativeDocumentMoniker": "Models\\Tour.cs",
@@ -559,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Payments\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Payments\\Index.cshtml",
@@ -571,7 +682,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Blogs\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Blogs\\Index.cshtml",
@@ -583,7 +694,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Feedback\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Feedback\\Index.cshtml",
@@ -595,7 +706,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Bookings\\Index.cshtml",
@@ -607,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Users\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
@@ -619,7 +730,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "ShowImages.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Tours\\ShowImages.cshtml",
               "RelativeDocumentMoniker": "Views\\Tours\\ShowImages.cshtml",
@@ -631,7 +742,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Tours\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Tours\\Edit.cshtml",
@@ -643,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Tours\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Tours\\Create.cshtml",
@@ -655,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Tours\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Tours\\Index.cshtml",
@@ -667,19 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "ShowImages.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\ShowImages.cshtml",
-              "RelativeDocumentMoniker": "Views\\Houses\\ShowImages.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\ShowImages.cshtml",
-              "RelativeToolTip": "Views\\Houses\\ShowImages.cshtml",
-              "ViewState": "AgIAAEQBAABgZ2ZmZqYowBoBAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T21:15:15.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Houses\\Edit.cshtml",
@@ -691,43 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "HousesController.cs",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\HousesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HousesController.cs",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\HousesController.cs",
-              "RelativeToolTip": "Controllers\\HousesController.cs",
-              "ViewState": "AgIAAAIAAACA9f///38ZwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T20:05:45.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T17:24:27.193Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Houses\\Index.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\Index.cshtml",
-              "RelativeToolTip": "Views\\Houses\\Index.cshtml",
-              "ViewState": "AgIAAGgAAAAAaGZmZmb0v3kAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-05T16:42:57.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Houses\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Houses\\Create.cshtml",
@@ -739,7 +802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "Admin.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Shared\\Admin.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Admin.cshtml",
@@ -751,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
@@ -763,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "House.cs",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Models\\House.cs",
               "RelativeDocumentMoniker": "Models\\House.cs",
@@ -775,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Dar\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Dar\\Index.cshtml",
@@ -787,19 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Cart3.cshtml",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\Cart3.cshtml",
-              "RelativeDocumentMoniker": "Views\\Bookings\\Cart3.cshtml",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\Cart3.cshtml",
-              "RelativeToolTip": "Views\\Bookings\\Cart3.cshtml",
-              "ViewState": "AgIAAHMAAAAANzMzM7MlwKgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-29T09:11:11.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "Cart2.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\Cart2.cshtml",
               "RelativeDocumentMoniker": "Views\\Bookings\\Cart2.cshtml",
@@ -811,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "custom.css",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\wwwroot\\css\\custom.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\custom.css",
@@ -823,7 +874,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "Cart1.cshtml",
               "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Views\\Bookings\\Cart1.cshtml",
               "RelativeDocumentMoniker": "Views\\Bookings\\Cart1.cshtml",
@@ -832,30 +883,6 @@
               "ViewState": "AgIAADEAAAAAAAAAAAAkwGkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-29T07:06:30.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "WishlistController.cs",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\WishlistController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WishlistController.cs",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\WishlistController.cs",
-              "RelativeToolTip": "Controllers\\WishlistController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAIBJwEYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T09:04:49.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\mac\\Desktop\\MasterPiece\\MasterPiece\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:21:08.753Z"
             }
           ]
         }

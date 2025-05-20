@@ -92,7 +92,7 @@ namespace MasterPiece.Controllers
             }
 
             _context.SaveChanges();
-            return RedirectToAction("Index", "Dar"); // Reload the list
+            return RedirectToAction("MyWishlist", "Wishlist"); // Reload the list
         }
 
 

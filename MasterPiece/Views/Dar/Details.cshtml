@@ -320,7 +320,7 @@
 
 
 @section Scripts {
-	<script>
+@* 	<script>
 		document.getElementById('reviewForm')?.addEventListener('submit', function (e) {
 			e.preventDefault();
 
@@ -346,8 +346,50 @@
 					console.error(err);
 				});
 		});
-	</script>
+	</script> *@
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script>
+		document.getElementById('reviewForm')?.addEventListener('submit', function (e) {
+			e.preventDefault();
 
+			const form = this;
+			const formData = new FormData(form);
+
+			fetch('/Feedback/SubmitHouseReviewAjax', {
+				method: 'POST',
+				body: formData
+			})
+				.then(res => res.json())
+				.then(data => {
+					if (data.success) {
+						Swal.fire({
+							icon: 'success',
+							title: 'Review Submitted!',
+							text: 'Thank you for your feedback.',
+							timer: 2000,
+							showConfirmButton: false
+						}).then(() => {
+							form.reset();
+							location.reload(); // Or dynamically add the new review
+						});
+					} else {
+						Swal.fire({
+							icon: 'error',
+							title: 'Oops...',
+							text: data.message || 'Something went wrong.'
+						});
+					}
+				})
+				.catch(err => {
+					console.error(err);
+					Swal.fire({
+						icon: 'error',
+						title: 'Error',
+						text: 'Unable to submit your review.'
+					});
+				});
+		});
+	</script>
 	
 
 	<script>

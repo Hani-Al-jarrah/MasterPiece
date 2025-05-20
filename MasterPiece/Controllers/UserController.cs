@@ -29,8 +29,19 @@ namespace MasterPiece.Controllers
 			// Find user by email
 			var user = _context.Users.FirstOrDefault(u => u.Email == Email);
 
-			if (Email == "Admin@gmail.com" && Password == "Admin") 
-			{ return RedirectToAction("Index", "Admin"); }
+			//if (Email == "Admin@gmail.com" && Password == "Admin") 
+			//{ return RedirectToAction("Index", "Admin"); }
+			if (Email == "Admin@gmail.com" && Password == "Admin")
+			{
+				// Set Admin session
+				HttpContext.Session.SetString("UserRole", "Admin");
+				HttpContext.Session.SetInt32("UserId", 0); // optional
+				HttpContext.Session.SetString("UserName", "Admin");
+				HttpContext.Session.SetString("UserImage", "admin.png"); // optional
+
+				return RedirectToAction("Index", "Admin");
+			}
+
 
 			if (user != null && user.Password == Password) // No hashing, normal password check
 			{

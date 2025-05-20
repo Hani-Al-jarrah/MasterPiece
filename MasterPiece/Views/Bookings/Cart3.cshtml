@@ -91,7 +91,7 @@
     </div>
 </main>
  *@
-
+@* 
 @{
     Layout = "DarNaLayout";
     var userEmail = TempData["UserEmail"]?.ToString() ?? "your email";
@@ -162,6 +162,132 @@
                         <p class="mt-2">Your Reference Number: <strong style="color:#28a745">@reference</strong></p>
                     }
                     <a href="@Url.Action("Index", "Home")" class="btn_1 mt-4">Return to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main> *@
+
+@{
+    Layout = "DarNaLayout";
+    var userEmail = TempData["UserEmail"]?.ToString() ?? "your email";
+    var reference = TempData["Reference"]?.ToString();
+}
+<style>
+    .cart_section {
+        background: url(/Images/img/CartNew.png) center bottom repeat-x #6f9de1;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .confirmation-wrapper {
+        background-color: #ffffffee;
+        padding: 40px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 30px auto;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 10;
+        text-align: center;
+    }
+
+        .confirmation-wrapper img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        .confirmation-wrapper h4 {
+            color: #28a745;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .confirmation-wrapper p {
+            margin-bottom: 10px;
+        }
+
+    .bs-wizard {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .bs-wizard-step {
+        text-align: center;
+        position: relative;
+        width: 33%;
+    }
+
+        .bs-wizard-step .bs-wizard-stepnum {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .bs-wizard-step .bs-wizard-dot {
+            width: 20px;
+            height: 20px;
+            background: #ffc107;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        .bs-wizard-step.active .bs-wizard-dot {
+            background: #28a745;
+        }
+</style>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    @if (TempData["Success"] != null)
+    {
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Thank you!',
+                text: '@TempData["Success"]'
+            });
+        </script>
+    }
+}
+
+<main>
+    <div class="hero_in cart_section">
+        <div class="wrapper">
+            <div class="container">
+                <!-- Wizard Steps -->
+                <div class="bs-wizard clearfix">
+                    <div class="bs-wizard-step">
+                        <div class="text-center bs-wizard-stepnum">Your cart</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step">
+                        <div class="text-center bs-wizard-stepnum">Payment</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                    <div class="bs-wizard-step active">
+                        <div class="text-center bs-wizard-stepnum">Finish!</div>
+                        <div class="progress"><div class="progress-bar"></div></div>
+                        <a href="#" class="bs-wizard-dot"></a>
+                    </div>
+                </div>
+
+                <!-- Confirmation Box -->
+                <div class="confirmation-wrapper">
+                    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" />
+                    <h4>House Booking Completed!</h4>
+                    <p>Confirmation sent to <strong>@userEmail</strong></p>
+                    @if (!string.IsNullOrEmpty(reference))
+                    {
+                        <p>Your Reference Number: <strong style="color:#28a745">@reference</strong></p>
+                    }
+                    <a href="@Url.Action("Index", "Home")" class="btn_1 mt-3">Return to Home</a>
                 </div>
             </div>
         </div>

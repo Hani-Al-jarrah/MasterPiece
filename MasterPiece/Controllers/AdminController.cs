@@ -26,7 +26,11 @@ namespace MasterPiece.Controllers
 
         public IActionResult Index()
         {
-            var stats = new
+			if (HttpContext.Session.GetString("UserRole") != "Admin")
+			{
+				return RedirectToAction("Login", "User");
+			}
+			var stats = new
             {
                 Houses = _context.Houses.Count(),
                 Tours = _context.Tours.Count(),
